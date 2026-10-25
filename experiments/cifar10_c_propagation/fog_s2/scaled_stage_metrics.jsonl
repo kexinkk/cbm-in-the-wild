@@ -1,0 +1,1 @@
+{"dataset": "cifar10", "corruption": "fog", "severity": 2, "scaled_argmax_shift_fraction": 0.6653000116348267, "scaled_spearman_rho_mean": 0.7694158554077148, "scaled_top5_jaccard_mean": 0.32156863808631897, "wall_seconds": 16.1}

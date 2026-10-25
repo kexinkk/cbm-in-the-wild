@@ -1,0 +1,655 @@
+{
+  "method": "capacity_matched_A_native_vs_B_prune",
+  "checkpoint": "imagenet_baseline",
+  "K_max": 2048,
+  "D": 512,
+  "sizes": [
+    50,
+    100,
+    200,
+    400,
+    500,
+    600,
+    700,
+    800,
+    1200,
+    1600,
+    2048
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "sev": 3,
+  "fit_n": 25000,
+  "eval_n": 50000,
+  "max_iter": 1000,
+  "rank_by": [
+    "geom_ar"
+  ],
+  "n_init": 3,
+  "crop_subsample": 0,
+  "val_emb_file": "images_ImageNet_val_CLIP-ViT-B16.torch",
+  "crop_blob": "$DCBM_REPO/data/Segments/segcrop_ImageNet_SAM2_CLIP-ViT-B16.torch",
+  "native_cache": "experiments/imagenet_concept_shift_robust_set/capacity_matched",
+  "out_dir": "experiments/imagenet_concept_shift_robust_set",
+  "table": [
+    {
+      "arm": "A_native",
+      "K_wanted": 50,
+      "clean_m": 0.4854,
+      "clean_s": 0.0032,
+      "corrupt_m": 0.1686,
+      "corrupt_s": 0.0018
+    },
+    {
+      "arm": "A_native",
+      "K_wanted": 100,
+      "clean_m": 0.5604,
+      "clean_s": 0.0006,
+      "corrupt_m": 0.2276,
+      "corrupt_s": 0.0006
+    },
+    {
+      "arm": "A_native",
+      "K_wanted": 200,
+      "clean_m": 0.5947,
+      "clean_s": 0.0028,
+      "corrupt_m": 0.257,
+      "corrupt_s": 0.0037
+    },
+    {
+      "arm": "A_native",
+      "K_wanted": 400,
+      "clean_m": 0.6098,
+      "clean_s": 0.0014,
+      "corrupt_m": 0.2744,
+      "corrupt_s": 0.0044
+    },
+    {
+      "arm": "A_native",
+      "K_wanted": 500,
+      "clean_m": 0.6119,
+      "clean_s": 0.0006,
+      "corrupt_m": 0.2753,
+      "corrupt_s": 0.0064
+    },
+    {
+      "arm": "A_native",
+      "K_wanted": 600,
+      "clean_m": 0.6135,
+      "clean_s": 0.0026,
+      "corrupt_m": 0.2774,
+      "corrupt_s": 0.0055
+    },
+    {
+      "arm": "A_native",
+      "K_wanted": 700,
+      "clean_m": 0.615,
+      "clean_s": 0.0023,
+      "corrupt_m": 0.2777,
+      "corrupt_s": 0.0065
+    },
+    {
+      "arm": "A_native",
+      "K_wanted": 800,
+      "clean_m": 0.6153,
+      "clean_s": 0.0016,
+      "corrupt_m": 0.2785,
+      "corrupt_s": 0.0053
+    },
+    {
+      "arm": "A_native",
+      "K_wanted": 1200,
+      "clean_m": 0.6135,
+      "clean_s": 0.0028,
+      "corrupt_m": 0.2786,
+      "corrupt_s": 0.0009
+    },
+    {
+      "arm": "A_native",
+      "K_wanted": 1600,
+      "clean_m": 0.6115,
+      "clean_s": 0.0067,
+      "corrupt_m": 0.2767,
+      "corrupt_s": 0.0044
+    },
+    {
+      "arm": "A_native",
+      "K_wanted": 2048,
+      "clean_m": 0.6126,
+      "clean_s": 0.0035,
+      "corrupt_m": 0.2749,
+      "corrupt_s": 0.0054
+    },
+    {
+      "arm": "B_prune_dk",
+      "K_wanted": 50,
+      "clean_m": 0.5216,
+      "clean_s": 0.0028,
+      "corrupt_m": 0.2663,
+      "corrupt_s": 0.0007
+    },
+    {
+      "arm": "B_prune_dk",
+      "K_wanted": 100,
+      "clean_m": 0.5944,
+      "clean_s": 0.0007,
+      "corrupt_m": 0.3345,
+      "corrupt_s": 0.0013
+    },
+    {
+      "arm": "B_prune_dk",
+      "K_wanted": 200,
+      "clean_m": 0.6276,
+      "clean_s": 0.0017,
+      "corrupt_m": 0.3712,
+      "corrupt_s": 0.0016
+    },
+    {
+      "arm": "B_prune_dk",
+      "K_wanted": 400,
+      "clean_m": 0.6426,
+      "clean_s": 0.0023,
+      "corrupt_m": 0.3903,
+      "corrupt_s": 0.0018
+    },
+    {
+      "arm": "B_prune_dk",
+      "K_wanted": 500,
+      "clean_m": 0.6426,
+      "clean_s": 0.0012,
+      "corrupt_m": 0.3883,
+      "corrupt_s": 0.0025
+    },
+    {
+      "arm": "B_prune_dk",
+      "K_wanted": 600,
+      "clean_m": 0.6442,
+      "clean_s": 0.0035,
+      "corrupt_m": 0.3904,
+      "corrupt_s": 0.0017
+    },
+    {
+      "arm": "B_prune_dk",
+      "K_wanted": 700,
+      "clean_m": 0.6457,
+      "clean_s": 0.0016,
+      "corrupt_m": 0.3904,
+      "corrupt_s": 0.0018
+    },
+    {
+      "arm": "B_prune_dk",
+      "K_wanted": 800,
+      "clean_m": 0.646,
+      "clean_s": 0.0039,
+      "corrupt_m": 0.3896,
+      "corrupt_s": 0.0014
+    },
+    {
+      "arm": "B_prune_dk",
+      "K_wanted": 1200,
+      "clean_m": 0.6415,
+      "clean_s": 0.0044,
+      "corrupt_m": 0.3764,
+      "corrupt_s": 0.0033
+    },
+    {
+      "arm": "B_prune_dk",
+      "K_wanted": 1600,
+      "clean_m": 0.6386,
+      "clean_s": 0.0015,
+      "corrupt_m": 0.3594,
+      "corrupt_s": 0.0012
+    },
+    {
+      "arm": "B_prune_dk",
+      "K_wanted": 2048,
+      "clean_m": 0.629,
+      "clean_s": 0.0039,
+      "corrupt_m": 0.3227,
+      "corrupt_s": 0.0047
+    },
+    {
+      "arm": "B_prune_dkres_geom",
+      "K_wanted": 50,
+      "clean_m": 0.5254,
+      "clean_s": 0.002,
+      "corrupt_m": 0.2556,
+      "corrupt_s": 0.0011
+    },
+    {
+      "arm": "B_prune_dkres_geom",
+      "K_wanted": 100,
+      "clean_m": 0.5921,
+      "clean_s": 0.0026,
+      "corrupt_m": 0.3066,
+      "corrupt_s": 0.0012
+    },
+    {
+      "arm": "B_prune_dkres_geom",
+      "K_wanted": 200,
+      "clean_m": 0.624,
+      "clean_s": 0.002,
+      "corrupt_m": 0.3457,
+      "corrupt_s": 0.0019
+    },
+    {
+      "arm": "B_prune_dkres_geom",
+      "K_wanted": 400,
+      "clean_m": 0.638,
+      "clean_s": 0.0008,
+      "corrupt_m": 0.3601,
+      "corrupt_s": 0.0021
+    },
+    {
+      "arm": "B_prune_dkres_geom",
+      "K_wanted": 500,
+      "clean_m": 0.6402,
+      "clean_s": 0.0012,
+      "corrupt_m": 0.362,
+      "corrupt_s": 0.0005
+    },
+    {
+      "arm": "B_prune_dkres_geom",
+      "K_wanted": 600,
+      "clean_m": 0.64,
+      "clean_s": 0.0028,
+      "corrupt_m": 0.3608,
+      "corrupt_s": 0.0023
+    },
+    {
+      "arm": "B_prune_dkres_geom",
+      "K_wanted": 700,
+      "clean_m": 0.6402,
+      "clean_s": 0.0031,
+      "corrupt_m": 0.3602,
+      "corrupt_s": 0.0017
+    },
+    {
+      "arm": "B_prune_dkres_geom",
+      "K_wanted": 800,
+      "clean_m": 0.6413,
+      "clean_s": 0.0022,
+      "corrupt_m": 0.3617,
+      "corrupt_s": 0.0007
+    },
+    {
+      "arm": "B_prune_dkres_geom",
+      "K_wanted": 1200,
+      "clean_m": 0.6394,
+      "clean_s": 0.004,
+      "corrupt_m": 0.3555,
+      "corrupt_s": 0.0036
+    },
+    {
+      "arm": "B_prune_dkres_geom",
+      "K_wanted": 1600,
+      "clean_m": 0.6328,
+      "clean_s": 0.0039,
+      "corrupt_m": 0.3415,
+      "corrupt_s": 0.0048
+    },
+    {
+      "arm": "B_prune_dkres_geom",
+      "K_wanted": 2048,
+      "clean_m": 0.6326,
+      "clean_s": 0.0041,
+      "corrupt_m": 0.3271,
+      "corrupt_s": 0.0042
+    },
+    {
+      "arm": "B_prune_geom",
+      "K_wanted": 50,
+      "clean_m": 0.5534,
+      "clean_s": 0.002,
+      "corrupt_m": 0.2774,
+      "corrupt_s": 0.0032
+    },
+    {
+      "arm": "B_prune_geom",
+      "K_wanted": 100,
+      "clean_m": 0.6087,
+      "clean_s": 0.0011,
+      "corrupt_m": 0.3277,
+      "corrupt_s": 0.0014
+    },
+    {
+      "arm": "B_prune_geom",
+      "K_wanted": 200,
+      "clean_m": 0.6338,
+      "clean_s": 0.0013,
+      "corrupt_m": 0.3497,
+      "corrupt_s": 0.0029
+    },
+    {
+      "arm": "B_prune_geom",
+      "K_wanted": 400,
+      "clean_m": 0.6424,
+      "clean_s": 0.0008,
+      "corrupt_m": 0.366,
+      "corrupt_s": 0.0004
+    },
+    {
+      "arm": "B_prune_geom",
+      "K_wanted": 500,
+      "clean_m": 0.6437,
+      "clean_s": 0.0014,
+      "corrupt_m": 0.3678,
+      "corrupt_s": 0.0028
+    },
+    {
+      "arm": "B_prune_geom",
+      "K_wanted": 600,
+      "clean_m": 0.6426,
+      "clean_s": 0.0026,
+      "corrupt_m": 0.3608,
+      "corrupt_s": 0.0029
+    },
+    {
+      "arm": "B_prune_geom",
+      "K_wanted": 700,
+      "clean_m": 0.6426,
+      "clean_s": 0.0016,
+      "corrupt_m": 0.363,
+      "corrupt_s": 0.001
+    },
+    {
+      "arm": "B_prune_geom",
+      "K_wanted": 800,
+      "clean_m": 0.6433,
+      "clean_s": 0.0023,
+      "corrupt_m": 0.3641,
+      "corrupt_s": 0.0025
+    },
+    {
+      "arm": "B_prune_geom",
+      "K_wanted": 1200,
+      "clean_m": 0.6426,
+      "clean_s": 0.0019,
+      "corrupt_m": 0.3638,
+      "corrupt_s": 0.0006
+    },
+    {
+      "arm": "B_prune_geom",
+      "K_wanted": 1600,
+      "clean_m": 0.6312,
+      "clean_s": 0.0014,
+      "corrupt_m": 0.3423,
+      "corrupt_s": 0.0023
+    },
+    {
+      "arm": "B_prune_geom",
+      "K_wanted": 2048,
+      "clean_m": 0.6297,
+      "clean_s": 0.0076,
+      "corrupt_m": 0.3238,
+      "corrupt_s": 0.0091
+    },
+    {
+      "arm": "B_prune_geom_ar",
+      "K_wanted": 50,
+      "clean_m": 0.5408,
+      "clean_s": 0.0015,
+      "corrupt_m": 0.2383,
+      "corrupt_s": 0.001
+    },
+    {
+      "arm": "B_prune_geom_ar",
+      "K_wanted": 100,
+      "clean_m": 0.5968,
+      "clean_s": 0.0008,
+      "corrupt_m": 0.2875,
+      "corrupt_s": 0.0024
+    },
+    {
+      "arm": "B_prune_geom_ar",
+      "K_wanted": 200,
+      "clean_m": 0.6235,
+      "clean_s": 0.0012,
+      "corrupt_m": 0.3156,
+      "corrupt_s": 0.0052
+    },
+    {
+      "arm": "B_prune_geom_ar",
+      "K_wanted": 400,
+      "clean_m": 0.6368,
+      "clean_s": 0.0012,
+      "corrupt_m": 0.3331,
+      "corrupt_s": 0.0027
+    },
+    {
+      "arm": "B_prune_geom_ar",
+      "K_wanted": 500,
+      "clean_m": 0.639,
+      "clean_s": 0.001,
+      "corrupt_m": 0.3378,
+      "corrupt_s": 0.0007
+    },
+    {
+      "arm": "B_prune_geom_ar",
+      "K_wanted": 600,
+      "clean_m": 0.6393,
+      "clean_s": 0.0019,
+      "corrupt_m": 0.3391,
+      "corrupt_s": 0.0025
+    },
+    {
+      "arm": "B_prune_geom_ar",
+      "K_wanted": 700,
+      "clean_m": 0.6386,
+      "clean_s": 0.0032,
+      "corrupt_m": 0.3351,
+      "corrupt_s": 0.0041
+    },
+    {
+      "arm": "B_prune_geom_ar",
+      "K_wanted": 800,
+      "clean_m": 0.6395,
+      "clean_s": 0.0017,
+      "corrupt_m": 0.3397,
+      "corrupt_s": 0.0019
+    },
+    {
+      "arm": "B_prune_geom_ar",
+      "K_wanted": 1200,
+      "clean_m": 0.6372,
+      "clean_s": 0.0052,
+      "corrupt_m": 0.3359,
+      "corrupt_s": 0.0066
+    },
+    {
+      "arm": "B_prune_geom_ar",
+      "K_wanted": 1600,
+      "clean_m": 0.6341,
+      "clean_s": 0.0059,
+      "corrupt_m": 0.3325,
+      "corrupt_s": 0.0072
+    },
+    {
+      "arm": "B_prune_geom_ar",
+      "K_wanted": 2048,
+      "clean_m": 0.6284,
+      "clean_s": 0.0042,
+      "corrupt_m": 0.3221,
+      "corrupt_s": 0.005
+    },
+    {
+      "arm": "B_prune_mk_perp",
+      "K_wanted": 50,
+      "clean_m": 0.541,
+      "clean_s": 0.0017,
+      "corrupt_m": 0.305,
+      "corrupt_s": 0.0011
+    },
+    {
+      "arm": "B_prune_mk_perp",
+      "K_wanted": 100,
+      "clean_m": 0.5982,
+      "clean_s": 0.0034,
+      "corrupt_m": 0.3506,
+      "corrupt_s": 0.0008
+    },
+    {
+      "arm": "B_prune_mk_perp",
+      "K_wanted": 200,
+      "clean_m": 0.6213,
+      "clean_s": 0.0028,
+      "corrupt_m": 0.3704,
+      "corrupt_s": 0.0007
+    },
+    {
+      "arm": "B_prune_mk_perp",
+      "K_wanted": 400,
+      "clean_m": 0.6334,
+      "clean_s": 0.0022,
+      "corrupt_m": 0.3752,
+      "corrupt_s": 0.0014
+    },
+    {
+      "arm": "B_prune_mk_perp",
+      "K_wanted": 500,
+      "clean_m": 0.6339,
+      "clean_s": 0.0005,
+      "corrupt_m": 0.3731,
+      "corrupt_s": 0.0024
+    },
+    {
+      "arm": "B_prune_mk_perp",
+      "K_wanted": 600,
+      "clean_m": 0.6342,
+      "clean_s": 0.0033,
+      "corrupt_m": 0.3686,
+      "corrupt_s": 0.0022
+    },
+    {
+      "arm": "B_prune_mk_perp",
+      "K_wanted": 700,
+      "clean_m": 0.6322,
+      "clean_s": 0.0035,
+      "corrupt_m": 0.3623,
+      "corrupt_s": 0.0022
+    },
+    {
+      "arm": "B_prune_mk_perp",
+      "K_wanted": 800,
+      "clean_m": 0.6345,
+      "clean_s": 0.0006,
+      "corrupt_m": 0.3641,
+      "corrupt_s": 0.0024
+    },
+    {
+      "arm": "B_prune_mk_perp",
+      "K_wanted": 1200,
+      "clean_m": 0.6325,
+      "clean_s": 0.0019,
+      "corrupt_m": 0.3547,
+      "corrupt_s": 0.0018
+    },
+    {
+      "arm": "B_prune_mk_perp",
+      "K_wanted": 1600,
+      "clean_m": 0.6353,
+      "clean_s": 0.0042,
+      "corrupt_m": 0.3498,
+      "corrupt_s": 0.004
+    },
+    {
+      "arm": "B_prune_mk_perp",
+      "K_wanted": 2048,
+      "clean_m": 0.6307,
+      "clean_s": 0.0026,
+      "corrupt_m": 0.3249,
+      "corrupt_s": 0.0023
+    },
+    {
+      "arm": "B_prune_random",
+      "K_wanted": 50,
+      "clean_m": 0.5329,
+      "clean_s": 0.0039,
+      "corrupt_m": 0.2343,
+      "corrupt_s": 0.0104
+    },
+    {
+      "arm": "B_prune_random",
+      "K_wanted": 100,
+      "clean_m": 0.5939,
+      "clean_s": 0.0043,
+      "corrupt_m": 0.291,
+      "corrupt_s": 0.0123
+    },
+    {
+      "arm": "B_prune_random",
+      "K_wanted": 200,
+      "clean_m": 0.6209,
+      "clean_s": 0.0019,
+      "corrupt_m": 0.3137,
+      "corrupt_s": 0.0081
+    },
+    {
+      "arm": "B_prune_random",
+      "K_wanted": 400,
+      "clean_m": 0.6319,
+      "clean_s": 0.0018,
+      "corrupt_m": 0.3275,
+      "corrupt_s": 0.0092
+    },
+    {
+      "arm": "B_prune_random",
+      "K_wanted": 500,
+      "clean_m": 0.6341,
+      "clean_s": 0.0023,
+      "corrupt_m": 0.3291,
+      "corrupt_s": 0.0064
+    },
+    {
+      "arm": "B_prune_random",
+      "K_wanted": 600,
+      "clean_m": 0.6355,
+      "clean_s": 0.0014,
+      "corrupt_m": 0.3308,
+      "corrupt_s": 0.0043
+    },
+    {
+      "arm": "B_prune_random",
+      "K_wanted": 700,
+      "clean_m": 0.6351,
+      "clean_s": 0.002,
+      "corrupt_m": 0.3297,
+      "corrupt_s": 0.0034
+    },
+    {
+      "arm": "B_prune_random",
+      "K_wanted": 800,
+      "clean_m": 0.636,
+      "clean_s": 0.002,
+      "corrupt_m": 0.3312,
+      "corrupt_s": 0.0038
+    },
+    {
+      "arm": "B_prune_random",
+      "K_wanted": 1200,
+      "clean_m": 0.6344,
+      "clean_s": 0.0034,
+      "corrupt_m": 0.3295,
+      "corrupt_s": 0.0041
+    },
+    {
+      "arm": "B_prune_random",
+      "K_wanted": 1600,
+      "clean_m": 0.6307,
+      "clean_s": 0.0043,
+      "corrupt_m": 0.3256,
+      "corrupt_s": 0.0054
+    },
+    {
+      "arm": "B_prune_random",
+      "K_wanted": 2048,
+      "clean_m": 0.6297,
+      "clean_s": 0.004,
+      "corrupt_m": 0.3233,
+      "corrupt_s": 0.0049
+    }
+  ]
+}

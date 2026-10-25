@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.conda/
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+
+# data, embedding caches, and checkpoints (download with scripts/download_checkpoints.sh)
+data/
+*.pt
+*.pth
+*.pkl
+*.torch
+*.tar
+*.tar.gz
+slurm-*.out
+processed_data/

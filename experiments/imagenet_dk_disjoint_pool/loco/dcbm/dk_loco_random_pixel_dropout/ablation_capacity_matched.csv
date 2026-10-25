@@ -1,0 +1,4 @@
+arm,K_wanted,seed,fit_n,clean,corrupt,corrupt_std,n_iter
+B_prune_dk_loco_random_pixel_dropout,400,0,128118,0.7175,0.45013800000000004,0.08957934156935962,322
+B_prune_dk_loco_random_pixel_dropout,400,1,128118,0.7175,0.45013800000000004,0.08957934156935962,322
+B_prune_dk_loco_random_pixel_dropout,400,2,128118,0.7175,0.45013800000000004,0.08957934156935962,322

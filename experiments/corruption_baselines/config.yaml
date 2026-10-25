@@ -1,0 +1,34 @@
+# PSNR / SSIM baselines for 10 corruption types × 5 severities per dataset.
+#
+# "Baseline" here = severity-vs-information-loss calibration before any
+# model is involved. Establishes that severities are monotonic (sev 5 >
+# sev 1 in degradation) and that the 4 Hendrycks + 6 custom corruptions
+# land in a reasonable PSNR/SSIM range. Does NOT depend on DCBM/CLIP
+# weights.
+#
+# Subset: 500 images per condition, class-stratified.
+#   CIFAR-10: 50 imgs/class × 10 classes = 500.
+#   ImageNet: 1 img/class × 500 stratified classes (out of 1 000).
+#
+# Corruptions (per proposal §4.3):
+#   4 Hendrycks natural (CIFAR-10-C / ImageNet-C):
+#       motion_blur, gaussian_noise, jpeg_compression, fog
+#   6 custom sensor-level (src/cbm_in_the_wild/corruptions/sensor_c.py):
+#       random_pixel_dropout, salt_and_pepper, sparse_random_occlusion,
+#       patch_masking, row_column_dropout, structured_pixel_dropout
+#
+# Severity ladder: SOFT (2026-04-26 recalibration). See notes.md for the
+# rationale + target PSNR/SSIM ranges. Strict-ladder evidence frozen at
+# experiments/corruption_baselines_strict/.
+
+subset_size: 500
+seed: 42
+severities: [1, 2, 3, 4, 5]
+datasets:
+  cifar10:
+    clean_root: data/raw
+    image_size: 32
+  imagenet:
+    clean_root: data/imagenet/test  # ILSVRC val set; ImageNet-C aligns here, not data/imagenet/val/ (train-carved 10%)
+    image_size: 224
+    resize: 256

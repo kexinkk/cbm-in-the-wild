@@ -1,0 +1,37 @@
+{
+  "method": "capacity_matched_A_native_vs_B_prune",
+  "checkpoint": "imagenet_baseline",
+  "K_max": 2048,
+  "D": 512,
+  "sizes": [
+    400
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "sev": 3,
+  "fit_n": 128118,
+  "eval_n": 50000,
+  "max_iter": 1000,
+  "rank_by": [
+    "rand1"
+  ],
+  "n_init": 3,
+  "crop_subsample": 0,
+  "val_emb_file": "images_ImageNet_val_CLIP-ViT-B16.torch",
+  "crop_blob": "$DCBM_REPO/data/Segments/segcrop_ImageNet_SAM2_CLIP-ViT-B16.torch",
+  "native_cache": "experiments/imagenet_concept_shift_robust_set/capacity_matched",
+  "out_dir": "experiments/imagenet_dk_disjoint_pool/loco/dcbm/rand1",
+  "table": [
+    {
+      "arm": "B_prune_random",
+      "K_wanted": 400,
+      "clean_m": 0.7164,
+      "clean_s": 0.0,
+      "corrupt_m": 0.416,
+      "corrupt_s": 0.0
+    }
+  ]
+}

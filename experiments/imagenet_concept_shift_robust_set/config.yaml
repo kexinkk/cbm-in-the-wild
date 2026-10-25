@@ -1,0 +1,60 @@
+# §3.4 Concept-shift robust set — experiment config
+# Pure CPU: streams cached per-image dumps (no GPU / CLIP / SAM2 / re-dump).
+# Notebook (presentation-only): notebooks/concept_shift_robust_set.ipynb
+
+dataset: imagenet
+checkpoint: imagenet_baseline
+
+inputs:
+  prop_root: experiments/imagenet_c_propagation         # 10 families x 5 sev, per_image/<cell>.pt
+  clean_ref: data/checkpoints/imagenet_baseline/clean_propagation   # concept_act/clip_emb/labels/image_ids
+  leaderboard: experiments/concept_retention/imagenet/leaderboard.json
+  concept_names: data/checkpoints/imagenet_baseline/concept_names_vocab.json
+  val_emb: DCBM/data/Embeddings/images_ImageNet_val_CLIP-ViT-B16.torch   # head refit (disjoint from test)
+  crop_blob: DCBM/data/Segments/segcrop_ImageNet_SAM2_CLIP-ViT-B16.torch # native-K arm A (KMeans pool)
+
+grid:
+  families: [fog, gaussian_noise, motion_blur, patch_masking, salt_and_pepper,
+             jpeg_compression, row_column_dropout, random_pixel_dropout,
+             sparse_random_occlusion, structured_pixel_dropout]
+  severities: [1, 2, 3, 4, 5]     # d_k grid; ablations/gate evaluate sev 3
+  clean_N: 50000
+
+# stage 1 — run.py (sbatch run.sbatch): d_k table, confound diagnostic, robust/fragile
+# sets, head-masking ablation. seed 0 = confound-regression subsample only (no training).
+stage_run:
+  seed: 0
+  outputs:
+    - concept_shift_table.csv     # per-concept d_k, d_k_dir, dir_frac, w_imp, companions
+    - ablation_robust_set.csv     # §F head-masking clean/corrupt acc vs r
+    - shift_grids.npz             # dk_grid, dkdir_grid (K x fam x sev), reg_pts
+    - summary.json                # headline numbers + robust/fragile top-10
+    - figures/{C,D,F}*.png
+
+# stage 2 — reduced-bank ablations (§3.4.4, capacity-CONFOUNDED, kept for the record):
+#   ablation_reduced_bank.py          test half-split refit (superseded)
+#   ablation_reduced_bank_trainval.py val-refit / test-eval; FIT_N env (25000 run on disk)
+# single-seed (SEED=0); MAX_ITER=200 left lbfgs unconverged — treat curves as indicative only.
+
+# stage 3 — diag_shift_covariance.py (sbatch diag_shift_covariance.sbatch), §3.4.6 gate.
+# v1: spectrum of the raw-score shift.  v2: softmax-invariant residual Δ⊥ + post-softmax Δa
+# (verdict_v2 is the gate that matters — softmax cancels the per-image uniform mode v1 sees).
+stage_gate:
+  seed: 0
+  subsample_per_family: 4000      # SUBSAMPLE env
+  outputs: [shift_covariance.npz, shift_covariance_summary.json, figures/H_shift_covariance.png]
+
+# stage 4 — ablation_capacity_matched.py (sbatch ablation_capacity_matched.sbatch), §3.4.5 v2.
+# Gate-3 verdict_v2 = GENERAL → run REFRAMED as the selection-null test: does ANY ranking beat
+# the random control band at matched capacity? (gate predicts dk ≈ random; mk_perp = best case)
+stage_capacity_matched:
+  seeds: [0, 1, 2]
+  sizes: [50, 100, 200, 400, 800, 1200, 1600, 2048]
+  rank_by: [dk_hold3, dk, mk_perp, rand0, rand1, rand2]  # RANK_BY env; rand<i> = selection-null band
+  fit_n: 25000                    # FIT_N env; stratified subsample of the 128k val split
+  max_iter: 1000                  # MAX_ITER env; n_iter logged per fit
+  n_init: 3                       # N_INIT env (KMeans restarts, arm A)
+  crop_subsample: 0               # CROP_SUBSAMPLE env; 0 = full crop pool
+  outputs: [ablation_capacity_matched.csv, ablation_capacity_matched_summary.json,
+            capacity_matched/native_K*_seed*.pt, capacity_matched/results.jsonl,
+            figures/I_capacity_matched.png]

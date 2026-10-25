@@ -1,0 +1,4 @@
+arm,K_wanted,seed,fit_n,clean,corrupt,corrupt_std,n_iter
+B_prune_dk_loco_sparse_random_occlusion,400,0,128118,0.71726,0.450222,0.08981250356158657,262
+B_prune_dk_loco_sparse_random_occlusion,400,1,128118,0.71726,0.450222,0.08981250356158657,262
+B_prune_dk_loco_sparse_random_occlusion,400,2,128118,0.71726,0.450222,0.08981250356158657,262

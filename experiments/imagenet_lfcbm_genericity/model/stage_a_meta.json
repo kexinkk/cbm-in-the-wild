@@ -1,0 +1,10 @@
+{
+  "dataset": "imagenet",
+  "n_concepts_raw": 4751,
+  "n_concepts": 4589,
+  "best_proj_step": 999,
+  "best_val_similarity": 0.9877349734306335,
+  "clip_cutoff": 0.28,
+  "interpretability_cutoff": 0.45,
+  "seed": 0
+}

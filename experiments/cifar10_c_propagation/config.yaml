@@ -1,0 +1,18 @@
+# CIFAR-10 Tier-2 corruption propagation — full test set, 50 cells.
+#
+# 10 corruption families (4 Hendrycks + 6 custom sensor) × 5 severities
+# = 50 SLURM array tasks. Each task evaluates the full 10k CIFAR-10 test
+# split through the deployed-DCBM forward path (CLIP → frozen K=215 bank
+# → linear) and emits paired clean/corrupted stage metrics.
+#
+
+dataset: cifar10
+seed: 42
+
+corruption_set: combined  # 4 Hendrycks + 6 sensor
+
+severities: [1, 2, 3, 4, 5]
+device: cuda
+
+# Tier-2: full test set (10000 images), no stratified subsampling.
+full_test: true

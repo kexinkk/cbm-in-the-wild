@@ -1,0 +1,88 @@
+{
+  "bank": "mmL",
+  "n_concepts": 4589,
+  "seed": 0,
+  "concept_source": "experiments/imagenet_lfcbm_genericity/model/concepts.txt",
+  "concepts_sample": [
+    {
+      "concept": "\"Police\" or \"Sheriff\" markings",
+      "prompt": "\"Police\" or \"Sheriff\" markings"
+    },
+    {
+      "concept": "2 pickups",
+      "prompt": "2 pickups"
+    },
+    {
+      "concept": "4x4",
+      "prompt": "4x4"
+    },
+    {
+      "concept": "A collar",
+      "prompt": "A collar"
+    },
+    {
+      "concept": "A leash",
+      "prompt": "A leash"
+    },
+    {
+      "concept": "A toy",
+      "prompt": "A toy"
+    },
+    {
+      "concept": "A yard",
+      "prompt": "A yard"
+    },
+    {
+      "concept": "Africa",
+      "prompt": "Africa"
+    },
+    {
+      "concept": "Animalia",
+      "prompt": "Animalia"
+    },
+    {
+      "concept": "Arabic inscriptions",
+      "prompt": "Arabic inscriptions"
+    },
+    {
+      "concept": "Asia",
+      "prompt": "Asia"
+    },
+    {
+      "concept": "Australia",
+      "prompt": "Australia"
+    },
+    {
+      "concept": "Aves",
+      "prompt": "Aves"
+    },
+    {
+      "concept": "CDs",
+      "prompt": "CDs"
+    },
+    {
+      "concept": "Christmas decoration",
+      "prompt": "Christmas decoration"
+    },
+    {
+      "concept": "HTML code",
+      "prompt": "HTML code"
+    },
+    {
+      "concept": "Ireland",
+      "prompt": "Ireland"
+    },
+    {
+      "concept": "Italian dish",
+      "prompt": "Italian dish"
+    },
+    {
+      "concept": "Madagascar",
+      "prompt": "Madagascar"
+    },
+    {
+      "concept": "Magnoliophyta",
+      "prompt": "Magnoliophyta"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "method": "crop_quality_correlational",
+  "checkpoint": "imagenet_baseline",
+  "K": 2048,
+  "n_crops": 618743,
+  "report_n": 20,
+  "correlations": {
+    "min_side": {
+      "spearman_rho": -0.6482,
+      "p": 1.7931869013662502e-244,
+      "partial_rho_ctrl_norm": -0.5853,
+      "per_family_rho": {
+        "fog": -0.5048,
+        "gaussian_noise": -0.7693,
+        "motion_blur": -0.5818,
+        "patch_masking": -0.0732,
+        "salt_and_pepper": -0.1567,
+        "jpeg_compression": -0.8366,
+        "row_column_dropout": -0.4671,
+        "random_pixel_dropout": -0.1606,
+        "sparse_random_occlusion": 0.0381,
+        "structured_pixel_dropout": -0.4625
+      }
+    },
+    "area": {
+      "spearman_rho": -0.6268,
+      "p": 5.799314313099346e-224,
+      "partial_rho_ctrl_norm": -0.5643,
+      "per_family_rho": {
+        "fog": -0.4809,
+        "gaussian_noise": -0.7442,
+        "motion_blur": -0.5576,
+        "patch_masking": -0.0709,
+        "salt_and_pepper": -0.149,
+        "jpeg_compression": -0.8261,
+        "row_column_dropout": -0.4432,
+        "random_pixel_dropout": -0.1536,
+        "sparse_random_occlusion": 0.0239,
+        "structured_pixel_dropout": -0.4374
+      }
+    },
+    "AR": {
+      "spearman_rho": 0.3168,
+      "p": 5.575236944547026e-49,
+      "partial_rho_ctrl_norm": 0.2488,
+      "per_family_rho": {
+        "fog": 0.2724,
+        "gaussian_noise": 0.378,
+        "motion_blur": 0.3104,
+        "patch_masking": 0.086,
+        "salt_and_pepper": 0.0991,
+        "jpeg_compression": 0.3288,
+        "row_column_dropout": 0.285,
+        "random_pixel_dropout": 0.086,
+        "sparse_random_occlusion": -0.0463,
+        "structured_pixel_dropout": 0.2621
+      }
+    },
+    "wh": {
+      "spearman_rho": -0.0049,
+      "p": 0.8261101343782776,
+      "partial_rho_ctrl_norm": 0.0092,
+      "per_family_rho": {
+        "fog": 0.0249,
+        "gaussian_noise": -0.0585,
+        "motion_blur": 0.0097,
+        "patch_masking": 0.0571,
+        "salt_and_pepper": 0.1195,
+        "jpeg_compression": -0.1459,
+        "row_column_dropout": 0.0575,
+        "random_pixel_dropout": 0.0592,
+        "sparse_random_occlusion": 0.018,
+        "structured_pixel_dropout": 0.0642
+      }
+    }
+  },
+  "pairwise_metric_rho": {
+    "min_side~area": 0.9805,
+    "min_side~AR": -0.3908,
+    "min_side~wh": 0.0804,
+    "area~AR": -0.2675,
+    "area~wh": 0.1611,
+    "AR~wh": 0.3607
+  },
+  "fragile_median_min_side": 16.0,
+  "robust_median_min_side": 232.5
+}

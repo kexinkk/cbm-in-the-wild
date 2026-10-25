@@ -1,0 +1,23 @@
+{
+  "dcbm": {
+    "n_folds": 10,
+    "mean_loco_vs_random_pp": 2.6313333333333344,
+    "min_loco_vs_random_pp": 1.3553333333333413,
+    "folds_positive": 10,
+    "mean_seen_vs_random_pp": 3.094933333333337
+  },
+  "lfcbm": {
+    "n_folds": 10,
+    "mean_loco_vs_random_pp": 1.834733333333333,
+    "min_loco_vs_random_pp": -0.3904444444444479,
+    "folds_positive": 9,
+    "mean_seen_vs_random_pp": 2.6976666666666658
+  },
+  "pcbm_mmL": {
+    "n_folds": 10,
+    "mean_loco_vs_random_pp": 0.7605555555555569,
+    "min_loco_vs_random_pp": -0.4424444444444404,
+    "folds_positive": 7,
+    "mean_seen_vs_random_pp": 1.3828888888888904
+  }
+}

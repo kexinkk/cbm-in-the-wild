@@ -1,0 +1,673 @@
+{
+  "bank": "mm",
+  "n_concepts": 166,
+  "seed": 0,
+  "svm_C": 0.1,
+  "n_samples": 50,
+  "concepts": [
+    {
+      "concept": "air_conditioner",
+      "prompt": "air conditioner"
+    },
+    {
+      "concept": "airplane",
+      "prompt": "airplane"
+    },
+    {
+      "concept": "apron",
+      "prompt": "apron"
+    },
+    {
+      "concept": "arm",
+      "prompt": "arm"
+    },
+    {
+      "concept": "armchair",
+      "prompt": "armchair"
+    },
+    {
+      "concept": "ashcan",
+      "prompt": "ashcan"
+    },
+    {
+      "concept": "awning",
+      "prompt": "awning"
+    },
+    {
+      "concept": "back",
+      "prompt": "back"
+    },
+    {
+      "concept": "back_pillow",
+      "prompt": "back pillow"
+    },
+    {
+      "concept": "bag",
+      "prompt": "bag"
+    },
+    {
+      "concept": "balcony",
+      "prompt": "balcony"
+    },
+    {
+      "concept": "bannister",
+      "prompt": "bannister"
+    },
+    {
+      "concept": "base",
+      "prompt": "base"
+    },
+    {
+      "concept": "basket",
+      "prompt": "basket"
+    },
+    {
+      "concept": "bathroom_s",
+      "prompt": "bathroom s"
+    },
+    {
+      "concept": "bathtub",
+      "prompt": "bathtub"
+    },
+    {
+      "concept": "beak",
+      "prompt": "beak"
+    },
+    {
+      "concept": "bed",
+      "prompt": "bed"
+    },
+    {
+      "concept": "bedclothes",
+      "prompt": "bedclothes"
+    },
+    {
+      "concept": "bedroom_s",
+      "prompt": "bedroom s"
+    },
+    {
+      "concept": "bench",
+      "prompt": "bench"
+    },
+    {
+      "concept": "bicycle",
+      "prompt": "bicycle"
+    },
+    {
+      "concept": "bird",
+      "prompt": "bird"
+    },
+    {
+      "concept": "blackness",
+      "prompt": "blackness"
+    },
+    {
+      "concept": "blind",
+      "prompt": "blind"
+    },
+    {
+      "concept": "blotchy",
+      "prompt": "blotchy"
+    },
+    {
+      "concept": "blueness",
+      "prompt": "blueness"
+    },
+    {
+      "concept": "board",
+      "prompt": "board"
+    },
+    {
+      "concept": "body",
+      "prompt": "body"
+    },
+    {
+      "concept": "book",
+      "prompt": "book"
+    },
+    {
+      "concept": "bookcase",
+      "prompt": "bookcase"
+    },
+    {
+      "concept": "bottle",
+      "prompt": "bottle"
+    },
+    {
+      "concept": "bowl",
+      "prompt": "bowl"
+    },
+    {
+      "concept": "box",
+      "prompt": "box"
+    },
+    {
+      "concept": "brick",
+      "prompt": "brick"
+    },
+    {
+      "concept": "bridge",
+      "prompt": "bridge"
+    },
+    {
+      "concept": "bucket",
+      "prompt": "bucket"
+    },
+    {
+      "concept": "bumper",
+      "prompt": "bumper"
+    },
+    {
+      "concept": "bus",
+      "prompt": "bus"
+    },
+    {
+      "concept": "bush",
+      "prompt": "bush"
+    },
+    {
+      "concept": "cabinet",
+      "prompt": "cabinet"
+    },
+    {
+      "concept": "can",
+      "prompt": "can"
+    },
+    {
+      "concept": "candlestick",
+      "prompt": "candlestick"
+    },
+    {
+      "concept": "canopy",
+      "prompt": "canopy"
+    },
+    {
+      "concept": "cap",
+      "prompt": "cap"
+    },
+    {
+      "concept": "car",
+      "prompt": "car"
+    },
+    {
+      "concept": "cardboard",
+      "prompt": "cardboard"
+    },
+    {
+      "concept": "carpet",
+      "prompt": "carpet"
+    },
+    {
+      "concept": "cat",
+      "prompt": "cat"
+    },
+    {
+      "concept": "ceiling",
+      "prompt": "ceiling"
+    },
+    {
+      "concept": "ceramic",
+      "prompt": "ceramic"
+    },
+    {
+      "concept": "chain_wheel",
+      "prompt": "chain wheel"
+    },
+    {
+      "concept": "chair",
+      "prompt": "chair"
+    },
+    {
+      "concept": "chandelier",
+      "prompt": "chandelier"
+    },
+    {
+      "concept": "chest_of_drawers",
+      "prompt": "chest of drawers"
+    },
+    {
+      "concept": "chimney",
+      "prompt": "chimney"
+    },
+    {
+      "concept": "clock",
+      "prompt": "clock"
+    },
+    {
+      "concept": "coach",
+      "prompt": "coach"
+    },
+    {
+      "concept": "coffee_table",
+      "prompt": "coffee table"
+    },
+    {
+      "concept": "column",
+      "prompt": "column"
+    },
+    {
+      "concept": "computer",
+      "prompt": "computer"
+    },
+    {
+      "concept": "concrete",
+      "prompt": "concrete"
+    },
+    {
+      "concept": "counter",
+      "prompt": "counter"
+    },
+    {
+      "concept": "countertop",
+      "prompt": "countertop"
+    },
+    {
+      "concept": "cow",
+      "prompt": "cow"
+    },
+    {
+      "concept": "cup",
+      "prompt": "cup"
+    },
+    {
+      "concept": "curtain",
+      "prompt": "curtain"
+    },
+    {
+      "concept": "cushion",
+      "prompt": "cushion"
+    },
+    {
+      "concept": "desk",
+      "prompt": "desk"
+    },
+    {
+      "concept": "dining_room_s",
+      "prompt": "dining room s"
+    },
+    {
+      "concept": "dog",
+      "prompt": "dog"
+    },
+    {
+      "concept": "door",
+      "prompt": "door"
+    },
+    {
+      "concept": "door_frame",
+      "prompt": "door frame"
+    },
+    {
+      "concept": "doorframe",
+      "prompt": "doorframe"
+    },
+    {
+      "concept": "double_door",
+      "prompt": "double door"
+    },
+    {
+      "concept": "drawer",
+      "prompt": "drawer"
+    },
+    {
+      "concept": "drinking_glass",
+      "prompt": "drinking glass"
+    },
+    {
+      "concept": "ear",
+      "prompt": "ear"
+    },
+    {
+      "concept": "earth",
+      "prompt": "earth"
+    },
+    {
+      "concept": "engine",
+      "prompt": "engine"
+    },
+    {
+      "concept": "exhaust_hood",
+      "prompt": "exhaust hood"
+    },
+    {
+      "concept": "eye",
+      "prompt": "eye"
+    },
+    {
+      "concept": "eyebrow",
+      "prompt": "eyebrow"
+    },
+    {
+      "concept": "fabric",
+      "prompt": "fabric"
+    },
+    {
+      "concept": "fan",
+      "prompt": "fan"
+    },
+    {
+      "concept": "faucet",
+      "prompt": "faucet"
+    },
+    {
+      "concept": "fence",
+      "prompt": "fence"
+    },
+    {
+      "concept": "field",
+      "prompt": "field"
+    },
+    {
+      "concept": "figurine",
+      "prompt": "figurine"
+    },
+    {
+      "concept": "fireplace",
+      "prompt": "fireplace"
+    },
+    {
+      "concept": "flag",
+      "prompt": "flag"
+    },
+    {
+      "concept": "floor",
+      "prompt": "floor"
+    },
+    {
+      "concept": "flower",
+      "prompt": "flower"
+    },
+    {
+      "concept": "flowerpot",
+      "prompt": "flowerpot"
+    },
+    {
+      "concept": "fluorescent",
+      "prompt": "fluorescent"
+    },
+    {
+      "concept": "food",
+      "prompt": "food"
+    },
+    {
+      "concept": "foot",
+      "prompt": "foot"
+    },
+    {
+      "concept": "footboard",
+      "prompt": "footboard"
+    },
+    {
+      "concept": "frame",
+      "prompt": "frame"
+    },
+    {
+      "concept": "glass",
+      "prompt": "glass"
+    },
+    {
+      "concept": "granite",
+      "prompt": "granite"
+    },
+    {
+      "concept": "grass",
+      "prompt": "grass"
+    },
+    {
+      "concept": "greenness",
+      "prompt": "greenness"
+    },
+    {
+      "concept": "ground",
+      "prompt": "ground"
+    },
+    {
+      "concept": "hair",
+      "prompt": "hair"
+    },
+    {
+      "concept": "hand",
+      "prompt": "hand"
+    },
+    {
+      "concept": "handle",
+      "prompt": "handle"
+    },
+    {
+      "concept": "handle_bar",
+      "prompt": "handle bar"
+    },
+    {
+      "concept": "head",
+      "prompt": "head"
+    },
+    {
+      "concept": "headboard",
+      "prompt": "headboard"
+    },
+    {
+      "concept": "headlight",
+      "prompt": "headlight"
+    },
+    {
+      "concept": "hill",
+      "prompt": "hill"
+    },
+    {
+      "concept": "horse",
+      "prompt": "horse"
+    },
+    {
+      "concept": "house",
+      "prompt": "house"
+    },
+    {
+      "concept": "inside_arm",
+      "prompt": "inside arm"
+    },
+    {
+      "concept": "jar",
+      "prompt": "jar"
+    },
+    {
+      "concept": "keyboard",
+      "prompt": "keyboard"
+    },
+    {
+      "concept": "knob",
+      "prompt": "knob"
+    },
+    {
+      "concept": "laminate",
+      "prompt": "laminate"
+    },
+    {
+      "concept": "lamp",
+      "prompt": "lamp"
+    },
+    {
+      "concept": "leather",
+      "prompt": "leather"
+    },
+    {
+      "concept": "leg",
+      "prompt": "leg"
+    },
+    {
+      "concept": "lid",
+      "prompt": "lid"
+    },
+    {
+      "concept": "light",
+      "prompt": "light"
+    },
+    {
+      "concept": "loudspeaker",
+      "prompt": "loudspeaker"
+    },
+    {
+      "concept": "manhole",
+      "prompt": "manhole"
+    },
+    {
+      "concept": "metal",
+      "prompt": "metal"
+    },
+    {
+      "concept": "microwave",
+      "prompt": "microwave"
+    },
+    {
+      "concept": "minibike",
+      "prompt": "minibike"
+    },
+    {
+      "concept": "mirror",
+      "prompt": "mirror"
+    },
+    {
+      "concept": "motorbike",
+      "prompt": "motorbike"
+    },
+    {
+      "concept": "mountain",
+      "prompt": "mountain"
+    },
+    {
+      "concept": "mouse",
+      "prompt": "mouse"
+    },
+    {
+      "concept": "mouth",
+      "prompt": "mouth"
+    },
+    {
+      "concept": "muzzle",
+      "prompt": "muzzle"
+    },
+    {
+      "concept": "napkin",
+      "prompt": "napkin"
+    },
+    {
+      "concept": "neck",
+      "prompt": "neck"
+    },
+    {
+      "concept": "nose",
+      "prompt": "nose"
+    },
+    {
+      "concept": "ottoman",
+      "prompt": "ottoman"
+    },
+    {
+      "concept": "outside_arm",
+      "prompt": "outside arm"
+    },
+    {
+      "concept": "oven",
+      "prompt": "oven"
+    },
+    {
+      "concept": "pack",
+      "prompt": "pack"
+    },
+    {
+      "concept": "painted",
+      "prompt": "painted"
+    },
+    {
+      "concept": "painting",
+      "prompt": "painting"
+    },
+    {
+      "concept": "palm",
+      "prompt": "palm"
+    },
+    {
+      "concept": "pane",
+      "prompt": "pane"
+    },
+    {
+      "concept": "paper",
+      "prompt": "paper"
+    },
+    {
+      "concept": "path",
+      "prompt": "path"
+    },
+    {
+      "concept": "paw",
+      "prompt": "paw"
+    },
+    {
+      "concept": "pedestal",
+      "prompt": "pedestal"
+    },
+    {
+      "concept": "person",
+      "prompt": "person"
+    },
+    {
+      "concept": "pillar",
+      "prompt": "pillar"
+    },
+    {
+      "concept": "pillow",
+      "prompt": "pillow"
+    },
+    {
+      "concept": "pipe",
+      "prompt": "pipe"
+    },
+    {
+      "concept": "plant",
+      "prompt": "plant"
+    },
+    {
+      "concept": "plate",
+      "prompt": "plate"
+    },
+    {
+      "concept": "polka_dots",
+      "prompt": "polka dots"
+    },
+    {
+      "concept": "redness",
+      "prompt": "redness"
+    },
+    {
+      "concept": "refrigerator",
+      "prompt": "refrigerator"
+    },
+    {
+      "concept": "sand",
+      "prompt": "sand"
+    },
+    {
+      "concept": "snow",
+      "prompt": "snow"
+    },
+    {
+      "concept": "sofa",
+      "prompt": "sofa"
+    },
+    {
+      "concept": "stairs",
+      "prompt": "stairs"
+    },
+    {
+      "concept": "street_s",
+      "prompt": "street s"
+    },
+    {
+      "concept": "stripes",
+      "prompt": "stripes"
+    },
+    {
+      "concept": "toilet",
+      "prompt": "toilet"
+    }
+  ]
+}

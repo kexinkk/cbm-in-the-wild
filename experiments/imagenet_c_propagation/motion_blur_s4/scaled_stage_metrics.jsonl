@@ -1,0 +1,1 @@
+{"dataset": "imagenet", "corruption": "motion_blur", "severity": 4, "scaled_argmax_shift_fraction": 0.9543200135231018, "scaled_spearman_rho_mean": 0.3641405999660492, "scaled_top5_jaccard_mean": 0.040021270513534546, "wall_seconds": 394.7}

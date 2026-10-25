@@ -1,0 +1,4 @@
+arm,K_wanted,seed,fit_n,clean,corrupt,corrupt_std,n_iter
+B_prune_dk_loco_patch_masking,400,0,128118,0.71816,0.450098,0.08973187012427634,270
+B_prune_dk_loco_patch_masking,400,1,128118,0.71816,0.450098,0.08973187012427634,270
+B_prune_dk_loco_patch_masking,400,2,128118,0.71816,0.450098,0.08973187012427634,270

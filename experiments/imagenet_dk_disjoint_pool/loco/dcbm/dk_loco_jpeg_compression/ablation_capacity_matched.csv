@@ -1,0 +1,4 @@
+arm,K_wanted,seed,fit_n,clean,corrupt,corrupt_std,n_iter
+B_prune_dk_loco_jpeg_compression,400,0,128118,0.71704,0.447334,0.08931691756884583,312
+B_prune_dk_loco_jpeg_compression,400,1,128118,0.71704,0.447334,0.08931691756884583,312
+B_prune_dk_loco_jpeg_compression,400,2,128118,0.71704,0.447334,0.08931691756884583,312

@@ -1,0 +1,839 @@
+{
+  "bank": "cav",
+  "n_concepts": 166,
+  "seed": 0,
+  "svm_C": 0.1,
+  "n_samples": 50,
+  "concepts": [
+    {
+      "concept": "air_conditioner",
+      "train_acc": 1.0,
+      "val_acc": 0.95
+    },
+    {
+      "concept": "airplane",
+      "train_acc": 1.0,
+      "val_acc": 1.0
+    },
+    {
+      "concept": "apron",
+      "train_acc": 1.0,
+      "val_acc": 0.99
+    },
+    {
+      "concept": "arm",
+      "train_acc": 1.0,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "armchair",
+      "train_acc": 1.0,
+      "val_acc": 0.9
+    },
+    {
+      "concept": "ashcan",
+      "train_acc": 1.0,
+      "val_acc": 0.84
+    },
+    {
+      "concept": "awning",
+      "train_acc": 1.0,
+      "val_acc": 0.81
+    },
+    {
+      "concept": "back",
+      "train_acc": 1.0,
+      "val_acc": 0.93
+    },
+    {
+      "concept": "back_pillow",
+      "train_acc": 1.0,
+      "val_acc": 0.93
+    },
+    {
+      "concept": "bag",
+      "train_acc": 1.0,
+      "val_acc": 0.88
+    },
+    {
+      "concept": "balcony",
+      "train_acc": 1.0,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "bannister",
+      "train_acc": 1.0,
+      "val_acc": 0.89
+    },
+    {
+      "concept": "base",
+      "train_acc": 1.0,
+      "val_acc": 0.9
+    },
+    {
+      "concept": "basket",
+      "train_acc": 1.0,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "bathroom_s",
+      "train_acc": 1.0,
+      "val_acc": 0.88
+    },
+    {
+      "concept": "bathtub",
+      "train_acc": 1.0,
+      "val_acc": 0.97
+    },
+    {
+      "concept": "beak",
+      "train_acc": 1.0,
+      "val_acc": 0.99
+    },
+    {
+      "concept": "bed",
+      "train_acc": 1.0,
+      "val_acc": 0.94
+    },
+    {
+      "concept": "bedclothes",
+      "train_acc": 1.0,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "bedroom_s",
+      "train_acc": 1.0,
+      "val_acc": 1.0
+    },
+    {
+      "concept": "bench",
+      "train_acc": 1.0,
+      "val_acc": 0.88
+    },
+    {
+      "concept": "bicycle",
+      "train_acc": 1.0,
+      "val_acc": 0.99
+    },
+    {
+      "concept": "bird",
+      "train_acc": 1.0,
+      "val_acc": 0.95
+    },
+    {
+      "concept": "blackness",
+      "train_acc": 1.0,
+      "val_acc": 1.0
+    },
+    {
+      "concept": "blind",
+      "train_acc": 0.99,
+      "val_acc": 0.9
+    },
+    {
+      "concept": "blotchy",
+      "train_acc": 1.0,
+      "val_acc": 1.0
+    },
+    {
+      "concept": "blueness",
+      "train_acc": 1.0,
+      "val_acc": 1.0
+    },
+    {
+      "concept": "board",
+      "train_acc": 1.0,
+      "val_acc": 0.81
+    },
+    {
+      "concept": "body",
+      "train_acc": 1.0,
+      "val_acc": 0.89
+    },
+    {
+      "concept": "book",
+      "train_acc": 1.0,
+      "val_acc": 0.89
+    },
+    {
+      "concept": "bookcase",
+      "train_acc": 1.0,
+      "val_acc": 0.97
+    },
+    {
+      "concept": "bottle",
+      "train_acc": 1.0,
+      "val_acc": 0.93
+    },
+    {
+      "concept": "bowl",
+      "train_acc": 1.0,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "box",
+      "train_acc": 1.0,
+      "val_acc": 0.82
+    },
+    {
+      "concept": "brick",
+      "train_acc": 1.0,
+      "val_acc": 0.94
+    },
+    {
+      "concept": "bridge",
+      "train_acc": 1.0,
+      "val_acc": 0.95
+    },
+    {
+      "concept": "bucket",
+      "train_acc": 1.0,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "bumper",
+      "train_acc": 1.0,
+      "val_acc": 0.95
+    },
+    {
+      "concept": "bus",
+      "train_acc": 1.0,
+      "val_acc": 0.97
+    },
+    {
+      "concept": "bush",
+      "train_acc": 1.0,
+      "val_acc": 0.94
+    },
+    {
+      "concept": "cabinet",
+      "train_acc": 0.99,
+      "val_acc": 0.89
+    },
+    {
+      "concept": "can",
+      "train_acc": 1.0,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "candlestick",
+      "train_acc": 1.0,
+      "val_acc": 0.95
+    },
+    {
+      "concept": "canopy",
+      "train_acc": 1.0,
+      "val_acc": 0.97
+    },
+    {
+      "concept": "cap",
+      "train_acc": 1.0,
+      "val_acc": 0.96
+    },
+    {
+      "concept": "car",
+      "train_acc": 1.0,
+      "val_acc": 0.95
+    },
+    {
+      "concept": "cardboard",
+      "train_acc": 0.99,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "carpet",
+      "train_acc": 1.0,
+      "val_acc": 0.93
+    },
+    {
+      "concept": "cat",
+      "train_acc": 1.0,
+      "val_acc": 1.0
+    },
+    {
+      "concept": "ceiling",
+      "train_acc": 1.0,
+      "val_acc": 0.9
+    },
+    {
+      "concept": "ceramic",
+      "train_acc": 1.0,
+      "val_acc": 0.93
+    },
+    {
+      "concept": "chain_wheel",
+      "train_acc": 1.0,
+      "val_acc": 0.98
+    },
+    {
+      "concept": "chair",
+      "train_acc": 1.0,
+      "val_acc": 0.81
+    },
+    {
+      "concept": "chandelier",
+      "train_acc": 1.0,
+      "val_acc": 0.96
+    },
+    {
+      "concept": "chest_of_drawers",
+      "train_acc": 1.0,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "chimney",
+      "train_acc": 1.0,
+      "val_acc": 0.88
+    },
+    {
+      "concept": "clock",
+      "train_acc": 1.0,
+      "val_acc": 0.94
+    },
+    {
+      "concept": "coach",
+      "train_acc": 1.0,
+      "val_acc": 0.97
+    },
+    {
+      "concept": "coffee_table",
+      "train_acc": 1.0,
+      "val_acc": 0.93
+    },
+    {
+      "concept": "column",
+      "train_acc": 1.0,
+      "val_acc": 0.89
+    },
+    {
+      "concept": "computer",
+      "train_acc": 0.98,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "concrete",
+      "train_acc": 0.99,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "counter",
+      "train_acc": 1.0,
+      "val_acc": 0.85
+    },
+    {
+      "concept": "countertop",
+      "train_acc": 1.0,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "cow",
+      "train_acc": 1.0,
+      "val_acc": 0.95
+    },
+    {
+      "concept": "cup",
+      "train_acc": 1.0,
+      "val_acc": 0.96
+    },
+    {
+      "concept": "curtain",
+      "train_acc": 1.0,
+      "val_acc": 0.92
+    },
+    {
+      "concept": "cushion",
+      "train_acc": 1.0,
+      "val_acc": 0.93
+    },
+    {
+      "concept": "desk",
+      "train_acc": 1.0,
+      "val_acc": 0.93
+    },
+    {
+      "concept": "dining_room_s",
+      "train_acc": 1.0,
+      "val_acc": 0.97
+    },
+    {
+      "concept": "dog",
+      "train_acc": 1.0,
+      "val_acc": 0.98
+    },
+    {
+      "concept": "door",
+      "train_acc": 1.0,
+      "val_acc": 0.82
+    },
+    {
+      "concept": "door_frame",
+      "train_acc": 1.0,
+      "val_acc": 0.95
+    },
+    {
+      "concept": "doorframe",
+      "train_acc": 1.0,
+      "val_acc": 0.97
+    },
+    {
+      "concept": "double_door",
+      "train_acc": 0.99,
+      "val_acc": 0.95
+    },
+    {
+      "concept": "drawer",
+      "train_acc": 1.0,
+      "val_acc": 0.84
+    },
+    {
+      "concept": "drinking_glass",
+      "train_acc": 1.0,
+      "val_acc": 0.85
+    },
+    {
+      "concept": "ear",
+      "train_acc": 1.0,
+      "val_acc": 0.95
+    },
+    {
+      "concept": "earth",
+      "train_acc": 1.0,
+      "val_acc": 0.94
+    },
+    {
+      "concept": "engine",
+      "train_acc": 1.0,
+      "val_acc": 0.92
+    },
+    {
+      "concept": "exhaust_hood",
+      "train_acc": 1.0,
+      "val_acc": 0.93
+    },
+    {
+      "concept": "eye",
+      "train_acc": 1.0,
+      "val_acc": 0.96
+    },
+    {
+      "concept": "eyebrow",
+      "train_acc": 1.0,
+      "val_acc": 0.88
+    },
+    {
+      "concept": "fabric",
+      "train_acc": 1.0,
+      "val_acc": 0.82
+    },
+    {
+      "concept": "fan",
+      "train_acc": 1.0,
+      "val_acc": 0.96
+    },
+    {
+      "concept": "faucet",
+      "train_acc": 1.0,
+      "val_acc": 0.86
+    },
+    {
+      "concept": "fence",
+      "train_acc": 1.0,
+      "val_acc": 0.87
+    },
+    {
+      "concept": "field",
+      "train_acc": 1.0,
+      "val_acc": 0.96
+    },
+    {
+      "concept": "figurine",
+      "train_acc": 1.0,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "fireplace",
+      "train_acc": 0.99,
+      "val_acc": 0.94
+    },
+    {
+      "concept": "flag",
+      "train_acc": 1.0,
+      "val_acc": 0.97
+    },
+    {
+      "concept": "floor",
+      "train_acc": 1.0,
+      "val_acc": 0.88
+    },
+    {
+      "concept": "flower",
+      "train_acc": 1.0,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "flowerpot",
+      "train_acc": 1.0,
+      "val_acc": 0.99
+    },
+    {
+      "concept": "fluorescent",
+      "train_acc": 1.0,
+      "val_acc": 0.88
+    },
+    {
+      "concept": "food",
+      "train_acc": 1.0,
+      "val_acc": 0.95
+    },
+    {
+      "concept": "foot",
+      "train_acc": 1.0,
+      "val_acc": 0.85
+    },
+    {
+      "concept": "footboard",
+      "train_acc": 0.99,
+      "val_acc": 0.85
+    },
+    {
+      "concept": "frame",
+      "train_acc": 1.0,
+      "val_acc": 0.89
+    },
+    {
+      "concept": "glass",
+      "train_acc": 1.0,
+      "val_acc": 0.89
+    },
+    {
+      "concept": "granite",
+      "train_acc": 1.0,
+      "val_acc": 0.95
+    },
+    {
+      "concept": "grass",
+      "train_acc": 1.0,
+      "val_acc": 0.93
+    },
+    {
+      "concept": "greenness",
+      "train_acc": 1.0,
+      "val_acc": 1.0
+    },
+    {
+      "concept": "ground",
+      "train_acc": 1.0,
+      "val_acc": 0.93
+    },
+    {
+      "concept": "hair",
+      "train_acc": 1.0,
+      "val_acc": 0.94
+    },
+    {
+      "concept": "hand",
+      "train_acc": 1.0,
+      "val_acc": 0.93
+    },
+    {
+      "concept": "handle",
+      "train_acc": 1.0,
+      "val_acc": 0.9
+    },
+    {
+      "concept": "handle_bar",
+      "train_acc": 1.0,
+      "val_acc": 0.96
+    },
+    {
+      "concept": "head",
+      "train_acc": 0.99,
+      "val_acc": 0.82
+    },
+    {
+      "concept": "headboard",
+      "train_acc": 1.0,
+      "val_acc": 0.96
+    },
+    {
+      "concept": "headlight",
+      "train_acc": 1.0,
+      "val_acc": 1.0
+    },
+    {
+      "concept": "hill",
+      "train_acc": 1.0,
+      "val_acc": 0.95
+    },
+    {
+      "concept": "horse",
+      "train_acc": 1.0,
+      "val_acc": 0.97
+    },
+    {
+      "concept": "house",
+      "train_acc": 1.0,
+      "val_acc": 0.94
+    },
+    {
+      "concept": "inside_arm",
+      "train_acc": 1.0,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "jar",
+      "train_acc": 1.0,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "keyboard",
+      "train_acc": 1.0,
+      "val_acc": 0.95
+    },
+    {
+      "concept": "knob",
+      "train_acc": 1.0,
+      "val_acc": 1.0
+    },
+    {
+      "concept": "laminate",
+      "train_acc": 0.99,
+      "val_acc": 0.9
+    },
+    {
+      "concept": "lamp",
+      "train_acc": 1.0,
+      "val_acc": 0.95
+    },
+    {
+      "concept": "leather",
+      "train_acc": 1.0,
+      "val_acc": 0.88
+    },
+    {
+      "concept": "leg",
+      "train_acc": 1.0,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "lid",
+      "train_acc": 1.0,
+      "val_acc": 0.95
+    },
+    {
+      "concept": "light",
+      "train_acc": 1.0,
+      "val_acc": 0.92
+    },
+    {
+      "concept": "loudspeaker",
+      "train_acc": 1.0,
+      "val_acc": 0.93
+    },
+    {
+      "concept": "manhole",
+      "train_acc": 1.0,
+      "val_acc": 1.0
+    },
+    {
+      "concept": "metal",
+      "train_acc": 1.0,
+      "val_acc": 0.89
+    },
+    {
+      "concept": "microwave",
+      "train_acc": 1.0,
+      "val_acc": 0.89
+    },
+    {
+      "concept": "minibike",
+      "train_acc": 1.0,
+      "val_acc": 0.92
+    },
+    {
+      "concept": "mirror",
+      "train_acc": 1.0,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "motorbike",
+      "train_acc": 1.0,
+      "val_acc": 0.98
+    },
+    {
+      "concept": "mountain",
+      "train_acc": 1.0,
+      "val_acc": 0.97
+    },
+    {
+      "concept": "mouse",
+      "train_acc": 1.0,
+      "val_acc": 0.9
+    },
+    {
+      "concept": "mouth",
+      "train_acc": 1.0,
+      "val_acc": 0.98
+    },
+    {
+      "concept": "muzzle",
+      "train_acc": 1.0,
+      "val_acc": 0.99
+    },
+    {
+      "concept": "napkin",
+      "train_acc": 1.0,
+      "val_acc": 0.92
+    },
+    {
+      "concept": "neck",
+      "train_acc": 1.0,
+      "val_acc": 0.92
+    },
+    {
+      "concept": "nose",
+      "train_acc": 1.0,
+      "val_acc": 0.9
+    },
+    {
+      "concept": "ottoman",
+      "train_acc": 1.0,
+      "val_acc": 0.92
+    },
+    {
+      "concept": "outside_arm",
+      "train_acc": 1.0,
+      "val_acc": 0.99
+    },
+    {
+      "concept": "oven",
+      "train_acc": 1.0,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "pack",
+      "train_acc": 0.99,
+      "val_acc": 0.96
+    },
+    {
+      "concept": "painted",
+      "train_acc": 1.0,
+      "val_acc": 0.93
+    },
+    {
+      "concept": "painting",
+      "train_acc": 1.0,
+      "val_acc": 0.93
+    },
+    {
+      "concept": "palm",
+      "train_acc": 1.0,
+      "val_acc": 0.95
+    },
+    {
+      "concept": "pane",
+      "train_acc": 1.0,
+      "val_acc": 0.82
+    },
+    {
+      "concept": "paper",
+      "train_acc": 1.0,
+      "val_acc": 0.89
+    },
+    {
+      "concept": "path",
+      "train_acc": 1.0,
+      "val_acc": 0.93
+    },
+    {
+      "concept": "paw",
+      "train_acc": 1.0,
+      "val_acc": 0.97
+    },
+    {
+      "concept": "pedestal",
+      "train_acc": 1.0,
+      "val_acc": 0.88
+    },
+    {
+      "concept": "person",
+      "train_acc": 1.0,
+      "val_acc": 0.86
+    },
+    {
+      "concept": "pillar",
+      "train_acc": 1.0,
+      "val_acc": 0.91
+    },
+    {
+      "concept": "pillow",
+      "train_acc": 1.0,
+      "val_acc": 0.87
+    },
+    {
+      "concept": "pipe",
+      "train_acc": 1.0,
+      "val_acc": 0.8
+    },
+    {
+      "concept": "plant",
+      "train_acc": 1.0,
+      "val_acc": 0.94
+    },
+    {
+      "concept": "plate",
+      "train_acc": 1.0,
+      "val_acc": 0.97
+    },
+    {
+      "concept": "polka_dots",
+      "train_acc": 1.0,
+      "val_acc": 0.99
+    },
+    {
+      "concept": "redness",
+      "train_acc": 1.0,
+      "val_acc": 1.0
+    },
+    {
+      "concept": "refrigerator",
+      "train_acc": 1.0,
+      "val_acc": 0.97
+    },
+    {
+      "concept": "sand",
+      "train_acc": 0.99,
+      "val_acc": 0.96
+    },
+    {
+      "concept": "snow",
+      "train_acc": 1.0,
+      "val_acc": 0.95
+    },
+    {
+      "concept": "sofa",
+      "train_acc": 0.98,
+      "val_acc": 0.82
+    },
+    {
+      "concept": "stairs",
+      "train_acc": 1.0,
+      "val_acc": 0.89
+    },
+    {
+      "concept": "street_s",
+      "train_acc": 1.0,
+      "val_acc": 0.99
+    },
+    {
+      "concept": "stripes",
+      "train_acc": 1.0,
+      "val_acc": 1.0
+    },
+    {
+      "concept": "toilet",
+      "train_acc": 1.0,
+      "val_acc": 0.93
+    }
+  ]
+}

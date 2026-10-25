@@ -1,0 +1,37 @@
+[project]
+name = "cbm-in-the-wild"
+version = "1.0.0"
+description = "Concept Bottleneck Models in the Wild: assessing interpretability under image corruptions."
+authors = [
+    { name = "Kexin Zhang" },
+    { name = "Katharina Prasse" },
+    { name = "Mishal Fatima" },
+    { name = "Margret Keuper" },
+]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+# Tested with Python 3.11, torch 2.1.2 / torchvision 0.16.2 (CUDA 12.1), the versions
+# pinned by upstream DCBM. CLIP and SAM2 are installed from their own repos (README).
+dependencies = [
+    "torch==2.1.2",
+    "torchvision==0.16.2",
+    "numpy==1.26.3",
+    "scipy==1.11.4",
+    "scikit-learn==1.4.1.post1",
+    "scikit-image==0.24.0",
+    "pandas==2.1.4",
+    "pillow==10.2.0",
+    "opencv-python-headless",
+    "pyyaml==6.0.1",
+    "tqdm",
+    "matplotlib==3.8.2",
+    "ftfy",
+    "regex",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

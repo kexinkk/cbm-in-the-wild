@@ -1,0 +1,1 @@
+{"dataset": "cifar10", "corruption": "patch_masking", "severity": 5, "scaled_argmax_shift_fraction": 0.9819999933242798, "scaled_spearman_rho_mean": 0.25104984641075134, "scaled_top5_jaccard_mean": 0.0399492084980011, "wall_seconds": 72.4}

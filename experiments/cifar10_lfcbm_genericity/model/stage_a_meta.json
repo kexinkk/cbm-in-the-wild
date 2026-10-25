@@ -1,0 +1,10 @@
+{
+  "dataset": "cifar10",
+  "n_concepts_raw": 143,
+  "n_concepts": 138,
+  "best_proj_step": 999,
+  "best_val_similarity": 0.9913473725318909,
+  "clip_cutoff": 0.25,
+  "interpretability_cutoff": 0.45,
+  "seed": 0
+}

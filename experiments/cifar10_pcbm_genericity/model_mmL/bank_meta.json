@@ -1,0 +1,88 @@
+{
+  "bank": "mmL",
+  "n_concepts": 138,
+  "seed": 0,
+  "concept_source": "experiments/cifar10_lfcbm_genericity/model/concepts.txt",
+  "concepts_sample": [
+    {
+      "concept": "a Hunter",
+      "prompt": "a Hunter"
+    },
+    {
+      "concept": "a barn",
+      "prompt": "a barn"
+    },
+    {
+      "concept": "a beak",
+      "prompt": "a beak"
+    },
+    {
+      "concept": "a bed",
+      "prompt": "a bed"
+    },
+    {
+      "concept": "a bed for carrying cargo",
+      "prompt": "a bed for carrying cargo"
+    },
+    {
+      "concept": "a beetle",
+      "prompt": "a beetle"
+    },
+    {
+      "concept": "a bird feeder",
+      "prompt": "a bird feeder"
+    },
+    {
+      "concept": "a birdfeeder",
+      "prompt": "a birdfeeder"
+    },
+    {
+      "concept": "a birdhouse",
+      "prompt": "a birdhouse"
+    },
+    {
+      "concept": "a boat",
+      "prompt": "a boat"
+    },
+    {
+      "concept": "a branch",
+      "prompt": "a branch"
+    },
+    {
+      "concept": "a bridle",
+      "prompt": "a bridle"
+    },
+    {
+      "concept": "a cab for the driver",
+      "prompt": "a cab for the driver"
+    },
+    {
+      "concept": "a cage",
+      "prompt": "a cage"
+    },
+    {
+      "concept": "a captain",
+      "prompt": "a captain"
+    },
+    {
+      "concept": "a cat bed",
+      "prompt": "a cat bed"
+    },
+    {
+      "concept": "a cat food dish",
+      "prompt": "a cat food dish"
+    },
+    {
+      "concept": "a cat toy",
+      "prompt": "a cat toy"
+    },
+    {
+      "concept": "a collar",
+      "prompt": "a collar"
+    },
+    {
+      "concept": "a copilot",
+      "prompt": "a copilot"
+    }
+  ]
+}

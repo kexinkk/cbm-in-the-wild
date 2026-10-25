@@ -1,0 +1,43 @@
+# CIFAR-10 + CLIP ViT-B/16 baseline — sweep + 5-seed replication on best-val.
+#
+# Deliberate deltas from the paper recipe:
+#   - model is ViT-B/16, not upstream-default ViT-L/14
+#   - class_labels_path is null because CIFAR-10 labels are inlined in
+#     DCBM/utils/dcbm.py:134 (no external txt file needed)
+#
+# Success criterion: 5-seed mean test accuracy ≥ 0.90 (within 5% of paper 95.2%).
+
+dataset: cifar10
+model_name: CLIP-ViT-B16
+class_labels_path: null
+
+segmentation_technique: SAM2
+concept_name: null
+concept_per_class: 50
+crop: false
+
+cluster_method: kmeans
+centroid_method: median
+
+# ----- Training hyperparams (fixed across sweep / replication) -----
+epochs: 200
+batch_size: 32
+one_hot: false
+early_stopping_patience: null
+
+device: cpu                   # cache-only, runs on cpu_il
+use_wandb: false
+
+# ----- Sweep grid (single-seed, seeds[0] from replication_seeds) -----
+sweep:
+  n_clusters: [128, 256, 512, 1024, 2048]
+  lambda_lr_pairs:
+    - [1.0e-4, 1.0e-4]
+    - [1.0e-3, 1.0e-3]
+    - [1.0e-3, 1.0e-4]
+
+# ----- 5-seed replication on best-val sweep cell -----
+replication_seeds: [0, 1, 2, 3, 4]
+
+# Target for the final replication mean — fail the run if mean_test < this.
+target_mean_test_accuracy: 0.90

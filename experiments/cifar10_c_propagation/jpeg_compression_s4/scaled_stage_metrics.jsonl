@@ -1,0 +1,1 @@
+{"dataset": "cifar10", "corruption": "jpeg_compression", "severity": 4, "scaled_argmax_shift_fraction": 0.9463000297546387, "scaled_spearman_rho_mean": 0.36574438214302063, "scaled_top5_jaccard_mean": 0.07333213835954666, "wall_seconds": 16.9}

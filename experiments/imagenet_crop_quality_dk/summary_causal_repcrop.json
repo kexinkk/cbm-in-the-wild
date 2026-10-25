@@ -1,0 +1,29 @@
+{
+  "method": "crop_quality_causal",
+  "estimator": "rep_crop_n1",
+  "R": 50,
+  "max_members": null,
+  "target_min_side": 16.0,
+  "by_arm": [
+    {
+      "arm": "control",
+      "d_k_orig_med": 0.0498,
+      "d_k_new_med": 0.0498,
+      "n": 50
+    },
+    {
+      "arm": "general",
+      "d_k_orig_med": 0.0649,
+      "d_k_new_med": 0.1078,
+      "n": 50
+    },
+    {
+      "arm": "intervention",
+      "d_k_orig_med": 0.0498,
+      "d_k_new_med": 0.1122,
+      "n": 50
+    }
+  ],
+  "intervention_minus_control_median": 0.0624,
+  "control_minus_orig_median": -0.0
+}

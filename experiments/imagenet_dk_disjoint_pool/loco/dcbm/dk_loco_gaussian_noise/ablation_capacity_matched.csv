@@ -1,0 +1,4 @@
+arm,K_wanted,seed,fit_n,clean,corrupt,corrupt_std,n_iter
+B_prune_dk_loco_gaussian_noise,400,0,128118,0.71822,0.450276,0.09178137841632145,333
+B_prune_dk_loco_gaussian_noise,400,1,128118,0.71822,0.450276,0.09178137841632145,333
+B_prune_dk_loco_gaussian_noise,400,2,128118,0.71822,0.450276,0.09178137841632145,333

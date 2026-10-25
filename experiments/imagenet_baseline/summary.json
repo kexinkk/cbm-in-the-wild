@@ -1,0 +1,456 @@
+{
+  "status": "ok",
+  "config": {
+    "dataset": "imagenet",
+    "model_name": "CLIP-ViT-B16",
+    "class_labels_path": null,
+    "segmentation_technique": "SAM2",
+    "concept_name": null,
+    "concept_per_class": 50,
+    "crop": false,
+    "cluster_method": "kmeans",
+    "centroid_method": "median",
+    "epochs": 200,
+    "batch_size": 512,
+    "one_hot": false,
+    "early_stopping_patience": null,
+    "device": "cuda:0",
+    "use_wandb": false,
+    "sweep": {
+      "n_clusters": [
+        128,
+        256,
+        512,
+        1024,
+        2048
+      ],
+      "lambda_lr_pairs": [
+        [
+          0.0001,
+          0.0001
+        ],
+        [
+          0.001,
+          0.001
+        ],
+        [
+          0.001,
+          0.0001
+        ]
+      ]
+    },
+    "replication_seeds": [
+      0,
+      1,
+      2
+    ],
+    "target_mean_test_accuracy": 0.7
+  },
+  "context": {
+    "git_commit": "33fc8c8e5df5a60b7a20b450bf23b827bd6fb993",
+    "slurm_job_id": "4099084",
+    "slurm_node": "uc3n071",
+    "slurm_partition": "gpu_h100",
+    "host": "uc3n071.localdomain",
+    "dcbm_git_commit": "e8b2ed620a6db6a24cf194f8c26b8ab19ba06efb"
+  },
+  "timing_seconds": {
+    "total": 4599.145732879639
+  },
+  "metrics": {
+    "best_sweep_cell": {
+      "n_clusters": 2048,
+      "lambda_1": 0.0001,
+      "lr": 0.0001,
+      "val_accuracy": 0.7176977473891256,
+      "test_accuracy": 0.69772
+    },
+    "replication": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "test_accuracies": [
+        0.69772,
+        0.6944199999999999,
+        0.6945999999999999
+      ],
+      "val_accuracies": [
+        0.7176977473891256,
+        0.7171201548572409,
+        0.717658720866701
+      ],
+      "mean_test_accuracy": 0.69558,
+      "std_test_accuracy": 0.0018554783749750935,
+      "mean_val_accuracy": 0.7174922077043558,
+      "std_val_accuracy": 0.0003227975497860728
+    }
+  },
+  "target_mean_test_accuracy": 0.7,
+  "passed": false,
+  "sweep_rows": [
+    {
+      "phase": "sweep",
+      "seed": 0,
+      "n_clusters": 128,
+      "lambda_1": 0.0001,
+      "lr": 0.0001,
+      "val": {
+        "loss": 1.723913277566473,
+        "accuracy": 0.6301768681996285
+      },
+      "test": {
+        "loss": 1.8118058811569213,
+        "accuracy": 0.60202
+      },
+      "timing_seconds": {
+        "preprocess": 74.22418451309204,
+        "train": 1270.0939526557922,
+        "total": 1345.227016210556
+      }
+    },
+    {
+      "phase": "sweep",
+      "seed": 0,
+      "n_clusters": 128,
+      "lambda_1": 0.001,
+      "lr": 0.001,
+      "val": {
+        "loss": 4.188686671196204,
+        "accuracy": 0.16409872149112537
+      },
+      "test": {
+        "loss": 4.226663228912353,
+        "accuracy": 0.15567999999999999
+      },
+      "timing_seconds": {
+        "preprocess": 65.32328081130981,
+        "train": 1266.478068113327,
+        "total": 1332.7592196464539
+      }
+    },
+    {
+      "phase": "sweep",
+      "seed": 0,
+      "n_clusters": 128,
+      "lambda_1": 0.001,
+      "lr": 0.0001,
+      "val": {
+        "loss": 4.194597873316451,
+        "accuracy": 0.1622098378057728
+      },
+      "test": {
+        "loss": 4.232476438446045,
+        "accuracy": 0.15498
+      },
+      "timing_seconds": {
+        "preprocess": 64.97939324378967,
+        "train": 1253.6525011062622,
+        "total": 1319.5694386959076
+      }
+    },
+    {
+      "phase": "sweep",
+      "seed": 0,
+      "n_clusters": 256,
+      "lambda_1": 0.0001,
+      "lr": 0.0001,
+      "val": {
+        "loss": 1.4909611075479658,
+        "accuracy": 0.6671584008492171
+      },
+      "test": {
+        "loss": 1.577805463180542,
+        "accuracy": 0.6408
+      },
+      "timing_seconds": {
+        "preprocess": 84.28552961349487,
+        "train": 1290.7432086467743,
+        "total": 1376.0434000492096
+      }
+    },
+    {
+      "phase": "sweep",
+      "seed": 0,
+      "n_clusters": 256,
+      "lambda_1": 0.001,
+      "lr": 0.001,
+      "val": {
+        "loss": 3.6342019147126616,
+        "accuracy": 0.24852870010459108
+      },
+      "test": {
+        "loss": 3.6811922419738767,
+        "accuracy": 0.23443999999999998
+      },
+      "timing_seconds": {
+        "preprocess": 76.57906174659729,
+        "train": 1271.1688017845154,
+        "total": 1348.7309174537659
+      }
+    },
+    {
+      "phase": "sweep",
+      "seed": 0,
+      "n_clusters": 256,
+      "lambda_1": 0.001,
+      "lr": 0.0001,
+      "val": {
+        "loss": 3.6389209763832064,
+        "accuracy": 0.2522518303439017
+      },
+      "test": {
+        "loss": 3.6853253283691405,
+        "accuracy": 0.24059999999999998
+      },
+      "timing_seconds": {
+        "preprocess": 75.36868858337402,
+        "train": 1274.2860283851624,
+        "total": 1350.637063741684
+      }
+    },
+    {
+      "phase": "sweep",
+      "seed": 0,
+      "n_clusters": 512,
+      "lambda_1": 0.0001,
+      "lr": 0.0001,
+      "val": {
+        "loss": 1.334297191871724,
+        "accuracy": 0.6909099423968529
+      },
+      "test": {
+        "loss": 1.414010170059204,
+        "accuracy": 0.6703
+      },
+      "timing_seconds": {
+        "preprocess": 109.05102229118347,
+        "train": 1285.6098201274872,
+        "total": 1395.774380683899
+      }
+    },
+    {
+      "phase": "sweep",
+      "seed": 0,
+      "n_clusters": 512,
+      "lambda_1": 0.001,
+      "lr": 0.001,
+      "val": {
+        "loss": 3.1603951316491026,
+        "accuracy": 0.3422782122730608
+      },
+      "test": {
+        "loss": 3.211916766052246,
+        "accuracy": 0.33354
+      },
+      "timing_seconds": {
+        "preprocess": 101.60261058807373,
+        "train": 1282.6378157138824,
+        "total": 1385.3687772750854
+      }
+    },
+    {
+      "phase": "sweep",
+      "seed": 0,
+      "n_clusters": 512,
+      "lambda_1": 0.001,
+      "lr": 0.0001,
+      "val": {
+        "loss": 3.1536421465042626,
+        "accuracy": 0.3527060990649245
+      },
+      "test": {
+        "loss": 3.203954036026001,
+        "accuracy": 0.33758000000000005
+      },
+      "timing_seconds": {
+        "preprocess": 102.27994394302368,
+        "train": 1267.2050733566284,
+        "total": 1370.5996696949005
+      }
+    },
+    {
+      "phase": "sweep",
+      "seed": 0,
+      "n_clusters": 1024,
+      "lambda_1": 0.0001,
+      "lr": 0.0001,
+      "val": {
+        "loss": 1.2177945809802084,
+        "accuracy": 0.7085030987058805
+      },
+      "test": {
+        "loss": 1.2974300526046754,
+        "accuracy": 0.68514
+      },
+      "timing_seconds": {
+        "preprocess": 135.47363376617432,
+        "train": 1279.0934584140778,
+        "total": 1415.665587425232
+      }
+    },
+    {
+      "phase": "sweep",
+      "seed": 0,
+      "n_clusters": 1024,
+      "lambda_1": 0.001,
+      "lr": 0.001,
+      "val": {
+        "loss": 2.788174450636621,
+        "accuracy": 0.4083188935200362
+      },
+      "test": {
+        "loss": 2.8455615187835694,
+        "accuracy": 0.39006
+      },
+      "timing_seconds": {
+        "preprocess": 131.3560242652893,
+        "train": 1277.0916340351105,
+        "total": 1409.614140510559
+      }
+    },
+    {
+      "phase": "sweep",
+      "seed": 0,
+      "n_clusters": 1024,
+      "lambda_1": 0.001,
+      "lr": 0.0001,
+      "val": {
+        "loss": 2.760351351152736,
+        "accuracy": 0.43530963642891707
+      },
+      "test": {
+        "loss": 2.817588952178955,
+        "accuracy": 0.41972000000000004
+      },
+      "timing_seconds": {
+        "preprocess": 132.25096654891968,
+        "train": 1275.3798739910126,
+        "total": 1408.7973928451538
+      }
+    },
+    {
+      "phase": "sweep",
+      "seed": 0,
+      "n_clusters": 2048,
+      "lambda_1": 0.0001,
+      "lr": 0.0001,
+      "val": {
+        "loss": 1.1455004126157777,
+        "accuracy": 0.7176977473891256
+      },
+      "test": {
+        "loss": 1.2218022804260253,
+        "accuracy": 0.69772
+      },
+      "timing_seconds": {
+        "preprocess": 231.76139283180237,
+        "train": 1309.2198441028595,
+        "total": 1542.3044533729553
+      }
+    },
+    {
+      "phase": "sweep",
+      "seed": 0,
+      "n_clusters": 2048,
+      "lambda_1": 0.001,
+      "lr": 0.001,
+      "val": {
+        "loss": 2.5779380666697684,
+        "accuracy": 0.42417927223340984
+      },
+      "test": {
+        "loss": 2.640919171142578,
+        "accuracy": 0.41090000000000004
+      },
+      "timing_seconds": {
+        "preprocess": 224.09732913970947,
+        "train": 1303.4369497299194,
+        "total": 1528.710904598236
+      }
+    },
+    {
+      "phase": "sweep",
+      "seed": 0,
+      "n_clusters": 2048,
+      "lambda_1": 0.001,
+      "lr": 0.0001,
+      "val": {
+        "loss": 2.461885452903224,
+        "accuracy": 0.502271343605114
+      },
+      "test": {
+        "loss": 2.524928780822754,
+        "accuracy": 0.48613999999999996
+      },
+      "timing_seconds": {
+        "preprocess": 224.42002129554749,
+        "train": 1287.7293746471405,
+        "total": 1513.3119850158691
+      }
+    }
+  ],
+  "seed_rows": [
+    {
+      "phase": "replication",
+      "seed": 0,
+      "n_clusters": 2048,
+      "lambda_1": 0.0001,
+      "lr": 0.0001,
+      "val": {
+        "loss": 1.1455004126157777,
+        "accuracy": 0.7176977473891256
+      },
+      "test": {
+        "loss": 1.2218022804260253,
+        "accuracy": 0.69772
+      },
+      "timing_seconds": {
+        "preprocess": 230.84371328353882,
+        "train": 1317.970025062561,
+        "total": 1550.0693216323853
+      }
+    },
+    {
+      "phase": "replication",
+      "seed": 1,
+      "n_clusters": 2048,
+      "lambda_1": 0.0001,
+      "lr": 0.0001,
+      "val": {
+        "loss": 1.1468333180888362,
+        "accuracy": 0.7171201548572409
+      },
+      "test": {
+        "loss": 1.2231973595809937,
+        "accuracy": 0.6944199999999999
+      },
+      "timing_seconds": {
+        "preprocess": 225.38431859016418,
+        "train": 1301.7723112106323,
+        "total": 1528.4011979103088
+      }
+    },
+    {
+      "phase": "replication",
+      "seed": 2,
+      "n_clusters": 2048,
+      "lambda_1": 0.0001,
+      "lr": 0.0001,
+      "val": {
+        "loss": 1.1466333073623902,
+        "accuracy": 0.717658720866701
+      },
+      "test": {
+        "loss": 1.2217403411483765,
+        "accuracy": 0.6945999999999999
+      },
+      "timing_seconds": {
+        "preprocess": 224.73445224761963,
+        "train": 1291.598886013031,
+        "total": 1517.5798161029816
+      }
+    }
+  ]
+}

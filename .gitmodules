@@ -1,0 +1,6 @@
+[submodule "third_party/DCBM"]
+	path = third_party/DCBM
+	url = https://github.com/KathPra/DCBM.git
+[submodule "third_party/Label-free-CBM"]
+	path = third_party/Label-free-CBM
+	url = https://github.com/Trustworthy-ML-Lab/Label-free-CBM.git

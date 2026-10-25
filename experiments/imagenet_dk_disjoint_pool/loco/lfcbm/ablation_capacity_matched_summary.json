@@ -1,0 +1,104 @@
+{
+  "n_fits": 42,
+  "cells": [
+    {
+      "rank": "dk_disjoint",
+      "K": 800,
+      "corrupt_mean": 0.4570166666666667,
+      "corrupt_std": 3.900427327012947e-05,
+      "clean_mean": 0.7086733333333334
+    },
+    {
+      "rank": "dk_loco_fog",
+      "K": 800,
+      "corrupt_mean": 0.4573126666666667,
+      "corrupt_std": 4.119870548125708e-05,
+      "clean_mean": 0.7102533333333333
+    },
+    {
+      "rank": "dk_loco_gaussian_noise",
+      "K": 800,
+      "corrupt_mean": 0.4602926666666667,
+      "corrupt_std": 2.6633312473879248e-05,
+      "clean_mean": 0.7096133333333333
+    },
+    {
+      "rank": "dk_loco_jpeg_compression",
+      "K": 800,
+      "corrupt_mean": 0.4579486666666666,
+      "corrupt_std": 6.132971003788234e-05,
+      "clean_mean": 0.70948
+    },
+    {
+      "rank": "dk_loco_motion_blur",
+      "K": 800,
+      "corrupt_mean": 0.4576533333333333,
+      "corrupt_std": 0.00014368484030445768,
+      "clean_mean": 0.7094266666666668
+    },
+    {
+      "rank": "dk_loco_patch_masking",
+      "K": 800,
+      "corrupt_mean": 0.4535753333333334,
+      "corrupt_std": 0.0001390011990355573,
+      "clean_mean": 0.7093666666666666
+    },
+    {
+      "rank": "dk_loco_random_pixel_dropout",
+      "K": 800,
+      "corrupt_mean": 0.45781066666666664,
+      "corrupt_std": 4.437717130839426e-05,
+      "clean_mean": 0.7095266666666666
+    },
+    {
+      "rank": "dk_loco_row_column_dropout",
+      "K": 800,
+      "corrupt_mean": 0.4550593333333333,
+      "corrupt_std": 6.268439465563642e-05,
+      "clean_mean": 0.7092933333333334
+    },
+    {
+      "rank": "dk_loco_salt_and_pepper",
+      "K": 800,
+      "corrupt_mean": 0.45600666666666667,
+      "corrupt_std": 0.0001300051281039477,
+      "clean_mean": 0.7090333333333333
+    },
+    {
+      "rank": "dk_loco_sparse_random_occlusion",
+      "K": 800,
+      "corrupt_mean": 0.45445533333333327,
+      "corrupt_std": 8.134699338845432e-05,
+      "clean_mean": 0.7089466666666667
+    },
+    {
+      "rank": "dk_loco_structured_pixel_dropout",
+      "K": 800,
+      "corrupt_mean": 0.4558959999999999,
+      "corrupt_std": 0.00015951175505272204,
+      "clean_mean": 0.7086666666666667
+    },
+    {
+      "rank": "rand0",
+      "K": 800,
+      "corrupt_mean": 0.4291433333333334,
+      "corrupt_std": 6.463229326993384e-05,
+      "clean_mean": 0.7093066666666666
+    },
+    {
+      "rank": "rand1",
+      "K": 800,
+      "corrupt_mean": 0.4292513333333334,
+      "corrupt_std": 2.1197484127456918e-05,
+      "clean_mean": 0.71008
+    },
+    {
+      "rank": "rand2",
+      "K": 800,
+      "corrupt_mean": 0.43172533333333335,
+      "corrupt_std": 0.00012361769021191493,
+      "clean_mean": 0.7085333333333333
+    }
+  ],
+  "margins": {}
+}

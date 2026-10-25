@@ -1,0 +1,17 @@
+{
+  "head": "elasticnet_glmsaga",
+  "alpha": 0.99,
+  "lam": 0.0002,
+  "epochs": 60,
+  "metrics": {
+    "loss_tr": 0.16777725517749786,
+    "acc_tr": 0.9574888944625854,
+    "loss_val": 0.1657337099313736,
+    "acc_val": 0.9575999975204468,
+    "loss_test": -1,
+    "acc_test": -1
+  },
+  "nnz": 991,
+  "sparsity": 0.596987951807229,
+  "clean_test_top1": 0.9481
+}

@@ -1,0 +1,54 @@
+# PCBM genericity ablation — ImageNet.
+#
+# Deployed pipeline: CLIP ViT-B/16 → PCBM concept margins → standardize →
+# L2 logistic head (NO input-dependent gate). Two concept sources, row-aligned:
+#   cav — per-concept linear SVM on Broden concept images (primary, faithful)
+#   mm  — CLIP text-encoder embeddings of the concept names (cheap secondary)
+# Both banks live in the 512-d CLIP space = the cached ImageNet + ImageNet-C
+# `clip_emb` embeddings, so the 50 full-test corruption cells of
+# experiments/imagenet_c_propagation are reused verbatim (no new corrupt compute).
+# Broden = 166 concepts → a deliberately tight bottleneck (PCBM's design); the
+# genericity test is the robust-vs-random margin under corruption, not top-1.
+
+dataset: imagenet
+clip_name: ViT-B/16
+model_name: CLIP-ViT-B16
+seed: 0
+
+# --- concept-bank construction (stage A) ---
+banks: [cav, mm]
+n_samples: 50        # pos/neg per concept per split (fork default; <100 → w/ replacement)
+svm_C: 0.1           # linear-SVM regularizer for CAVs (fork sweeps; 0.1 = mid)
+head_fit_n: 250000   # subsample for the stage-A L2 *sanity* head (not deployed)
+
+# large-vocabulary multimodal bank (mmL): CLIP-text embeddings of LF-CBM's
+# deployed ~4.6k ImageNet concept list — same vocabulary as LF-CBM, so PCBM-mmL
+# isolates raw-text-embedding vs LF-CBM's learned projection, and gives a
+# DCBM/LF-CBM-width K grid to test whether the small 166-bank margin was a
+# bank-size artifact. No Broden; reuses cached embeddings.
+mm_large_concept_file: experiments/imagenet_lfcbm_genericity/model/concepts.txt
+
+# --- faithful PCBM reference head (stage B: sparse elastic-net via glm_saga) ---
+# PCBM's published head is a sparse elastic-net linear predictor (train_pcbm.py:
+# SGDClassifier(penalty='elasticnet', alpha=0.99)); glm_saga solves the same
+# objective on GPU. This is the DEPLOYED/reproduction head (propagation + clean top-1).
+# The d_k ablation deliberately refits a plain L2 head instead (isolates concept
+# selection, common axis across DCBM/LF-CBM/PCBM) — see ablation.py.
+saga:
+  lam: 0.0002        # L1 strength (max_reg nongrouped); elastic-net alpha=0.99
+  n_iters: 60
+  batch_size: 256
+  chunk_epochs: 40   # per 25-min job; afterany waves resume (exact warm restart)
+
+# --- corruption grid (matches imagenet_c_propagation) ---
+corruption_set: combined     # 4 Hendrycks + 6 sensor
+severities: [1, 2, 3, 4, 5]
+
+# --- capacity-matched ablation ---
+ablation:
+  # even-spaced grid over the 166-concept bank; K_full (166) appended at
+  # runtime as the inert anchor where all arms coincide.
+  sizes: [20, 40, 60, 80, 100, 120, 140, 160]           # cav/mm (K_full=166)
+  sizes_large: [400, 800, 1200, 1600, 2000, 2400, 2800, 3200, 3600, 4000]  # mmL (K_full≈4588)
+  seeds: [0, 1, 2]
+  fit_n: 25000

@@ -1,0 +1,10 @@
+{
+  "n_concepts": 4589,
+  "dk_space": "raw_projection (W_c z, pre-standardization; DCBM-comparable)",
+  "dk_mean": 0.21049121022224426,
+  "dk_p90_over_p10": 1.6142151262174986,
+  "spearman_dk_vs_hold3": 0.9997659954969126,
+  "spearman_dk_vs_wimp": 0.06478332252902695,
+  "spearman_dk_raw_vs_std": 0.8659336059003401,
+  "spearman_dk_raw_vs_std_hold3": 0.8644491581207441
+}

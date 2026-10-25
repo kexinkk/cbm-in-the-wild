@@ -1,0 +1,50 @@
+{
+  "status": "ok",
+  "config": {
+    "dataset": "imagenet",
+    "seed": 42,
+    "corruption_set": "combined",
+    "severities": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "device": "cuda",
+    "full_test": true
+  },
+  "context": {
+    "git_commit": "07457100d2bfb66dda77fc498a3c483b16de0937",
+    "slurm_job_id": "5203382",
+    "slurm_node": "uc2n569",
+    "slurm_partition": "gpu_a100_short",
+    "host": "uc2n569.localdomain"
+  },
+  "timing_seconds": {
+    "forward": 466.76249623298645
+  },
+  "metrics": {
+    "by_cell": {
+      "imagenet|sparse_random_occlusion|5": {
+        "n": 50000,
+        "cosine_drift_mean": 0.7467242479324341,
+        "cosine_drift_std": 0.06178698688745499,
+        "nearest_ref_drift_mean": 0.7669890522956848,
+        "per_concept_cosine_mean": 0.9988532066345215,
+        "softmax_entropy_clean_mean": 7.624619483947754,
+        "delta_entropy_mean": 4.5299529460862686e-08,
+        "top5_jaccard_mean": 0.20593152940273285,
+        "argmax_shift_fraction": 0.7537400126457214,
+        "kl_divergence_mean": 0.0011286778608337045,
+        "spearman_rho_mean": 0.6798735857009888,
+        "accuracy": 0.37887999415397644,
+        "prediction_shifts_vs_clean": 29046
+      }
+    },
+    "n_cells": 1
+  },
+  "n_eval": 50000,
+  "corruption": "sparse_random_occlusion",
+  "severity": 5
+}

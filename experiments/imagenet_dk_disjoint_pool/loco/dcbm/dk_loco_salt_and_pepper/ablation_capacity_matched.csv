@@ -1,0 +1,4 @@
+arm,K_wanted,seed,fit_n,clean,corrupt,corrupt_std,n_iter
+B_prune_dk_loco_salt_and_pepper,400,0,128118,0.7181,0.4537000000000001,0.09110392263783158,315
+B_prune_dk_loco_salt_and_pepper,400,1,128118,0.7181,0.4537000000000001,0.09110392263783158,315
+B_prune_dk_loco_salt_and_pepper,400,2,128118,0.7181,0.4537000000000001,0.09110392263783158,315

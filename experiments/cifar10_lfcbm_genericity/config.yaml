@@ -1,0 +1,34 @@
+# LF-CBM genericity ablation — CIFAR-10.
+#
+# Deployed pipeline: CLIP ViT-B/16 → W_c concept projection → standardize
+# → sparse GLM-SAGA head. Trained entirely on cached clean embeddings
+# (DCBM/data/Embeddings/images_cifar10_*_CLIP-ViT-B16.torch); corrupted
+# eval on freshly embedded corrupted test cells (corrupted_test/, seed-42
+# harness → same corruption realizations as cifar10_c_propagation).
+
+dataset: cifar10
+clip_name: ViT-B/16
+model_name: CLIP-ViT-B16
+seed: 0                      # model seed; ablation refit seeds below
+
+# --- LF-CBM training (upstream cifar10 defaults, training_commands.txt) ---
+concept_set: data/concept_sets/cifar10_filtered.txt   # relative to LFCBM_REPO
+clip_cutoff: 0.25
+interpretability_cutoff: 0.45
+proj_steps: 1000
+proj_batch_size: 50000
+saga:
+  lam: 0.0007
+  n_iters: 1000
+  batch_size: 256
+  chunk_epochs: 400          # per 25-min job; afterany waves resume
+
+# --- corruption grid (matches cifar10_c_propagation) ---
+corruption_set: combined     # 4 Hendrycks + 6 sensor
+severities: [1, 2, 3, 4, 5]
+
+# --- capacity-matched ablation ---
+ablation:
+  sizes: [16, 32, 64, 96]    # + K_full appended at runtime (~128 concepts)
+  seeds: [0, 1, 2]
+  fit_n: 4000                # stratified from the 5k held-out val split

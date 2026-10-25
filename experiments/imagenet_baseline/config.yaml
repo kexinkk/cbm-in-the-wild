@@ -1,0 +1,55 @@
+# ImageNet-1k + CLIP ViT-B/16 baseline — sweep + 3-seed replication on best-val.
+#
+# Mirrors experiments/cifar10_baseline/config.yaml with these deltas:
+#   dataset: imagenet (not cifar10)
+#   class_labels_path: null — the DCBM fork ships DCBM/data/classes/imagenet_classes.txt
+#     but the file is newline-corrupted (1000 names smushed onto one line). DCBM's
+#     extract_data_labels falls back to one-hot encoding the wnid strings (sorted-
+#     wnid order = canonical class index 0..999), so class_labels is metadata-only
+#     for training. Fix the class-labels file later if per-class reporting is
+#     needed. Training accuracy doesn't depend on it.
+#   concept_per_class: 50 (same as CIFAR-10, matches paper)
+#   batch_size: 512 — DCBM's DCBM_ImageNet.ipynb uses 512 (CIFAR-10 notebook
+#     uses 32; the two are NOT the same). The 2026-04-23 retrain followed a
+#     first attempt at bs=32 that ran 16× too many optimizer steps/epoch →
+#     L1 pushed weights ~16× too hard → test acc 0.661 vs paper ~0.74.
+
+
+dataset: imagenet
+model_name: CLIP-ViT-B16
+class_labels_path: null
+
+segmentation_technique: SAM2
+concept_name: null
+concept_per_class: 50
+crop: false
+
+cluster_method: kmeans
+centroid_method: median
+
+# ----- Training hyperparams (fixed across sweep / replication) -----
+epochs: 200
+batch_size: 512
+one_hot: false
+early_stopping_patience: null
+
+device: cpu                   # cache-only, runs on cpu_il
+use_wandb: false
+
+# ----- Sweep grid (single-seed) -----
+# Same grid as CIFAR-10: 5 cluster counts × 3 (lambda, lr) pairs = 15 cells.
+# Apr 20 observation: (1e-4, 1e-4) corner dominated CIFAR-10; consider
+# extending to (1e-5, 1e-5) later if the corner dominates here too.
+sweep:
+  n_clusters: [128, 256, 512, 1024, 2048]
+  lambda_lr_pairs:
+    - [1.0e-4, 1.0e-4]
+    - [1.0e-3, 1.0e-3]
+    - [1.0e-3, 1.0e-4]
+
+# ----- 3-seed replication on best-val sweep cell -----
+replication_seeds: [0, 1, 2]
+
+# Target for the final replication mean — fail the run if mean_test < this.
+# Tentative; adjust once the paper number is confirmed.
+target_mean_test_accuracy: 0.70

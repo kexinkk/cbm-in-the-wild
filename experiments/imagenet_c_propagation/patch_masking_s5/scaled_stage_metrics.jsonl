@@ -1,0 +1,1 @@
+{"dataset": "imagenet", "corruption": "patch_masking", "severity": 5, "scaled_argmax_shift_fraction": 0.8020600080490112, "scaled_spearman_rho_mean": 0.5872658491134644, "scaled_top5_jaccard_mean": 0.15674588084220886, "wall_seconds": 359.3}

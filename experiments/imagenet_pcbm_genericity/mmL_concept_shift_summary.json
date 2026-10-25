@@ -1,0 +1,10 @@
+{
+  "bank": "mmL",
+  "n_concepts": 4589,
+  "dk_space": "raw_pcbm_margin ((z\u00b7cav+b)/\u2016cav\u2016, pre-standardization; DCBM-comparable)",
+  "dk_mean": 0.23844027519226074,
+  "dk_p90_over_p10": 1.499374458707573,
+  "spearman_dk_vs_hold3": 0.9997923003314318,
+  "spearman_dk_vs_wimp": 0.21580505982107084,
+  "spearman_dk_raw_vs_std": 0.6971328548864418
+}
