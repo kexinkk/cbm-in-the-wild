@@ -15,9 +15,9 @@ concepts. Deployed, they face sensor noise, blur, weather and dead pixels, yet C
 far been evaluated on clean data only. We follow ten image corruptions through three CBMs
 (DCBM, Label-free CBM, Post-hoc CBM) on a frozen CLIP ViT-B/16 and find:
 
-- **Corruption hurts all three CBMs.** Accuracy drops by 3–67 %, depending on corruption type and severity.
-- **Corruption reorders concepts.** The CLIP embedding barely turns (cosine ≥ 0.59), yet the top-1 concept changes in 70–100 % of images.
-- **Concepts differ in stability, and the stable ones can be found.** A per-concept shift score $d_k$ ranks concepts consistently across corruptions. Keeping the most stable ones beats a size-matched random subset by +1.5 to +3.3 pp on corrupted images, with clean accuracy unchanged or higher.
+- **Corruption hurts all three CBMs.** Accuracy drops by 4–66 points, depending on corruption type and severity; Gaussian noise is harshest, patch masking mildest.
+- **Corruption reorders concepts.** The CLIP embedding direction is largely preserved (cosine $\geq 0.59$), yet the concept activation vector is reordered with the top-1 activated concept changes in 70--100% of images.
+- **Concepts differ in robustness, and the robust ones can be found.** A per-concept shift score $d_k$ ranks concepts consistently across corruptionsand moderately across corruption types. Keeping the most stable ones beats a size-matched random subset by \good{+1.5 to +3.3\,pp} on corrupted images, at $\leq 0.25$\,pp clean cost with the head refit.
 
 ![Corruptions](figures/corruption_examples.png)
 *Four natural corruptions from ImageNet-C and six sensor corruptions, at severity 3.*
@@ -46,7 +46,7 @@ needs [SAM2](https://github.com/facebookresearch/sam2), installed from `third_pa
 bash scripts/download_checkpoints.sh   # ~30 MB from the GitHub release, unpacked in place
 ```
 
-| Model (CLIP ViT-B/16) | Concepts | ImageNet clean top-1 |
+| Model (CLIP ViT-B/16) | Concepts | ImageNet clean top-1 accuracy (%) |
 |---|---|---|
 | DCBM | 2048 SAM2-crop medoids | 69.77 |
 | Label-free CBM | 4589 text concepts | 75.48 |
