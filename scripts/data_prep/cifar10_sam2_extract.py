@@ -17,19 +17,14 @@ Crops land at:
 Stats (per-image bounding boxes, sizes) at:
     $DCBM_REPO/data/Segments/stats/cifar10_SAM2_STATS.torch
 
-Sharding: set SHARD_ID / SHARD_COUNT env vars (exported by
-`scripts/slurm/extract_gpu.sbatch`) to process a slice of the subset.
+Sharding: set SHARD_ID / SHARD_COUNT env vars to process a slice of the subset.
 Each shard writes its own partial stats file which we merge on the final
 shard; crops/masks are written to a shared dir (restartable via skip-
 if-exists).
 
 Usage:
     python scripts/data_prep/cifar10_sam2_extract.py
-    sbatch scripts/slurm/extract_gpu.sbatch \\
-        python scripts/data_prep/cifar10_sam2_extract.py
-    # for sharded extraction:
-    sbatch --array=0-3 scripts/slurm/extract_gpu.sbatch \\
-        python scripts/data_prep/cifar10_sam2_extract.py
+    SHARD_ID=0 SHARD_COUNT=4 python scripts/data_prep/cifar10_sam2_extract.py   # one of 4 shards
 """
 
 from __future__ import annotations

@@ -24,8 +24,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 from cbm_in_the_wild.paths import CHECKPOINT_DIR
-from cbm_in_the_wild.persistence import load_cbm_artifacts
-from cbm_in_the_wild.analysis.analysis import load_per_image_cell
+from cbm_in_the_wild.dcbm.persistence import load_cbm_artifacts
+from cbm_in_the_wild.dcbm.analysis import load_per_image_cell
 
 # --- config -----------------------------------------------------------------
 HERE       = Path(__file__).resolve().parent

@@ -28,9 +28,9 @@ Split into two phases so the sweep can be sharded across a SLURM array
       sweep (unsharded) + replicate in one process. Useful for debugging,
       not recommended on the cluster (too long for any short partition).
 
-Typical SLURM submission:
-    sbatch scripts/slurm/imagenet1000/06_baseline_sweep.sbatch     # array 0..4
-    sbatch scripts/slurm/imagenet1000/07_baseline_replicate.sbatch # afterok
+Typical run:
+    python experiments/imagenet_baseline/run.py --phase sweep --cluster-index {0..4}   # one K per process
+    python experiments/imagenet_baseline/run.py --phase replicate
 """
 
 from __future__ import annotations
@@ -45,7 +45,7 @@ from pathlib import Path
 
 import yaml
 
-from cbm_in_the_wild.dcbm_bridge import build_cbm, evaluate_split
+from cbm_in_the_wild.dcbm.bridge import build_cbm, evaluate_split
 from cbm_in_the_wild.runs import capture_context, write_summary
 from cbm_in_the_wild.seeding import set_all_seeds
 
@@ -160,13 +160,13 @@ def run_save_best(
 ) -> dict:
     """Train one CBM with ``best`` (n_clusters, λ, lr); save artifacts.
 
-    Output layout (per ``cbm_in_the_wild.persistence.save_cbm_artifacts``):
+    Output layout (per ``cbm_in_the_wild.dcbm.persistence.save_cbm_artifacts``):
         out_dir/linear_head.pt
         out_dir/centroids.pt
         out_dir/scaler.pkl
         out_dir/manifest.json
     """
-    from cbm_in_the_wild.persistence import save_cbm_artifacts
+    from cbm_in_the_wild.dcbm.persistence import save_cbm_artifacts
 
     res = train_and_evaluate(
         cfg, seed=seed,

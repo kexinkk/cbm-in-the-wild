@@ -42,7 +42,7 @@ from PIL import Image
 from scipy.stats import spearmanr
 
 from cbm_in_the_wild.paths import CHECKPOINT_DIR, REPO_ROOT
-from cbm_in_the_wild.persistence import load_cbm_artifacts
+from cbm_in_the_wild.dcbm.persistence import load_cbm_artifacts
 
 HERE       = Path(__file__).resolve().parent
 REPO       = HERE.parents[1]

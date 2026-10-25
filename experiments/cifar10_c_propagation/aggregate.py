@@ -29,7 +29,7 @@ REPO_ROOT = HERE.parents[1]
 sys.path.insert(0, str(REPO_ROOT / "src"))
 
 from cbm_in_the_wild.corruption_eval import resolve_corruptions  # noqa: E402
-from cbm_in_the_wild.pipeline import compare_clean_vs_corrupted  # noqa: E402
+from cbm_in_the_wild.dcbm.pipeline import compare_clean_vs_corrupted  # noqa: E402
 from cbm_in_the_wild.runs import capture_context, write_summary  # noqa: E402
 
 

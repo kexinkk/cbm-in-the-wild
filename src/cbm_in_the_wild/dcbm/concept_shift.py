@@ -27,7 +27,7 @@ import numpy as np
 import torch
 
 from cbm_in_the_wild.paths import CHECKPOINT_DIR, REPO_ROOT
-from cbm_in_the_wild.analysis.analysis import load_per_image_cell
+from cbm_in_the_wild.dcbm.analysis import load_per_image_cell
 
 # The 10 ImageNet-C families the §3.4 pass uses (order fixed; matches shift_grids.npz).
 FAMILIES = ["fog", "gaussian_noise", "motion_blur", "patch_masking", "salt_and_pepper",

@@ -33,7 +33,7 @@ REPO = HERE.parents[1]
 sys.path.insert(0, str(REPO / "src"))
 
 from cbm_in_the_wild.paths import CHECKPOINT_DIR, DATA_DIR  # noqa: E402
-from cbm_in_the_wild.persistence import load_cbm_artifacts  # noqa: E402
+from cbm_in_the_wild.dcbm.persistence import load_cbm_artifacts  # noqa: E402
 from cbm_in_the_wild.lfcbm import core as lf_core  # noqa: E402
 from cbm_in_the_wild.pcbm import core as pc_core  # noqa: E402
 
@@ -47,8 +47,8 @@ SEVERITIES = [1, 2, 3, 4, 5]
 # no severity-3 hold-out. d_k_hold3 is still written, for the record only.
 EVAL_POOL_TABLES = {   # eval-pool d_k (all severities), for the Spearman comparison
     "dcbm": REPO / "experiments/imagenet_concept_shift_robust_set/concept_shift_table.csv",
-    "lfcbm": REPO / "experiments/imagenet_lfcbm_genericity_full_val/concept_shift_table.csv",
-    "pcbm_mmL": REPO / "experiments/imagenet_pcbm_genericity_full_val/mmL_concept_shift_table.csv",
+    "lfcbm": REPO / "experiments/imagenet_lfcbm_genericity/concept_shift_table.csv",
+    "pcbm_mmL": REPO / "experiments/imagenet_pcbm_genericity/mmL_concept_shift_table.csv",
 }
 
 
@@ -56,8 +56,8 @@ def score_fns() -> dict:
     art = load_cbm_artifacts(CHECKPOINT_DIR / "imagenet_baseline")
     C = art["centroids"].float()
     nsq = (C ** 2).sum(1)
-    lf = lf_core.load_artifacts(REPO / "experiments/imagenet_lfcbm_genericity_full_val/model")
-    pc = pc_core.load_artifacts(REPO / "experiments/imagenet_pcbm_genericity_full_val/model_mmL")
+    lf = lf_core.load_artifacts(REPO / "experiments/imagenet_lfcbm_genericity/model")
+    pc = pc_core.load_artifacts(REPO / "experiments/imagenet_pcbm_genericity/model_mmL")
     return {
         "dcbm": lambda z: (z @ C.t()) / nsq,
         "lfcbm": lambda z: lf_core.raw_acts_from_emb(z, lf),

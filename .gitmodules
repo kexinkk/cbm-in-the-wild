@@ -4,3 +4,6 @@
 [submodule "third_party/Label-free-CBM"]
 	path = third_party/Label-free-CBM
 	url = https://github.com/Trustworthy-ML-Lab/Label-free-CBM.git
+[submodule "third_party/post-hoc-cbm"]
+	path = third_party/post-hoc-cbm
+	url = https://github.com/mertyg/post-hoc-cbm.git

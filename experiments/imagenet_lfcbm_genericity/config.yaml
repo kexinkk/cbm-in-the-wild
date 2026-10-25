@@ -35,4 +35,4 @@ ablation:
   # runtime as the inert anchor where all arms coincide by construction.
   sizes: [400, 800, 1200, 1600, 2000, 2400, 2800, 3200, 3600, 4000]
   seeds: [0, 1, 2]
-  fit_n: 25000               # stratified from 128k held-out val (mirrors DCBM)
+  fit_n: 200000              # >= 128k held-out val -> uses the full pool

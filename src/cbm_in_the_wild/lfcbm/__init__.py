@@ -1,7 +1,7 @@
 """LF-CBM: training, propagation, d_k and capacity-matched ablation.
 
 Wraps the forked upstream repo at ~/Label-free-CBM (never edited) the same
-way dcbm_bridge wraps ~/DCBM. Deployed pipeline under test:
+way dcbm.bridge wraps the DCBM repo. Deployed pipeline under test:
 
     CLIP ViT-B/16 z  →  W_c projection (concept scores)  →  per-concept
     standardize (train mean/std)  →  sparse GLM-SAGA head.

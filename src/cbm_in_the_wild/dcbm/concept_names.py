@@ -27,9 +27,9 @@ from pathlib import Path
 
 import torch
 
-from cbm_in_the_wild.dcbm_bridge import _resolve_dcbm_repo
+from cbm_in_the_wild.dcbm.bridge import _resolve_dcbm_repo
 from cbm_in_the_wild.paths import CHECKPOINT_DIR
-from cbm_in_the_wild.persistence import load_cbm_artifacts
+from cbm_in_the_wild.dcbm.persistence import load_cbm_artifacts
 
 
 # Per-dataset segcrop filename casing — upstream DCBM casing, see README.

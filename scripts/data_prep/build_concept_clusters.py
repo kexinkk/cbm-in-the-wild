@@ -31,16 +31,16 @@ import torch
 REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO / "src"))
 
-from cbm_in_the_wild.concept_names import (  # noqa: E402
+from cbm_in_the_wild.dcbm.concept_names import (  # noqa: E402
     _CROPS_DIRNAME,
     _SEGCROP_DATASET,
     _SEGCROP_FILENAME_TEMPLATE,
     _centroid_key,
 )
-from cbm_in_the_wild.dcbm_bridge import _resolve_dcbm_repo  # noqa: E402
+from cbm_in_the_wild.dcbm.bridge import _resolve_dcbm_repo  # noqa: E402
 from cbm_in_the_wild.imagenet_labels import wnid_to_name  # noqa: E402
 from cbm_in_the_wild.paths import CHECKPOINT_DIR  # noqa: E402
-from cbm_in_the_wild.persistence import load_cbm_artifacts  # noqa: E402
+from cbm_in_the_wild.dcbm.persistence import load_cbm_artifacts  # noqa: E402
 
 
 def build(dataset: str, *, top_n: int = 12, chunk_size: int = 20_000, force: bool = False) -> Path:

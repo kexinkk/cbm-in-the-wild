@@ -51,8 +51,8 @@ from cbm_in_the_wild.paths import (
     cifar10_dir,
     imagenet_dir,
 )
-from cbm_in_the_wild.persistence import load_cbm_artifacts
-from cbm_in_the_wild.pipeline import (
+from cbm_in_the_wild.dcbm.persistence import load_cbm_artifacts
+from cbm_in_the_wild.dcbm.pipeline import (
     compare_clean_vs_corrupted,
     propagate_clean,
     propagate_corrupted_cell,
@@ -200,7 +200,7 @@ class CellContext:
 
 
 def _upstream_emb_path(dataset: str, model_tag: str | None = None) -> Path:
-    from cbm_in_the_wild.pipeline import _upstream_emb_path as _p
+    from cbm_in_the_wild.dcbm.pipeline import _upstream_emb_path as _p
     return _p(dataset, model_tag=model_tag)
 
 

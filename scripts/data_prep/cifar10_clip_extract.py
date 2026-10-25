@@ -10,8 +10,6 @@ set to `$DCBM_REPO/data/Embeddings/`. File schema (per split):
 Usage (from repo root, env already active):
     python scripts/data_prep/cifar10_clip_extract.py              # all splits
     python scripts/data_prep/cifar10_clip_extract.py --split train
-    sbatch scripts/slurm/extract_gpu.sbatch \\
-        python scripts/data_prep/cifar10_clip_extract.py
 
 Skip-if-exists: if the output file for a split already exists, that split
 is skipped. Pass --overwrite to force re-extraction.

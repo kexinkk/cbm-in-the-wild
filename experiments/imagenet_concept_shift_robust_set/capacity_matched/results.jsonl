@@ -1,330 +1,159 @@
-{"arm": "A_native", "K_wanted": 50, "seed": 0, "clean": 0.48466, "corrupt": 0.169662, "corrupt_std": 0.0522826789290679, "n_iter": 90}
-{"arm": "B_prune_dk_hold3", "K_wanted": 50, "seed": 0, "clean": 0.5244, "corrupt": 0.263098, "corrupt_std": 0.06080144501572312, "n_iter": 96}
-{"arm": "B_prune_dk", "K_wanted": 50, "seed": 0, "clean": 0.52376, "corrupt": 0.266302, "corrupt_std": 0.059281812691583585, "n_iter": 106}
-{"arm": "B_prune_mk_perp", "K_wanted": 50, "seed": 0, "clean": 0.5427, "corrupt": 0.305842, "corrupt_std": 0.07307656174177873, "n_iter": 103}
-{"arm": "B_prune_rand0", "K_wanted": 50, "seed": 0, "clean": 0.52982, "corrupt": 0.22177799999999998, "corrupt_std": 0.06204772321366837, "n_iter": 105}
-{"arm": "B_prune_rand1", "K_wanted": 50, "seed": 0, "clean": 0.53978, "corrupt": 0.23867600000000003, "corrupt_std": 0.06537142421578407, "n_iter": 105}
-{"arm": "B_prune_rand2", "K_wanted": 50, "seed": 0, "clean": 0.53522, "corrupt": 0.242008, "corrupt_std": 0.06405625290321, "n_iter": 103}
-{"arm": "A_native", "K_wanted": 50, "seed": 1, "clean": 0.4826, "corrupt": 0.166436, "corrupt_std": 0.05313344317847282, "n_iter": 78}
-{"arm": "B_prune_dk_hold3", "K_wanted": 50, "seed": 1, "clean": 0.5203, "corrupt": 0.265868, "corrupt_std": 0.0615156105066023, "n_iter": 112}
-{"arm": "B_prune_dk", "K_wanted": 50, "seed": 1, "clean": 0.5184, "corrupt": 0.26564400000000005, "corrupt_std": 0.05957274531192934, "n_iter": 99}
-{"arm": "B_prune_mk_perp", "K_wanted": 50, "seed": 1, "clean": 0.54104, "corrupt": 0.303712, "corrupt_std": 0.07365530650265466, "n_iter": 88}
-{"arm": "B_prune_rand0", "K_wanted": 50, "seed": 1, "clean": 0.52654, "corrupt": 0.21701399999999998, "corrupt_std": 0.06426935944911852, "n_iter": 129}
-{"arm": "B_prune_rand1", "K_wanted": 50, "seed": 1, "clean": 0.53534, "corrupt": 0.24174200000000004, "corrupt_std": 0.0675196400760549, "n_iter": 102}
-{"arm": "B_prune_rand2", "K_wanted": 50, "seed": 1, "clean": 0.53252, "corrupt": 0.24321600000000002, "corrupt_std": 0.06646142026770117, "n_iter": 97}
-{"arm": "A_native", "K_wanted": 50, "seed": 2, "clean": 0.4889, "corrupt": 0.169562, "corrupt_std": 0.05708621581432772, "n_iter": 95}
-{"arm": "B_prune_dk_hold3", "K_wanted": 50, "seed": 2, "clean": 0.52232, "corrupt": 0.265748, "corrupt_std": 0.061957947803328674, "n_iter": 89}
-{"arm": "B_prune_dk", "K_wanted": 50, "seed": 2, "clean": 0.5227, "corrupt": 0.267032, "corrupt_std": 0.059915993991587924, "n_iter": 110}
-{"arm": "B_prune_mk_perp", "K_wanted": 50, "seed": 2, "clean": 0.5394, "corrupt": 0.30536199999999997, "corrupt_std": 0.07285021040463782, "n_iter": 90}
-{"arm": "B_prune_rand0", "K_wanted": 50, "seed": 2, "clean": 0.52934, "corrupt": 0.223082, "corrupt_std": 0.06511902545339572, "n_iter": 111}
-{"arm": "B_prune_rand1", "K_wanted": 50, "seed": 2, "clean": 0.53364, "corrupt": 0.240706, "corrupt_std": 0.06563832785804342, "n_iter": 96}
-{"arm": "B_prune_rand2", "K_wanted": 50, "seed": 2, "clean": 0.53404, "corrupt": 0.24011, "corrupt_std": 0.06577391777901025, "n_iter": 109}
-{"arm": "A_native", "K_wanted": 100, "seed": 0, "clean": 0.56002, "corrupt": 0.227568, "corrupt_std": 0.062100815582405995, "n_iter": 112}
-{"arm": "B_prune_dk_hold3", "K_wanted": 100, "seed": 0, "clean": 0.59556, "corrupt": 0.33247, "corrupt_std": 0.07241295698975425, "n_iter": 148}
-{"arm": "B_prune_dk", "K_wanted": 100, "seed": 0, "clean": 0.59488, "corrupt": 0.33434200000000003, "corrupt_std": 0.07409029380424942, "n_iter": 127}
-{"arm": "B_prune_mk_perp", "K_wanted": 100, "seed": 0, "clean": 0.60108, "corrupt": 0.35006600000000004, "corrupt_std": 0.074429391533184, "n_iter": 101}
-{"arm": "B_prune_rand0", "K_wanted": 100, "seed": 0, "clean": 0.58748, "corrupt": 0.27891000000000005, "corrupt_std": 0.0708029074261785, "n_iter": 120}
-{"arm": "B_prune_rand1", "K_wanted": 100, "seed": 0, "clean": 0.59626, "corrupt": 0.29137, "corrupt_std": 0.0707073049974329, "n_iter": 102}
-{"arm": "B_prune_rand2", "K_wanted": 100, "seed": 0, "clean": 0.5996, "corrupt": 0.30846, "corrupt_std": 0.07519049408003647, "n_iter": 121}
-{"arm": "A_native", "K_wanted": 100, "seed": 1, "clean": 0.56012, "corrupt": 0.228168, "corrupt_std": 0.06609577850362307, "n_iter": 103}
-{"arm": "B_prune_dk_hold3", "K_wanted": 100, "seed": 1, "clean": 0.59466, "corrupt": 0.33091000000000004, "corrupt_std": 0.07539216948728826, "n_iter": 146}
-{"arm": "B_prune_dk", "K_wanted": 100, "seed": 1, "clean": 0.59358, "corrupt": 0.33333599999999997, "corrupt_std": 0.07687527186293391, "n_iter": 137}
-{"arm": "B_prune_mk_perp", "K_wanted": 100, "seed": 1, "clean": 0.5991, "corrupt": 0.350174, "corrupt_std": 0.07559415958921695, "n_iter": 97}
-{"arm": "B_prune_rand0", "K_wanted": 100, "seed": 1, "clean": 0.59002, "corrupt": 0.278714, "corrupt_std": 0.07228816558745975, "n_iter": 117}
-{"arm": "B_prune_rand1", "K_wanted": 100, "seed": 1, "clean": 0.59296, "corrupt": 0.28533, "corrupt_std": 0.07325762554164583, "n_iter": 118}
-{"arm": "B_prune_rand2", "K_wanted": 100, "seed": 1, "clean": 0.59654, "corrupt": 0.306922, "corrupt_std": 0.07539757420501007, "n_iter": 105}
-{"arm": "A_native", "K_wanted": 100, "seed": 2, "clean": 0.5611, "corrupt": 0.22705599999999998, "corrupt_std": 0.06546720388102734, "n_iter": 103}
-{"arm": "B_prune_dk_hold3", "K_wanted": 100, "seed": 2, "clean": 0.59552, "corrupt": 0.334708, "corrupt_std": 0.07137759883885139, "n_iter": 118}
-{"arm": "B_prune_dk", "K_wanted": 100, "seed": 2, "clean": 0.59462, "corrupt": 0.33582799999999996, "corrupt_std": 0.07281021312975261, "n_iter": 123}
-{"arm": "B_prune_mk_perp", "K_wanted": 100, "seed": 2, "clean": 0.59452, "corrupt": 0.351554, "corrupt_std": 0.07363751437956063, "n_iter": 90}
-{"arm": "B_prune_rand0", "K_wanted": 100, "seed": 2, "clean": 0.589, "corrupt": 0.27823, "corrupt_std": 0.07185316096039199, "n_iter": 101}
-{"arm": "B_prune_rand1", "K_wanted": 100, "seed": 2, "clean": 0.59476, "corrupt": 0.28763, "corrupt_std": 0.07147622387899351, "n_iter": 113}
-{"arm": "B_prune_rand2", "K_wanted": 100, "seed": 2, "clean": 0.59872, "corrupt": 0.30309600000000003, "corrupt_std": 0.07654872738328183, "n_iter": 104}
-{"arm": "A_native", "K_wanted": 200, "seed": 0, "clean": 0.59752, "corrupt": 0.25917, "corrupt_std": 0.07253191752601058, "n_iter": 122}
-{"arm": "B_prune_dk_hold3", "K_wanted": 200, "seed": 0, "clean": 0.62996, "corrupt": 0.37078999999999995, "corrupt_std": 0.07984306018684405, "n_iter": 129}
-{"arm": "B_prune_dk", "K_wanted": 200, "seed": 0, "clean": 0.62938, "corrupt": 0.37091399999999997, "corrupt_std": 0.07982767542650857, "n_iter": 121}
-{"arm": "B_prune_mk_perp", "K_wanted": 200, "seed": 0, "clean": 0.6237, "corrupt": 0.370796, "corrupt_std": 0.07860422522994549, "n_iter": 105}
-{"arm": "B_prune_rand0", "K_wanted": 200, "seed": 0, "clean": 0.61952, "corrupt": 0.310264, "corrupt_std": 0.07734748750929146, "n_iter": 120}
-{"arm": "B_prune_rand1", "K_wanted": 200, "seed": 0, "clean": 0.6231, "corrupt": 0.310634, "corrupt_std": 0.07479683204521433, "n_iter": 105}
-{"arm": "B_prune_rand2", "K_wanted": 200, "seed": 0, "clean": 0.62434, "corrupt": 0.32537800000000006, "corrupt_std": 0.07763250373393865, "n_iter": 114}
-{"arm": "A_native", "K_wanted": 200, "seed": 1, "clean": 0.592, "corrupt": 0.25912799999999997, "corrupt_std": 0.07131655527295187, "n_iter": 122}
-{"arm": "B_prune_dk_hold3", "K_wanted": 200, "seed": 1, "clean": 0.62772, "corrupt": 0.37050800000000006, "corrupt_std": 0.08184168874112997, "n_iter": 150}
-{"arm": "B_prune_dk", "K_wanted": 200, "seed": 1, "clean": 0.626, "corrupt": 0.369672, "corrupt_std": 0.08250041755045849, "n_iter": 136}
-{"arm": "B_prune_mk_perp", "K_wanted": 200, "seed": 1, "clean": 0.62198, "corrupt": 0.369614, "corrupt_std": 0.08005375696368035, "n_iter": 104}
-{"arm": "B_prune_rand0", "K_wanted": 200, "seed": 1, "clean": 0.62104, "corrupt": 0.30845399999999995, "corrupt_std": 0.08073500061311699, "n_iter": 130}
-{"arm": "B_prune_rand1", "K_wanted": 200, "seed": 1, "clean": 0.6203, "corrupt": 0.305914, "corrupt_std": 0.07653952236589931, "n_iter": 121}
-{"arm": "B_prune_rand2", "K_wanted": 200, "seed": 1, "clean": 0.61884, "corrupt": 0.324252, "corrupt_std": 0.07756555895498982, "n_iter": 116}
-{"arm": "A_native", "K_wanted": 200, "seed": 2, "clean": 0.59472, "corrupt": 0.25268999999999997, "corrupt_std": 0.0709620874833879, "n_iter": 110}
-{"arm": "B_prune_dk_hold3", "K_wanted": 200, "seed": 2, "clean": 0.62708, "corrupt": 0.37189, "corrupt_std": 0.07604726806401396, "n_iter": 134}
-{"arm": "B_prune_dk", "K_wanted": 200, "seed": 2, "clean": 0.62736, "corrupt": 0.37292000000000003, "corrupt_std": 0.07682843067510882, "n_iter": 150}
-{"arm": "B_prune_mk_perp", "K_wanted": 200, "seed": 2, "clean": 0.6183, "corrupt": 0.370886, "corrupt_std": 0.07731286570810839, "n_iter": 95}
-{"arm": "B_prune_rand0", "K_wanted": 200, "seed": 2, "clean": 0.6192, "corrupt": 0.30607000000000006, "corrupt_std": 0.07870343791728542, "n_iter": 120}
-{"arm": "B_prune_rand1", "K_wanted": 200, "seed": 2, "clean": 0.6216, "corrupt": 0.308786, "corrupt_std": 0.07502536800309613, "n_iter": 117}
-{"arm": "B_prune_rand2", "K_wanted": 200, "seed": 2, "clean": 0.61988, "corrupt": 0.32315400000000005, "corrupt_std": 0.07632250417799458, "n_iter": 111}
-{"arm": "A_native", "K_wanted": 400, "seed": 0, "clean": 0.6114, "corrupt": 0.279266, "corrupt_std": 0.07079994466099532, "n_iter": 128}
-{"arm": "B_prune_dk_hold3", "K_wanted": 400, "seed": 0, "clean": 0.64442, "corrupt": 0.392862, "corrupt_std": 0.08414792282641324, "n_iter": 152}
-{"arm": "B_prune_dk", "K_wanted": 400, "seed": 0, "clean": 0.64472, "corrupt": 0.39102000000000003, "corrupt_std": 0.08416665135313392, "n_iter": 153}
-{"arm": "B_prune_mk_perp", "K_wanted": 400, "seed": 0, "clean": 0.63568, "corrupt": 0.37666600000000006, "corrupt_std": 0.08455487593273377, "n_iter": 127}
-{"arm": "B_prune_rand0", "K_wanted": 400, "seed": 0, "clean": 0.6338, "corrupt": 0.32684199999999997, "corrupt_std": 0.07963092688145731, "n_iter": 137}
-{"arm": "B_prune_rand1", "K_wanted": 400, "seed": 0, "clean": 0.62904, "corrupt": 0.316068, "corrupt_std": 0.07922139115163278, "n_iter": 109}
-{"arm": "B_prune_rand2", "K_wanted": 400, "seed": 0, "clean": 0.63442, "corrupt": 0.34177, "corrupt_std": 0.08232721603455323, "n_iter": 141}
-{"arm": "A_native", "K_wanted": 400, "seed": 1, "clean": 0.60916, "corrupt": 0.27315, "corrupt_std": 0.0747946683928741, "n_iter": 131}
-{"arm": "B_prune_dk_hold3", "K_wanted": 400, "seed": 1, "clean": 0.6438, "corrupt": 0.390816, "corrupt_std": 0.08464955607680408, "n_iter": 163}
-{"arm": "B_prune_dk", "K_wanted": 400, "seed": 1, "clean": 0.64294, "corrupt": 0.38824999999999993, "corrupt_std": 0.0851106466900587, "n_iter": 159}
-{"arm": "B_prune_mk_perp", "K_wanted": 400, "seed": 1, "clean": 0.63338, "corrupt": 0.37393200000000004, "corrupt_std": 0.08353342238888575, "n_iter": 125}
-{"arm": "B_prune_rand0", "K_wanted": 400, "seed": 1, "clean": 0.63114, "corrupt": 0.324374, "corrupt_std": 0.08225302768895501, "n_iter": 137}
-{"arm": "B_prune_rand1", "K_wanted": 400, "seed": 1, "clean": 0.63236, "corrupt": 0.32003799999999993, "corrupt_std": 0.08287623661822488, "n_iter": 134}
-{"arm": "B_prune_rand2", "K_wanted": 400, "seed": 1, "clean": 0.63214, "corrupt": 0.338712, "corrupt_std": 0.08153561489312508, "n_iter": 127}
-{"arm": "A_native", "K_wanted": 400, "seed": 2, "clean": 0.6089, "corrupt": 0.270676, "corrupt_std": 0.06900865441377625, "n_iter": 126}
-{"arm": "B_prune_dk_hold3", "K_wanted": 400, "seed": 2, "clean": 0.63966, "corrupt": 0.391988, "corrupt_std": 0.07976406669672755, "n_iter": 156}
-{"arm": "B_prune_dk", "K_wanted": 400, "seed": 2, "clean": 0.64008, "corrupt": 0.39155799999999996, "corrupt_std": 0.0800468065321784, "n_iter": 155}
-{"arm": "B_prune_mk_perp", "K_wanted": 400, "seed": 2, "clean": 0.63128, "corrupt": 0.37500999999999995, "corrupt_std": 0.08175688362456093, "n_iter": 119}
-{"arm": "B_prune_rand0", "K_wanted": 400, "seed": 2, "clean": 0.63, "corrupt": 0.322114, "corrupt_std": 0.07959302635281561, "n_iter": 139}
-{"arm": "B_prune_rand1", "K_wanted": 400, "seed": 2, "clean": 0.63336, "corrupt": 0.321068, "corrupt_std": 0.0789843261413301, "n_iter": 137}
-{"arm": "B_prune_rand2", "K_wanted": 400, "seed": 2, "clean": 0.63048, "corrupt": 0.33640400000000004, "corrupt_std": 0.07974927450453703, "n_iter": 122}
-{"arm": "A_native", "K_wanted": 800, "seed": 0, "clean": 0.61358, "corrupt": 0.282906, "corrupt_std": 0.07120457572375528, "n_iter": 127}
-{"arm": "B_prune_dk_hold3", "K_wanted": 800, "seed": 0, "clean": 0.64908, "corrupt": 0.39153400000000005, "corrupt_std": 0.08900482056607946, "n_iter": 169}
-{"arm": "B_prune_dk", "K_wanted": 800, "seed": 0, "clean": 0.64942, "corrupt": 0.391288, "corrupt_std": 0.08881286402318078, "n_iter": 171}
-{"arm": "B_prune_mk_perp", "K_wanted": 800, "seed": 0, "clean": 0.63444, "corrupt": 0.36139000000000004, "corrupt_std": 0.08513285018134892, "n_iter": 127}
-{"arm": "B_prune_rand0", "K_wanted": 800, "seed": 0, "clean": 0.63558, "corrupt": 0.330278, "corrupt_std": 0.080901497860052, "n_iter": 139}
-{"arm": "B_prune_rand1", "K_wanted": 800, "seed": 0, "clean": 0.63678, "corrupt": 0.330136, "corrupt_std": 0.08275638213455201, "n_iter": 139}
-{"arm": "B_prune_rand2", "K_wanted": 800, "seed": 0, "clean": 0.63914, "corrupt": 0.33882999999999996, "corrupt_std": 0.08243709322871591, "n_iter": 159}
-{"arm": "A_native", "K_wanted": 800, "seed": 1, "clean": 0.61658, "corrupt": 0.280042, "corrupt_std": 0.07790697604194377, "n_iter": 148}
-{"arm": "B_prune_dk_hold3", "K_wanted": 800, "seed": 1, "clean": 0.64684, "corrupt": 0.38944599999999996, "corrupt_std": 0.08845099300742758, "n_iter": 169}
-{"arm": "B_prune_dk", "K_wanted": 800, "seed": 1, "clean": 0.64688, "corrupt": 0.38891000000000003, "corrupt_std": 0.08841902521516508, "n_iter": 168}
-{"arm": "B_prune_mk_perp", "K_wanted": 800, "seed": 1, "clean": 0.63388, "corrupt": 0.364678, "corrupt_std": 0.08623448519009086, "n_iter": 140}
-{"arm": "B_prune_rand0", "K_wanted": 800, "seed": 1, "clean": 0.6376, "corrupt": 0.334168, "corrupt_std": 0.08480856098295739, "n_iter": 161}
-{"arm": "B_prune_rand1", "K_wanted": 800, "seed": 1, "clean": 0.63286, "corrupt": 0.32599600000000006, "corrupt_std": 0.08454152579649837, "n_iter": 137}
-{"arm": "B_prune_rand2", "K_wanted": 800, "seed": 1, "clean": 0.63426, "corrupt": 0.32899200000000006, "corrupt_std": 0.08333927295099232, "n_iter": 133}
-{"arm": "A_native", "K_wanted": 800, "seed": 2, "clean": 0.61586, "corrupt": 0.272582, "corrupt_std": 0.06877283036199688, "n_iter": 143}
-{"arm": "B_prune_dk_hold3", "K_wanted": 800, "seed": 2, "clean": 0.64392, "corrupt": 0.390732, "corrupt_std": 0.08413305994672961, "n_iter": 156}
-{"arm": "B_prune_dk", "K_wanted": 800, "seed": 2, "clean": 0.64182, "corrupt": 0.388724, "corrupt_std": 0.08391576767211274, "n_iter": 149}
-{"arm": "B_prune_mk_perp", "K_wanted": 800, "seed": 2, "clean": 0.63506, "corrupt": 0.366126, "corrupt_std": 0.08296705035132923, "n_iter": 140}
-{"arm": "B_prune_rand0", "K_wanted": 800, "seed": 2, "clean": 0.6376, "corrupt": 0.33229600000000004, "corrupt_std": 0.08155473048205113, "n_iter": 174}
-{"arm": "B_prune_rand1", "K_wanted": 800, "seed": 2, "clean": 0.63404, "corrupt": 0.327694, "corrupt_std": 0.08070929019635845, "n_iter": 138}
-{"arm": "B_prune_rand2", "K_wanted": 800, "seed": 2, "clean": 0.63598, "corrupt": 0.33258, "corrupt_std": 0.07996478825082949, "n_iter": 141}
-{"arm": "A_native", "K_wanted": 1200, "seed": 0, "clean": 0.61034, "corrupt": 0.27800199999999997, "corrupt_std": 0.07176857554668338, "n_iter": 119}
-{"arm": "B_prune_dk_hold3", "K_wanted": 1200, "seed": 0, "clean": 0.64286, "corrupt": 0.376996, "corrupt_std": 0.0882748901103819, "n_iter": 157}
-{"arm": "B_prune_dk", "K_wanted": 1200, "seed": 0, "clean": 0.64468, "corrupt": 0.37921400000000005, "corrupt_std": 0.08802313243687708, "n_iter": 161}
-{"arm": "B_prune_mk_perp", "K_wanted": 1200, "seed": 0, "clean": 0.63472, "corrupt": 0.35663999999999996, "corrupt_std": 0.0855517214321255, "n_iter": 141}
-{"arm": "B_prune_rand0", "K_wanted": 1200, "seed": 0, "clean": 0.63562, "corrupt": 0.33209999999999995, "corrupt_std": 0.08156212111023106, "n_iter": 156}
-{"arm": "B_prune_rand1", "K_wanted": 1200, "seed": 0, "clean": 0.63882, "corrupt": 0.33374799999999993, "corrupt_std": 0.08232934213268074, "n_iter": 158}
-{"arm": "B_prune_rand2", "K_wanted": 1200, "seed": 0, "clean": 0.6371, "corrupt": 0.33511199999999997, "corrupt_std": 0.08316455937477213, "n_iter": 154}
-{"arm": "A_native", "K_wanted": 1200, "seed": 1, "clean": 0.61456, "corrupt": 0.27818, "corrupt_std": 0.07614387644453098, "n_iter": 137}
-{"arm": "B_prune_dk_hold3", "K_wanted": 1200, "seed": 1, "clean": 0.63986, "corrupt": 0.37334, "corrupt_std": 0.08785438679997715, "n_iter": 153}
-{"arm": "B_prune_dk", "K_wanted": 1200, "seed": 1, "clean": 0.64326, "corrupt": 0.37722, "corrupt_std": 0.08850393708756689, "n_iter": 164}
-{"arm": "B_prune_mk_perp", "K_wanted": 1200, "seed": 1, "clean": 0.63138, "corrupt": 0.353036, "corrupt_std": 0.08565491873792186, "n_iter": 137}
-{"arm": "B_prune_rand0", "K_wanted": 1200, "seed": 1, "clean": 0.6361, "corrupt": 0.33198, "corrupt_std": 0.08452775591484729, "n_iter": 153}
-{"arm": "B_prune_rand1", "K_wanted": 1200, "seed": 1, "clean": 0.6327, "corrupt": 0.32673199999999997, "corrupt_std": 0.08404768893907792, "n_iter": 139}
-{"arm": "B_prune_rand2", "K_wanted": 1200, "seed": 1, "clean": 0.63118, "corrupt": 0.326478, "corrupt_std": 0.08383629307167631, "n_iter": 139}
-{"arm": "A_native", "K_wanted": 1200, "seed": 2, "clean": 0.6156, "corrupt": 0.279562, "corrupt_std": 0.069844297949081, "n_iter": 135}
-{"arm": "B_prune_dk_hold3", "K_wanted": 1200, "seed": 2, "clean": 0.63842, "corrupt": 0.375386, "corrupt_std": 0.08405296475437378, "n_iter": 148}
-{"arm": "B_prune_dk", "K_wanted": 1200, "seed": 2, "clean": 0.63642, "corrupt": 0.37273, "corrupt_std": 0.08371029912740725, "n_iter": 146}
-{"arm": "B_prune_mk_perp", "K_wanted": 1200, "seed": 2, "clean": 0.63136, "corrupt": 0.35442399999999996, "corrupt_std": 0.08227886912202913, "n_iter": 133}
-{"arm": "B_prune_rand0", "K_wanted": 1200, "seed": 2, "clean": 0.63248, "corrupt": 0.32660799999999995, "corrupt_std": 0.08042132612684275, "n_iter": 142}
-{"arm": "B_prune_rand1", "K_wanted": 1200, "seed": 2, "clean": 0.63736, "corrupt": 0.33014200000000005, "corrupt_std": 0.08078223440831529, "n_iter": 154}
-{"arm": "B_prune_rand2", "K_wanted": 1200, "seed": 2, "clean": 0.62834, "corrupt": 0.32285200000000003, "corrupt_std": 0.08071870821562992, "n_iter": 116}
-{"arm": "A_native", "K_wanted": 1600, "seed": 0, "clean": 0.61506, "corrupt": 0.280982, "corrupt_std": 0.07205928695178715, "n_iter": 130}
-{"arm": "B_prune_dk_hold3", "K_wanted": 1600, "seed": 0, "clean": 0.6428, "corrupt": 0.36325799999999997, "corrupt_std": 0.0871825952584574, "n_iter": 162}
-{"arm": "B_prune_dk", "K_wanted": 1600, "seed": 0, "clean": 0.63964, "corrupt": 0.35800400000000004, "corrupt_std": 0.0867528456247978, "n_iter": 149}
-{"arm": "B_prune_mk_perp", "K_wanted": 1600, "seed": 0, "clean": 0.63628, "corrupt": 0.34869, "corrupt_std": 0.08584071772766116, "n_iter": 145}
-{"arm": "B_prune_rand0", "K_wanted": 1600, "seed": 0, "clean": 0.6289, "corrupt": 0.322072, "corrupt_std": 0.08179834531333748, "n_iter": 133}
-{"arm": "B_prune_rand1", "K_wanted": 1600, "seed": 0, "clean": 0.62976, "corrupt": 0.320608, "corrupt_std": 0.08202138462620588, "n_iter": 130}
-{"arm": "B_prune_rand2", "K_wanted": 1600, "seed": 0, "clean": 0.63834, "corrupt": 0.33489199999999997, "corrupt_std": 0.0833586176468876, "n_iter": 163}
-{"arm": "A_native", "K_wanted": 1600, "seed": 1, "clean": 0.60372, "corrupt": 0.272208, "corrupt_std": 0.07468465877273592, "n_iter": 115}
-{"arm": "B_prune_dk_hold3", "K_wanted": 1600, "seed": 1, "clean": 0.6405, "corrupt": 0.360256, "corrupt_std": 0.08775169368166064, "n_iter": 163}
-{"arm": "B_prune_dk", "K_wanted": 1600, "seed": 1, "clean": 0.6393, "corrupt": 0.36004800000000003, "corrupt_std": 0.08805232226352692, "n_iter": 163}
-{"arm": "B_prune_mk_perp", "K_wanted": 1600, "seed": 1, "clean": 0.63892, "corrupt": 0.35426, "corrupt_std": 0.08700914986367814, "n_iter": 163}
-{"arm": "B_prune_rand0", "K_wanted": 1600, "seed": 1, "clean": 0.63246, "corrupt": 0.32955000000000007, "corrupt_std": 0.08541435769236926, "n_iter": 151}
-{"arm": "B_prune_rand1", "K_wanted": 1600, "seed": 1, "clean": 0.6261, "corrupt": 0.320078, "corrupt_std": 0.08425796838281825, "n_iter": 130}
-{"arm": "B_prune_rand2", "K_wanted": 1600, "seed": 1, "clean": 0.6294, "corrupt": 0.32439, "corrupt_std": 0.08435696971797885, "n_iter": 137}
-{"arm": "A_native", "K_wanted": 1600, "seed": 2, "clean": 0.6157, "corrupt": 0.27686, "corrupt_std": 0.06995366523635484, "n_iter": 145}
-{"arm": "B_prune_dk_hold3", "K_wanted": 1600, "seed": 2, "clean": 0.63024, "corrupt": 0.35209999999999997, "corrupt_std": 0.0833585729244449, "n_iter": 135}
-{"arm": "B_prune_dk", "K_wanted": 1600, "seed": 2, "clean": 0.6369, "corrupt": 0.360102, "corrupt_std": 0.08437920713066696, "n_iter": 160}
-{"arm": "B_prune_mk_perp", "K_wanted": 1600, "seed": 2, "clean": 0.63062, "corrupt": 0.346382, "corrupt_std": 0.08336883420079712, "n_iter": 142}
-{"arm": "B_prune_rand0", "K_wanted": 1600, "seed": 2, "clean": 0.62848, "corrupt": 0.32415400000000005, "corrupt_std": 0.08044495959350095, "n_iter": 142}
-{"arm": "B_prune_rand1", "K_wanted": 1600, "seed": 2, "clean": 0.6367, "corrupt": 0.33240600000000003, "corrupt_std": 0.08096353749682632, "n_iter": 169}
-{"arm": "B_prune_rand2", "K_wanted": 1600, "seed": 2, "clean": 0.62624, "corrupt": 0.322032, "corrupt_std": 0.0799690946303633, "n_iter": 133}
-{"arm": "A_native", "K_wanted": 2048, "seed": 0, "clean": 0.61308, "corrupt": 0.279142, "corrupt_std": 0.06999363482488961, "n_iter": 134}
-{"arm": "B_prune_dk_hold3", "K_wanted": 2048, "seed": 0, "clean": 0.62954, "corrupt": 0.323908, "corrupt_std": 0.08203358297672973, "n_iter": 147}
-{"arm": "B_prune_dk", "K_wanted": 2048, "seed": 0, "clean": 0.63344, "corrupt": 0.32764399999999994, "corrupt_std": 0.08309961097381864, "n_iter": 154}
-{"arm": "B_prune_mk_perp", "K_wanted": 2048, "seed": 0, "clean": 0.63054, "corrupt": 0.324458, "corrupt_std": 0.08224744103010136, "n_iter": 151}
-{"arm": "B_prune_rand0", "K_wanted": 2048, "seed": 0, "clean": 0.62598, "corrupt": 0.31862599999999996, "corrupt_std": 0.08144444391117174, "n_iter": 139}
-{"arm": "B_prune_rand1", "K_wanted": 2048, "seed": 0, "clean": 0.63358, "corrupt": 0.32816599999999996, "corrupt_std": 0.08309903972971047, "n_iter": 156}
-{"arm": "B_prune_rand2", "K_wanted": 2048, "seed": 0, "clean": 0.63642, "corrupt": 0.331522, "corrupt_std": 0.08290301632630745, "n_iter": 166}
-{"arm": "A_native", "K_wanted": 2048, "seed": 1, "clean": 0.60898, "corrupt": 0.26878, "corrupt_std": 0.07565133125067926, "n_iter": 130}
-{"arm": "B_prune_dk_hold3", "K_wanted": 2048, "seed": 1, "clean": 0.62854, "corrupt": 0.32240199999999997, "corrupt_std": 0.08463354817092332, "n_iter": 145}
-{"arm": "B_prune_dk", "K_wanted": 2048, "seed": 1, "clean": 0.62596, "corrupt": 0.31836000000000003, "corrupt_std": 0.08385823895122053, "n_iter": 133}
-{"arm": "B_prune_mk_perp", "K_wanted": 2048, "seed": 1, "clean": 0.6281, "corrupt": 0.32292600000000005, "corrupt_std": 0.08434631138348613, "n_iter": 141}
-{"arm": "B_prune_rand0", "K_wanted": 2048, "seed": 1, "clean": 0.62868, "corrupt": 0.32214400000000004, "corrupt_std": 0.08457641884118763, "n_iter": 145}
-{"arm": "B_prune_rand1", "K_wanted": 2048, "seed": 1, "clean": 0.6315, "corrupt": 0.323678, "corrupt_std": 0.08573831416583837, "n_iter": 149}
-{"arm": "B_prune_rand2", "K_wanted": 2048, "seed": 1, "clean": 0.62446, "corrupt": 0.317262, "corrupt_std": 0.08325486385791522, "n_iter": 133}
-{"arm": "A_native", "K_wanted": 2048, "seed": 2, "clean": 0.61586, "corrupt": 0.27686399999999994, "corrupt_std": 0.069920586267565, "n_iter": 138}
-{"arm": "B_prune_dk_hold3", "K_wanted": 2048, "seed": 2, "clean": 0.62428, "corrupt": 0.31659399999999993, "corrupt_std": 0.07954210912466429, "n_iter": 132}
-{"arm": "B_prune_dk", "K_wanted": 2048, "seed": 2, "clean": 0.6277, "corrupt": 0.32222599999999996, "corrupt_std": 0.07999118853973855, "n_iter": 141}
-{"arm": "B_prune_mk_perp", "K_wanted": 2048, "seed": 2, "clean": 0.63332, "corrupt": 0.32745, "corrupt_std": 0.08046509665687354, "n_iter": 159}
-{"arm": "B_prune_rand0", "K_wanted": 2048, "seed": 2, "clean": 0.63176, "corrupt": 0.32683799999999996, "corrupt_std": 0.08041217641626175, "n_iter": 155}
-{"arm": "B_prune_rand1", "K_wanted": 2048, "seed": 2, "clean": 0.62894, "corrupt": 0.32320400000000005, "corrupt_std": 0.08016448380673327, "n_iter": 148}
-{"arm": "B_prune_rand2", "K_wanted": 2048, "seed": 2, "clean": 0.62588, "corrupt": 0.317918, "corrupt_std": 0.07935492244341241, "n_iter": 135}
-{"arm": "A_native", "K_wanted": 500, "seed": 0, "clean": 0.61264, "corrupt": 0.282162, "corrupt_std": 0.06951555247568705, "n_iter": 135}
-{"arm": "B_prune_dk_hold3", "K_wanted": 500, "seed": 0, "clean": 0.64574, "corrupt": 0.39088, "corrupt_std": 0.08667325308305902, "n_iter": 159}
-{"arm": "B_prune_dk", "K_wanted": 500, "seed": 0, "clean": 0.64322, "corrupt": 0.38700000000000007, "corrupt_std": 0.08646724512785176, "n_iter": 143}
-{"arm": "B_prune_mk_perp", "K_wanted": 500, "seed": 0, "clean": 0.63434, "corrupt": 0.371076, "corrupt_std": 0.08457391219519172, "n_iter": 115}
-{"arm": "B_prune_rand0", "K_wanted": 500, "seed": 0, "clean": 0.6349, "corrupt": 0.32867, "corrupt_std": 0.0803361110584773, "n_iter": 139}
-{"arm": "B_prune_rand1", "K_wanted": 500, "seed": 0, "clean": 0.63594, "corrupt": 0.32623199999999997, "corrupt_std": 0.08006478486825527, "n_iter": 129}
-{"arm": "B_prune_rand2", "K_wanted": 500, "seed": 0, "clean": 0.63718, "corrupt": 0.339622, "corrupt_std": 0.08127559212949481, "n_iter": 137}
-{"arm": "A_native", "K_wanted": 500, "seed": 1, "clean": 0.61148, "corrupt": 0.2743, "corrupt_std": 0.07655865620555262, "n_iter": 139}
-{"arm": "B_prune_dk_hold3", "K_wanted": 500, "seed": 1, "clean": 0.64494, "corrupt": 0.38855200000000006, "corrupt_std": 0.0856728340607453, "n_iter": 158}
-{"arm": "B_prune_dk", "K_wanted": 500, "seed": 1, "clean": 0.64332, "corrupt": 0.386698, "corrupt_std": 0.0853013263437328, "n_iter": 146}
-{"arm": "B_prune_mk_perp", "K_wanted": 500, "seed": 1, "clean": 0.63416, "corrupt": 0.37238000000000004, "corrupt_std": 0.08440612015724926, "n_iter": 133}
-{"arm": "B_prune_rand0", "K_wanted": 500, "seed": 1, "clean": 0.6326, "corrupt": 0.32780600000000004, "corrupt_std": 0.08401877649668554, "n_iter": 136}
-{"arm": "B_prune_rand1", "K_wanted": 500, "seed": 1, "clean": 0.63084, "corrupt": 0.32144, "corrupt_std": 0.08388724003088908, "n_iter": 121}
-{"arm": "B_prune_rand2", "K_wanted": 500, "seed": 1, "clean": 0.6354, "corrupt": 0.33585000000000004, "corrupt_std": 0.08074629613796537, "n_iter": 150}
-{"arm": "A_native", "K_wanted": 500, "seed": 2, "clean": 0.61156, "corrupt": 0.26943599999999995, "corrupt_std": 0.06951290861415597, "n_iter": 126}
-{"arm": "B_prune_dk_hold3", "K_wanted": 500, "seed": 2, "clean": 0.63732, "corrupt": 0.386386, "corrupt_std": 0.0811385447490895, "n_iter": 131}
-{"arm": "B_prune_dk", "K_wanted": 500, "seed": 2, "clean": 0.64112, "corrupt": 0.391106, "corrupt_std": 0.08136840027922389, "n_iter": 145}
-{"arm": "B_prune_mk_perp", "K_wanted": 500, "seed": 2, "clean": 0.63334, "corrupt": 0.37571599999999994, "corrupt_std": 0.08307120743073378, "n_iter": 131}
-{"arm": "B_prune_rand0", "K_wanted": 500, "seed": 2, "clean": 0.63076, "corrupt": 0.32345, "corrupt_std": 0.07988715403617781, "n_iter": 131}
-{"arm": "B_prune_rand1", "K_wanted": 500, "seed": 2, "clean": 0.63374, "corrupt": 0.323188, "corrupt_std": 0.07932856494353091, "n_iter": 124}
-{"arm": "B_prune_rand2", "K_wanted": 500, "seed": 2, "clean": 0.63522, "corrupt": 0.335358, "corrupt_std": 0.07923646758910949, "n_iter": 143}
-{"arm": "A_native", "K_wanted": 600, "seed": 0, "clean": 0.61262, "corrupt": 0.283484, "corrupt_std": 0.07092143811288656, "n_iter": 136}
-{"arm": "B_prune_dk_hold3", "K_wanted": 600, "seed": 0, "clean": 0.6481, "corrupt": 0.393898, "corrupt_std": 0.0887621515962744, "n_iter": 171}
-{"arm": "B_prune_dk", "K_wanted": 600, "seed": 0, "clean": 0.64662, "corrupt": 0.39192799999999994, "corrupt_std": 0.08880606654953253, "n_iter": 157}
-{"arm": "B_prune_mk_perp", "K_wanted": 600, "seed": 0, "clean": 0.63796, "corrupt": 0.370622, "corrupt_std": 0.085102797815348, "n_iter": 130}
-{"arm": "B_prune_rand0", "K_wanted": 600, "seed": 0, "clean": 0.63652, "corrupt": 0.332558, "corrupt_std": 0.0810381364297082, "n_iter": 147}
-{"arm": "B_prune_rand1", "K_wanted": 600, "seed": 0, "clean": 0.63446, "corrupt": 0.32744399999999996, "corrupt_std": 0.08090574802818401, "n_iter": 133}
-{"arm": "B_prune_rand2", "K_wanted": 600, "seed": 0, "clean": 0.63662, "corrupt": 0.33721799999999996, "corrupt_std": 0.08139538682259578, "n_iter": 142}
-{"arm": "A_native", "K_wanted": 600, "seed": 1, "clean": 0.61152, "corrupt": 0.272828, "corrupt_std": 0.07473569867205365, "n_iter": 124}
-{"arm": "B_prune_dk_hold3", "K_wanted": 600, "seed": 1, "clean": 0.64474, "corrupt": 0.390336, "corrupt_std": 0.08716601117408092, "n_iter": 157}
-{"arm": "B_prune_dk", "K_wanted": 600, "seed": 1, "clean": 0.6458, "corrupt": 0.390678, "corrupt_std": 0.08754326905022453, "n_iter": 164}
-{"arm": "B_prune_mk_perp", "K_wanted": 600, "seed": 1, "clean": 0.63192, "corrupt": 0.3662060000000001, "corrupt_std": 0.08500624402948292, "n_iter": 128}
-{"arm": "B_prune_rand0", "K_wanted": 600, "seed": 1, "clean": 0.63506, "corrupt": 0.33041200000000004, "corrupt_std": 0.08468326550151452, "n_iter": 149}
-{"arm": "B_prune_rand1", "K_wanted": 600, "seed": 1, "clean": 0.63258, "corrupt": 0.323292, "corrupt_std": 0.08381027488321466, "n_iter": 125}
-{"arm": "B_prune_rand2", "K_wanted": 600, "seed": 1, "clean": 0.6367, "corrupt": 0.33541600000000005, "corrupt_std": 0.08131447290611923, "n_iter": 148}
-{"arm": "A_native", "K_wanted": 600, "seed": 2, "clean": 0.61642, "corrupt": 0.275856, "corrupt_std": 0.06986329954990675, "n_iter": 137}
-{"arm": "B_prune_dk_hold3", "K_wanted": 600, "seed": 2, "clean": 0.64116, "corrupt": 0.39125000000000004, "corrupt_std": 0.08344723087077245, "n_iter": 144}
-{"arm": "B_prune_dk", "K_wanted": 600, "seed": 2, "clean": 0.64024, "corrupt": 0.388536, "corrupt_std": 0.08288635776772918, "n_iter": 144}
-{"arm": "B_prune_mk_perp", "K_wanted": 600, "seed": 2, "clean": 0.63268, "corrupt": 0.369082, "corrupt_std": 0.08256899488306732, "n_iter": 123}
-{"arm": "B_prune_rand0", "K_wanted": 600, "seed": 2, "clean": 0.63474, "corrupt": 0.32897, "corrupt_std": 0.08051650923878904, "n_iter": 152}
-{"arm": "B_prune_rand1", "K_wanted": 600, "seed": 2, "clean": 0.6371, "corrupt": 0.32869000000000004, "corrupt_std": 0.0804647168639771, "n_iter": 150}
-{"arm": "B_prune_rand2", "K_wanted": 600, "seed": 2, "clean": 0.6355, "corrupt": 0.333582, "corrupt_std": 0.0790544063035072, "n_iter": 140}
-{"arm": "A_native", "K_wanted": 700, "seed": 0, "clean": 0.61644, "corrupt": 0.285156, "corrupt_std": 0.07107289486154338, "n_iter": 150}
-{"arm": "B_prune_dk_hold3", "K_wanted": 700, "seed": 0, "clean": 0.64674, "corrupt": 0.39197200000000004, "corrupt_std": 0.08866807235978462, "n_iter": 157}
-{"arm": "B_prune_dk", "K_wanted": 700, "seed": 0, "clean": 0.6459, "corrupt": 0.38916199999999995, "corrupt_std": 0.08966838392655463, "n_iter": 154}
-{"arm": "B_prune_mk_perp", "K_wanted": 700, "seed": 0, "clean": 0.6362, "corrupt": 0.364624, "corrupt_std": 0.08456319095209215, "n_iter": 128}
-{"arm": "B_prune_rand0", "K_wanted": 700, "seed": 0, "clean": 0.63682, "corrupt": 0.33303600000000005, "corrupt_std": 0.08141858696882426, "n_iter": 143}
-{"arm": "B_prune_rand1", "K_wanted": 700, "seed": 0, "clean": 0.63546, "corrupt": 0.325944, "corrupt_std": 0.08173599686796511, "n_iter": 130}
-{"arm": "B_prune_rand2", "K_wanted": 700, "seed": 0, "clean": 0.63674, "corrupt": 0.335656, "corrupt_std": 0.08231373387230104, "n_iter": 134}
-{"arm": "A_native", "K_wanted": 700, "seed": 1, "clean": 0.61228, "corrupt": 0.274428, "corrupt_std": 0.07662191602929282, "n_iter": 134}
-{"arm": "B_prune_dk_hold3", "K_wanted": 700, "seed": 1, "clean": 0.64618, "corrupt": 0.39071000000000006, "corrupt_std": 0.0879701455040288, "n_iter": 172}
-{"arm": "B_prune_dk", "K_wanted": 700, "seed": 1, "clean": 0.64716, "corrupt": 0.389548, "corrupt_std": 0.0885906190067549, "n_iter": 166}
-{"arm": "B_prune_mk_perp", "K_wanted": 700, "seed": 1, "clean": 0.62968, "corrupt": 0.360208, "corrupt_std": 0.08454623691211809, "n_iter": 123}
-{"arm": "B_prune_rand0", "K_wanted": 700, "seed": 1, "clean": 0.63216, "corrupt": 0.32838, "corrupt_std": 0.08404401085145806, "n_iter": 137}
-{"arm": "B_prune_rand1", "K_wanted": 700, "seed": 1, "clean": 0.63556, "corrupt": 0.32706799999999997, "corrupt_std": 0.08430280289527746, "n_iter": 143}
-{"arm": "B_prune_rand2", "K_wanted": 700, "seed": 1, "clean": 0.63248, "corrupt": 0.329144, "corrupt_std": 0.08216241758857878, "n_iter": 126}
-{"arm": "A_native", "K_wanted": 700, "seed": 2, "clean": 0.61618, "corrupt": 0.27355199999999996, "corrupt_std": 0.06817293433614252, "n_iter": 141}
-{"arm": "B_prune_dk_hold3", "K_wanted": 700, "seed": 2, "clean": 0.64448, "corrupt": 0.393022, "corrupt_std": 0.08348630759591658, "n_iter": 160}
-{"arm": "B_prune_dk", "K_wanted": 700, "seed": 2, "clean": 0.64402, "corrupt": 0.39237799999999995, "corrupt_std": 0.08430637956880843, "n_iter": 162}
-{"arm": "B_prune_mk_perp", "K_wanted": 700, "seed": 2, "clean": 0.63086, "corrupt": 0.362208, "corrupt_std": 0.08209455436263721, "n_iter": 120}
-{"arm": "B_prune_rand0", "K_wanted": 700, "seed": 2, "clean": 0.63312, "corrupt": 0.326398, "corrupt_std": 0.0804986859271628, "n_iter": 136}
-{"arm": "B_prune_rand1", "K_wanted": 700, "seed": 2, "clean": 0.63624, "corrupt": 0.328464, "corrupt_std": 0.08059453966615852, "n_iter": 149}
-{"arm": "B_prune_rand2", "K_wanted": 700, "seed": 2, "clean": 0.63722, "corrupt": 0.33312400000000003, "corrupt_std": 0.07949039378440644, "n_iter": 143}
-{"arm": "B_prune_geom", "K_wanted": 50, "seed": 0, "clean": 0.55572, "corrupt": 0.279024, "corrupt_std": 0.07089653971809909, "n_iter": 110}
-{"arm": "B_prune_dkres_geom", "K_wanted": 50, "seed": 0, "clean": 0.52628, "corrupt": 0.255456, "corrupt_std": 0.06598175493270848, "n_iter": 99}
-{"arm": "B_prune_geom", "K_wanted": 50, "seed": 1, "clean": 0.55198, "corrupt": 0.27367, "corrupt_std": 0.07082113371021394, "n_iter": 108}
-{"arm": "B_prune_dkres_geom", "K_wanted": 50, "seed": 1, "clean": 0.52318, "corrupt": 0.25461199999999995, "corrupt_std": 0.06356725899391918, "n_iter": 93}
-{"arm": "B_prune_geom", "K_wanted": 50, "seed": 2, "clean": 0.55248, "corrupt": 0.27943799999999996, "corrupt_std": 0.06923737975978005, "n_iter": 90}
-{"arm": "B_prune_dkres_geom", "K_wanted": 50, "seed": 2, "clean": 0.52688, "corrupt": 0.25679799999999997, "corrupt_std": 0.06394579294996662, "n_iter": 85}
-{"arm": "B_prune_geom", "K_wanted": 100, "seed": 0, "clean": 0.60986, "corrupt": 0.32845599999999997, "corrupt_std": 0.07902832292286101, "n_iter": 117}
-{"arm": "B_prune_dkres_geom", "K_wanted": 100, "seed": 0, "clean": 0.59468, "corrupt": 0.305382, "corrupt_std": 0.07877941581403101, "n_iter": 101}
-{"arm": "B_prune_geom", "K_wanted": 100, "seed": 1, "clean": 0.60852, "corrupt": 0.326112, "corrupt_std": 0.08111359501341314, "n_iter": 130}
-{"arm": "B_prune_dkres_geom", "K_wanted": 100, "seed": 1, "clean": 0.58952, "corrupt": 0.306554, "corrupt_std": 0.07953366836755363, "n_iter": 106}
-{"arm": "B_prune_geom", "K_wanted": 100, "seed": 2, "clean": 0.60758, "corrupt": 0.328676, "corrupt_std": 0.07738884095268517, "n_iter": 136}
-{"arm": "B_prune_dkres_geom", "K_wanted": 100, "seed": 2, "clean": 0.59214, "corrupt": 0.30780399999999997, "corrupt_std": 0.07802739047283333, "n_iter": 99}
-{"arm": "B_prune_geom", "K_wanted": 200, "seed": 0, "clean": 0.6351, "corrupt": 0.35312, "corrupt_std": 0.08701473484416304, "n_iter": 152}
-{"arm": "B_prune_dkres_geom", "K_wanted": 200, "seed": 0, "clean": 0.62616, "corrupt": 0.34486999999999995, "corrupt_std": 0.08691747269680591, "n_iter": 127}
-{"arm": "B_prune_geom", "K_wanted": 200, "seed": 1, "clean": 0.6337, "corrupt": 0.34797, "corrupt_std": 0.08787560765081513, "n_iter": 144}
-{"arm": "B_prune_dkres_geom", "K_wanted": 200, "seed": 1, "clean": 0.62366, "corrupt": 0.34440800000000005, "corrupt_std": 0.08673228473872921, "n_iter": 129}
-{"arm": "B_prune_geom", "K_wanted": 200, "seed": 2, "clean": 0.6325, "corrupt": 0.34812999999999994, "corrupt_std": 0.0833542244880246, "n_iter": 139}
-{"arm": "B_prune_dkres_geom", "K_wanted": 200, "seed": 2, "clean": 0.62226, "corrupt": 0.347958, "corrupt_std": 0.08238152727401939, "n_iter": 114}
-{"arm": "B_prune_geom", "K_wanted": 400, "seed": 0, "clean": 0.64326, "corrupt": 0.36577199999999993, "corrupt_std": 0.08686074795901773, "n_iter": 140}
-{"arm": "B_prune_dkres_geom", "K_wanted": 400, "seed": 0, "clean": 0.63822, "corrupt": 0.358934, "corrupt_std": 0.08907877684387006, "n_iter": 135}
-{"arm": "B_prune_geom", "K_wanted": 400, "seed": 1, "clean": 0.6423, "corrupt": 0.36648000000000003, "corrupt_std": 0.08740703999106708, "n_iter": 162}
-{"arm": "B_prune_dkres_geom", "K_wanted": 400, "seed": 1, "clean": 0.63864, "corrupt": 0.358912, "corrupt_std": 0.0900220405012017, "n_iter": 150}
-{"arm": "B_prune_geom", "K_wanted": 400, "seed": 2, "clean": 0.64166, "corrupt": 0.36570800000000003, "corrupt_std": 0.08320271976323851, "n_iter": 141}
-{"arm": "B_prune_dkres_geom", "K_wanted": 400, "seed": 2, "clean": 0.63702, "corrupt": 0.36248800000000003, "corrupt_std": 0.0847832814651568, "n_iter": 143}
-{"arm": "B_prune_geom", "K_wanted": 500, "seed": 0, "clean": 0.64512, "corrupt": 0.369004, "corrupt_std": 0.0844780055635785, "n_iter": 154}
-{"arm": "B_prune_dkres_geom", "K_wanted": 500, "seed": 0, "clean": 0.6416, "corrupt": 0.361756, "corrupt_std": 0.08881896725362212, "n_iter": 147}
-{"arm": "B_prune_geom", "K_wanted": 500, "seed": 1, "clean": 0.64242, "corrupt": 0.36461399999999994, "corrupt_std": 0.0861808893200807, "n_iter": 146}
-{"arm": "B_prune_dkres_geom", "K_wanted": 500, "seed": 1, "clean": 0.6398, "corrupt": 0.361704, "corrupt_std": 0.09010316611529254, "n_iter": 155}
-{"arm": "B_prune_geom", "K_wanted": 500, "seed": 2, "clean": 0.64344, "corrupt": 0.36976400000000004, "corrupt_std": 0.08152549726312622, "n_iter": 162}
-{"arm": "B_prune_dkres_geom", "K_wanted": 500, "seed": 2, "clean": 0.63932, "corrupt": 0.362652, "corrupt_std": 0.08429697892570054, "n_iter": 143}
-{"arm": "B_prune_geom", "K_wanted": 600, "seed": 0, "clean": 0.64374, "corrupt": 0.361996, "corrupt_std": 0.08427490672792227, "n_iter": 133}
-{"arm": "B_prune_dkres_geom", "K_wanted": 600, "seed": 0, "clean": 0.64274, "corrupt": 0.36243400000000003, "corrupt_std": 0.08840000545248852, "n_iter": 147}
-{"arm": "B_prune_geom", "K_wanted": 600, "seed": 1, "clean": 0.64444, "corrupt": 0.362888, "corrupt_std": 0.08620060565912516, "n_iter": 158}
-{"arm": "B_prune_dkres_geom", "K_wanted": 600, "seed": 1, "clean": 0.64012, "corrupt": 0.36181199999999997, "corrupt_std": 0.09003516566320073, "n_iter": 154}
-{"arm": "B_prune_geom", "K_wanted": 600, "seed": 2, "clean": 0.63966, "corrupt": 0.35744000000000004, "corrupt_std": 0.0816447632123457, "n_iter": 141}
-{"arm": "B_prune_dkres_geom", "K_wanted": 600, "seed": 2, "clean": 0.63718, "corrupt": 0.358186, "corrupt_std": 0.08361493983732811, "n_iter": 129}
-{"arm": "B_prune_geom", "K_wanted": 700, "seed": 0, "clean": 0.64368, "corrupt": 0.36340399999999995, "corrupt_std": 0.0843152744406374, "n_iter": 150}
-{"arm": "B_prune_dkres_geom", "K_wanted": 700, "seed": 0, "clean": 0.64376, "corrupt": 0.36211999999999994, "corrupt_std": 0.08891332498562857, "n_iter": 156}
-{"arm": "B_prune_geom", "K_wanted": 700, "seed": 1, "clean": 0.64342, "corrupt": 0.363746, "corrupt_std": 0.08600112094618302, "n_iter": 156}
-{"arm": "B_prune_dkres_geom", "K_wanted": 700, "seed": 1, "clean": 0.638, "corrupt": 0.359284, "corrupt_std": 0.08955585064081521, "n_iter": 143}
-{"arm": "B_prune_geom", "K_wanted": 700, "seed": 2, "clean": 0.64072, "corrupt": 0.36189, "corrupt_std": 0.0823187046788274, "n_iter": 148}
-{"arm": "B_prune_dkres_geom", "K_wanted": 700, "seed": 2, "clean": 0.6389, "corrupt": 0.35905, "corrupt_std": 0.08395942031719847, "n_iter": 141}
-{"arm": "B_prune_geom", "K_wanted": 800, "seed": 0, "clean": 0.64264, "corrupt": 0.36270399999999997, "corrupt_std": 0.08360475670678075, "n_iter": 150}
-{"arm": "B_prune_dkres_geom", "K_wanted": 800, "seed": 0, "clean": 0.6438, "corrupt": 0.362494, "corrupt_std": 0.0899031625917576, "n_iter": 152}
-{"arm": "B_prune_geom", "K_wanted": 800, "seed": 1, "clean": 0.64588, "corrupt": 0.367042, "corrupt_std": 0.08529244630094741, "n_iter": 162}
-{"arm": "B_prune_dkres_geom", "K_wanted": 800, "seed": 1, "clean": 0.63984, "corrupt": 0.361006, "corrupt_std": 0.08995487848916256, "n_iter": 152}
-{"arm": "B_prune_geom", "K_wanted": 800, "seed": 2, "clean": 0.64148, "corrupt": 0.362628, "corrupt_std": 0.08243049882173466, "n_iter": 147}
-{"arm": "B_prune_dkres_geom", "K_wanted": 800, "seed": 2, "clean": 0.64018, "corrupt": 0.36173, "corrupt_std": 0.08517366647033578, "n_iter": 155}
-{"arm": "B_prune_geom", "K_wanted": 1200, "seed": 0, "clean": 0.6432, "corrupt": 0.36391999999999997, "corrupt_std": 0.08531531023210313, "n_iter": 157}
-{"arm": "B_prune_dkres_geom", "K_wanted": 1200, "seed": 0, "clean": 0.64204, "corrupt": 0.357044, "corrupt_std": 0.08762386971596267, "n_iter": 162}
-{"arm": "B_prune_geom", "K_wanted": 1200, "seed": 1, "clean": 0.64414, "corrupt": 0.364304, "corrupt_std": 0.08648111923420049, "n_iter": 171}
-{"arm": "B_prune_dkres_geom", "K_wanted": 1200, "seed": 1, "clean": 0.63476, "corrupt": 0.35139, "corrupt_std": 0.08836294030870634, "n_iter": 141}
-{"arm": "B_prune_geom", "K_wanted": 1200, "seed": 2, "clean": 0.64046, "corrupt": 0.36312399999999995, "corrupt_std": 0.08450807005251038, "n_iter": 167}
-{"arm": "B_prune_dkres_geom", "K_wanted": 1200, "seed": 2, "clean": 0.6414, "corrupt": 0.358156, "corrupt_std": 0.08556697858403088, "n_iter": 173}
-{"arm": "B_prune_geom", "K_wanted": 1600, "seed": 0, "clean": 0.63068, "corrupt": 0.341118, "corrupt_std": 0.08478160434905675, "n_iter": 133}
-{"arm": "B_prune_dkres_geom", "K_wanted": 1600, "seed": 0, "clean": 0.63434, "corrupt": 0.340794, "corrupt_std": 0.08491428292107284, "n_iter": 136}
-{"arm": "B_prune_geom", "K_wanted": 1600, "seed": 1, "clean": 0.63026, "corrupt": 0.340828, "corrupt_std": 0.08493488103247099, "n_iter": 142}
-{"arm": "B_prune_dkres_geom", "K_wanted": 1600, "seed": 1, "clean": 0.63578, "corrupt": 0.34658, "corrupt_std": 0.08772668100412782, "n_iter": 153}
-{"arm": "B_prune_geom", "K_wanted": 1600, "seed": 2, "clean": 0.63278, "corrupt": 0.34499, "corrupt_std": 0.08333535588212244, "n_iter": 148}
-{"arm": "B_prune_dkres_geom", "K_wanted": 1600, "seed": 2, "clean": 0.62838, "corrupt": 0.337136, "corrupt_std": 0.08240263529766509, "n_iter": 129}
-{"arm": "B_prune_geom", "K_wanted": 2048, "seed": 0, "clean": 0.63438, "corrupt": 0.329618, "corrupt_std": 0.0829706490031264, "n_iter": 159}
-{"arm": "B_prune_dkres_geom", "K_wanted": 2048, "seed": 0, "clean": 0.6358, "corrupt": 0.330994, "corrupt_std": 0.08280366322814468, "n_iter": 164}
-{"arm": "B_prune_geom", "K_wanted": 2048, "seed": 1, "clean": 0.62084, "corrupt": 0.313312, "corrupt_std": 0.0824428991241817, "n_iter": 122}
-{"arm": "B_prune_dkres_geom", "K_wanted": 2048, "seed": 1, "clean": 0.63416, "corrupt": 0.327692, "corrupt_std": 0.08582871370351532, "n_iter": 155}
-{"arm": "B_prune_geom", "K_wanted": 2048, "seed": 2, "clean": 0.63374, "corrupt": 0.328408, "corrupt_std": 0.08051710138846281, "n_iter": 161}
-{"arm": "B_prune_dkres_geom", "K_wanted": 2048, "seed": 2, "clean": 0.62796, "corrupt": 0.322708, "corrupt_std": 0.07968727286085277, "n_iter": 145}
-{"arm": "B_prune_geom_ar", "K_wanted": 50, "seed": 0, "fit_n": 25000, "clean": 0.54206, "corrupt": 0.23915199999999998, "corrupt_std": 0.06179942666400716, "n_iter": 114}
-{"arm": "B_prune_geom_ar", "K_wanted": 50, "seed": 1, "fit_n": 25000, "clean": 0.53918, "corrupt": 0.23719400000000004, "corrupt_std": 0.06323369231667561, "n_iter": 122}
-{"arm": "B_prune_geom_ar", "K_wanted": 50, "seed": 2, "fit_n": 25000, "clean": 0.54128, "corrupt": 0.238524, "corrupt_std": 0.06198568918710189, "n_iter": 107}
-{"arm": "B_prune_geom_ar", "K_wanted": 100, "seed": 0, "fit_n": 25000, "clean": 0.59754, "corrupt": 0.290224, "corrupt_std": 0.0721559570929525, "n_iter": 114}
-{"arm": "B_prune_geom_ar", "K_wanted": 100, "seed": 1, "fit_n": 25000, "clean": 0.59684, "corrupt": 0.286196, "corrupt_std": 0.07469425723574738, "n_iter": 175}
-{"arm": "B_prune_geom_ar", "K_wanted": 100, "seed": 2, "fit_n": 25000, "clean": 0.59592, "corrupt": 0.28611200000000003, "corrupt_std": 0.07290716354378354, "n_iter": 127}
-{"arm": "B_prune_geom_ar", "K_wanted": 200, "seed": 0, "fit_n": 25000, "clean": 0.62484, "corrupt": 0.320898, "corrupt_std": 0.08134343314613664, "n_iter": 129}
-{"arm": "B_prune_geom_ar", "K_wanted": 200, "seed": 1, "fit_n": 25000, "clean": 0.62244, "corrupt": 0.31055999999999995, "corrupt_std": 0.0836114422791522, "n_iter": 126}
-{"arm": "B_prune_geom_ar", "K_wanted": 200, "seed": 2, "fit_n": 25000, "clean": 0.62322, "corrupt": 0.315204, "corrupt_std": 0.08061038235860192, "n_iter": 126}
-{"arm": "B_prune_geom_ar", "K_wanted": 400, "seed": 0, "fit_n": 25000, "clean": 0.63814, "corrupt": 0.33621, "corrupt_std": 0.08494772851583496, "n_iter": 150}
-{"arm": "B_prune_geom_ar", "K_wanted": 400, "seed": 1, "fit_n": 25000, "clean": 0.6364, "corrupt": 0.331994, "corrupt_std": 0.08708558413422969, "n_iter": 141}
-{"arm": "B_prune_geom_ar", "K_wanted": 400, "seed": 2, "fit_n": 25000, "clean": 0.63582, "corrupt": 0.33123, "corrupt_std": 0.08327378326940599, "n_iter": 125}
-{"arm": "B_prune_geom_ar", "K_wanted": 500, "seed": 0, "fit_n": 25000, "clean": 0.64008, "corrupt": 0.338398, "corrupt_std": 0.0859483605195585, "n_iter": 147}
-{"arm": "B_prune_geom_ar", "K_wanted": 500, "seed": 1, "fit_n": 25000, "clean": 0.6384, "corrupt": 0.337026, "corrupt_std": 0.08686263871193414, "n_iter": 147}
-{"arm": "B_prune_geom_ar", "K_wanted": 500, "seed": 2, "fit_n": 25000, "clean": 0.63842, "corrupt": 0.33792600000000006, "corrupt_std": 0.08351024849681624, "n_iter": 139}
-{"arm": "B_prune_geom_ar", "K_wanted": 600, "seed": 0, "fit_n": 25000, "clean": 0.64084, "corrupt": 0.34153200000000006, "corrupt_std": 0.08667755658761962, "n_iter": 153}
-{"arm": "B_prune_geom_ar", "K_wanted": 600, "seed": 1, "fit_n": 25000, "clean": 0.63714, "corrupt": 0.336518, "corrupt_std": 0.08701799374841965, "n_iter": 141}
-{"arm": "B_prune_geom_ar", "K_wanted": 600, "seed": 2, "fit_n": 25000, "clean": 0.63984, "corrupt": 0.339182, "corrupt_std": 0.08358774429304812, "n_iter": 150}
-{"arm": "B_prune_geom_ar", "K_wanted": 700, "seed": 0, "fit_n": 25000, "clean": 0.63838, "corrupt": 0.334104, "corrupt_std": 0.0862099826238238, "n_iter": 122}
-{"arm": "B_prune_geom_ar", "K_wanted": 700, "seed": 1, "fit_n": 25000, "clean": 0.64188, "corrupt": 0.33960999999999997, "corrupt_std": 0.08747174000784481, "n_iter": 159}
-{"arm": "B_prune_geom_ar", "K_wanted": 700, "seed": 2, "fit_n": 25000, "clean": 0.63548, "corrupt": 0.33167399999999997, "corrupt_std": 0.08322130883373562, "n_iter": 127}
-{"arm": "B_prune_geom_ar", "K_wanted": 800, "seed": 0, "fit_n": 25000, "clean": 0.64086, "corrupt": 0.34058400000000005, "corrupt_std": 0.08583717460401408, "n_iter": 139}
-{"arm": "B_prune_geom_ar", "K_wanted": 800, "seed": 1, "fit_n": 25000, "clean": 0.6401, "corrupt": 0.34103999999999995, "corrupt_std": 0.08685496784870743, "n_iter": 151}
-{"arm": "B_prune_geom_ar", "K_wanted": 800, "seed": 2, "fit_n": 25000, "clean": 0.63766, "corrupt": 0.337502, "corrupt_std": 0.08352719387121776, "n_iter": 139}
-{"arm": "B_prune_geom_ar", "K_wanted": 1200, "seed": 0, "fit_n": 25000, "clean": 0.64324, "corrupt": 0.343542, "corrupt_std": 0.08566897148909866, "n_iter": 162}
-{"arm": "B_prune_geom_ar", "K_wanted": 1200, "seed": 1, "fit_n": 25000, "clean": 0.63414, "corrupt": 0.33188000000000006, "corrupt_std": 0.08570153510877154, "n_iter": 128}
-{"arm": "B_prune_geom_ar", "K_wanted": 1200, "seed": 2, "fit_n": 25000, "clean": 0.63416, "corrupt": 0.332368, "corrupt_std": 0.08189283934508561, "n_iter": 136}
-{"arm": "B_prune_geom_ar", "K_wanted": 1600, "seed": 0, "fit_n": 25000, "clean": 0.63986, "corrupt": 0.339704, "corrupt_std": 0.08533649713926626, "n_iter": 164}
-{"arm": "B_prune_geom_ar", "K_wanted": 1600, "seed": 1, "fit_n": 25000, "clean": 0.63426, "corrupt": 0.33246000000000003, "corrupt_std": 0.08594502661585485, "n_iter": 146}
-{"arm": "B_prune_geom_ar", "K_wanted": 1600, "seed": 2, "fit_n": 25000, "clean": 0.62816, "corrupt": 0.325234, "corrupt_std": 0.08138729043284339, "n_iter": 141}
-{"arm": "B_prune_geom_ar", "K_wanted": 2048, "seed": 0, "fit_n": 25000, "clean": 0.62952, "corrupt": 0.323664, "corrupt_std": 0.08197798865549215, "n_iter": 148}
-{"arm": "B_prune_geom_ar", "K_wanted": 2048, "seed": 1, "fit_n": 25000, "clean": 0.62376, "corrupt": 0.31649, "corrupt_std": 0.08312786644681794, "n_iter": 129}
-{"arm": "B_prune_geom_ar", "K_wanted": 2048, "seed": 2, "fit_n": 25000, "clean": 0.632, "corrupt": 0.326046, "corrupt_std": 0.08016977687383195, "n_iter": 153}
+{"arm": "B_prune_dk_hold3", "K_wanted": 100, "seed": 0, "fit_n": 128118, "clean": 0.68918, "corrupt": 0.40618599999999994, "corrupt_std": 0.08844206648422458, "n_iter": 195}
+{"arm": "B_prune_dk_hold3", "K_wanted": 100, "seed": 1, "fit_n": 128118, "clean": 0.68918, "corrupt": 0.40618599999999994, "corrupt_std": 0.08844206648422458, "n_iter": 195}
+{"arm": "B_prune_dk_hold3", "K_wanted": 100, "seed": 2, "fit_n": 128118, "clean": 0.68918, "corrupt": 0.40618599999999994, "corrupt_std": 0.08844206648422458, "n_iter": 195}
+{"arm": "B_prune_dk_hold3", "K_wanted": 400, "seed": 0, "fit_n": 128118, "clean": 0.718, "corrupt": 0.454992, "corrupt_std": 0.08888512910492957, "n_iter": 307}
+{"arm": "B_prune_dk_hold3", "K_wanted": 400, "seed": 1, "fit_n": 128118, "clean": 0.718, "corrupt": 0.454992, "corrupt_std": 0.08888512910492957, "n_iter": 307}
+{"arm": "B_prune_dk_hold3", "K_wanted": 400, "seed": 2, "fit_n": 128118, "clean": 0.718, "corrupt": 0.454992, "corrupt_std": 0.08888512910492957, "n_iter": 307}
+{"arm": "B_prune_dk_hold3", "K_wanted": 800, "seed": 0, "fit_n": 128118, "clean": 0.71572, "corrupt": 0.44463400000000003, "corrupt_std": 0.08998632698360345, "n_iter": 308}
+{"arm": "B_prune_dk_hold3", "K_wanted": 800, "seed": 1, "fit_n": 128118, "clean": 0.71572, "corrupt": 0.44463400000000003, "corrupt_std": 0.08998632698360345, "n_iter": 308}
+{"arm": "B_prune_dk_hold3", "K_wanted": 800, "seed": 2, "fit_n": 128118, "clean": 0.71572, "corrupt": 0.44463400000000003, "corrupt_std": 0.08998632698360345, "n_iter": 308}
+{"arm": "B_prune_dk_hold3", "K_wanted": 1200, "seed": 0, "fit_n": 128118, "clean": 0.7133, "corrupt": 0.439074, "corrupt_std": 0.09037349613686528, "n_iter": 348}
+{"arm": "B_prune_dk_hold3", "K_wanted": 1200, "seed": 1, "fit_n": 128118, "clean": 0.7133, "corrupt": 0.439074, "corrupt_std": 0.09037349613686528, "n_iter": 348}
+{"arm": "B_prune_dk_hold3", "K_wanted": 1200, "seed": 2, "fit_n": 128118, "clean": 0.7133, "corrupt": 0.439074, "corrupt_std": 0.09037349613686528, "n_iter": 348}
+{"arm": "B_prune_dk_hold3", "K_wanted": 1600, "seed": 0, "fit_n": 128118, "clean": 0.70866, "corrupt": 0.4262079999999999, "corrupt_std": 0.08988718137754682, "n_iter": 287}
+{"arm": "B_prune_dk_hold3", "K_wanted": 1600, "seed": 1, "fit_n": 128118, "clean": 0.70866, "corrupt": 0.4262079999999999, "corrupt_std": 0.08988718137754682, "n_iter": 287}
+{"arm": "B_prune_dk_hold3", "K_wanted": 1600, "seed": 2, "fit_n": 128118, "clean": 0.70866, "corrupt": 0.4262079999999999, "corrupt_std": 0.08988718137754682, "n_iter": 287}
+{"arm": "B_prune_dk_hold3", "K_wanted": 2048, "seed": 0, "fit_n": 128118, "clean": 0.70482, "corrupt": 0.40703000000000006, "corrupt_std": 0.08943157306007761, "n_iter": 276}
+{"arm": "B_prune_dk_hold3", "K_wanted": 2048, "seed": 1, "fit_n": 128118, "clean": 0.70482, "corrupt": 0.40703000000000006, "corrupt_std": 0.08943157306007761, "n_iter": 276}
+{"arm": "B_prune_dk_hold3", "K_wanted": 2048, "seed": 2, "fit_n": 128118, "clean": 0.70482, "corrupt": 0.40703000000000006, "corrupt_std": 0.08943157306007761, "n_iter": 276}
+{"arm": "B_prune_dkres_geom", "K_wanted": 100, "seed": 0, "fit_n": 128118, "clean": 0.68582, "corrupt": 0.39247600000000005, "corrupt_std": 0.09201378844499339, "n_iter": 172}
+{"arm": "B_prune_dkres_geom", "K_wanted": 100, "seed": 1, "fit_n": 128118, "clean": 0.68582, "corrupt": 0.39247600000000005, "corrupt_std": 0.09201378844499339, "n_iter": 172}
+{"arm": "B_prune_dkres_geom", "K_wanted": 100, "seed": 2, "fit_n": 128118, "clean": 0.68582, "corrupt": 0.39247600000000005, "corrupt_std": 0.09201378844499339, "n_iter": 172}
+{"arm": "B_prune_dkres_geom", "K_wanted": 400, "seed": 0, "fit_n": 128118, "clean": 0.71774, "corrupt": 0.43933599999999995, "corrupt_std": 0.09144403219456149, "n_iter": 260}
+{"arm": "B_prune_dkres_geom", "K_wanted": 400, "seed": 1, "fit_n": 128118, "clean": 0.71774, "corrupt": 0.43933599999999995, "corrupt_std": 0.09144403219456149, "n_iter": 260}
+{"arm": "B_prune_dkres_geom", "K_wanted": 400, "seed": 2, "fit_n": 128118, "clean": 0.71774, "corrupt": 0.43933599999999995, "corrupt_std": 0.09144403219456149, "n_iter": 260}
+{"arm": "B_prune_dkres_geom", "K_wanted": 800, "seed": 0, "fit_n": 128118, "clean": 0.71488, "corrupt": 0.43589399999999995, "corrupt_std": 0.09252715798077882, "n_iter": 281}
+{"arm": "B_prune_dkres_geom", "K_wanted": 800, "seed": 1, "fit_n": 128118, "clean": 0.71488, "corrupt": 0.43589399999999995, "corrupt_std": 0.09252715798077882, "n_iter": 281}
+{"arm": "B_prune_dkres_geom", "K_wanted": 800, "seed": 2, "fit_n": 128118, "clean": 0.71488, "corrupt": 0.43589399999999995, "corrupt_std": 0.09252715798077882, "n_iter": 281}
+{"arm": "B_prune_dkres_geom", "K_wanted": 1200, "seed": 0, "fit_n": 128118, "clean": 0.71064, "corrupt": 0.427816, "corrupt_std": 0.09182479787072771, "n_iter": 320}
+{"arm": "B_prune_dkres_geom", "K_wanted": 1200, "seed": 1, "fit_n": 128118, "clean": 0.71064, "corrupt": 0.427816, "corrupt_std": 0.09182479787072771, "n_iter": 320}
+{"arm": "B_prune_dkres_geom", "K_wanted": 1200, "seed": 2, "fit_n": 128118, "clean": 0.71064, "corrupt": 0.427816, "corrupt_std": 0.09182479787072771, "n_iter": 320}
+{"arm": "B_prune_dkres_geom", "K_wanted": 1600, "seed": 0, "fit_n": 128118, "clean": 0.70884, "corrupt": 0.42342599999999997, "corrupt_std": 0.09122893359017192, "n_iter": 308}
+{"arm": "B_prune_dkres_geom", "K_wanted": 1600, "seed": 1, "fit_n": 128118, "clean": 0.70884, "corrupt": 0.42342599999999997, "corrupt_std": 0.09122893359017192, "n_iter": 308}
+{"arm": "B_prune_dkres_geom", "K_wanted": 1600, "seed": 2, "fit_n": 128118, "clean": 0.70884, "corrupt": 0.42342599999999997, "corrupt_std": 0.09122893359017192, "n_iter": 308}
+{"arm": "B_prune_dkres_geom", "K_wanted": 2048, "seed": 0, "fit_n": 128118, "clean": 0.70574, "corrupt": 0.40740800000000005, "corrupt_std": 0.08948439560057386, "n_iter": 277}
+{"arm": "B_prune_dkres_geom", "K_wanted": 2048, "seed": 1, "fit_n": 128118, "clean": 0.70574, "corrupt": 0.40740800000000005, "corrupt_std": 0.08948439560057386, "n_iter": 277}
+{"arm": "B_prune_dkres_geom", "K_wanted": 2048, "seed": 2, "fit_n": 128118, "clean": 0.70574, "corrupt": 0.40740800000000005, "corrupt_std": 0.08948439560057386, "n_iter": 277}
+{"arm": "B_prune_geom", "K_wanted": 100, "seed": 0, "fit_n": 128118, "clean": 0.69616, "corrupt": 0.41484, "corrupt_std": 0.08948109699819287, "n_iter": 205}
+{"arm": "B_prune_geom", "K_wanted": 100, "seed": 1, "fit_n": 128118, "clean": 0.69616, "corrupt": 0.41484, "corrupt_std": 0.08948109699819287, "n_iter": 205}
+{"arm": "B_prune_geom", "K_wanted": 100, "seed": 2, "fit_n": 128118, "clean": 0.69616, "corrupt": 0.41484, "corrupt_std": 0.08948109699819287, "n_iter": 205}
+{"arm": "B_prune_geom", "K_wanted": 400, "seed": 0, "fit_n": 128118, "clean": 0.72064, "corrupt": 0.44462999999999997, "corrupt_std": 0.09023129313048771, "n_iter": 282}
+{"arm": "B_prune_geom", "K_wanted": 400, "seed": 1, "fit_n": 128118, "clean": 0.72064, "corrupt": 0.44462999999999997, "corrupt_std": 0.09023129313048771, "n_iter": 282}
+{"arm": "B_prune_geom", "K_wanted": 400, "seed": 2, "fit_n": 128118, "clean": 0.72064, "corrupt": 0.44462999999999997, "corrupt_std": 0.09023129313048771, "n_iter": 282}
+{"arm": "B_prune_geom", "K_wanted": 800, "seed": 0, "fit_n": 128118, "clean": 0.71454, "corrupt": 0.43526800000000004, "corrupt_std": 0.08747760042433722, "n_iter": 350}
+{"arm": "B_prune_geom", "K_wanted": 800, "seed": 1, "fit_n": 128118, "clean": 0.71454, "corrupt": 0.43526800000000004, "corrupt_std": 0.08747760042433722, "n_iter": 350}
+{"arm": "B_prune_geom", "K_wanted": 800, "seed": 2, "fit_n": 128118, "clean": 0.71454, "corrupt": 0.43526800000000004, "corrupt_std": 0.08747760042433722, "n_iter": 350}
+{"arm": "B_prune_geom", "K_wanted": 1200, "seed": 0, "fit_n": 128118, "clean": 0.71044, "corrupt": 0.427144, "corrupt_std": 0.08790696982606103, "n_iter": 307}
+{"arm": "B_prune_geom", "K_wanted": 1200, "seed": 1, "fit_n": 128118, "clean": 0.71044, "corrupt": 0.427144, "corrupt_std": 0.08790696982606103, "n_iter": 307}
+{"arm": "B_prune_geom", "K_wanted": 1200, "seed": 2, "fit_n": 128118, "clean": 0.71044, "corrupt": 0.427144, "corrupt_std": 0.08790696982606103, "n_iter": 307}
+{"arm": "B_prune_geom", "K_wanted": 1600, "seed": 0, "fit_n": 128118, "clean": 0.7099, "corrupt": 0.423046, "corrupt_std": 0.08895541896927919, "n_iter": 324}
+{"arm": "B_prune_geom", "K_wanted": 1600, "seed": 1, "fit_n": 128118, "clean": 0.7099, "corrupt": 0.423046, "corrupt_std": 0.08895541896927919, "n_iter": 324}
+{"arm": "B_prune_geom", "K_wanted": 1600, "seed": 2, "fit_n": 128118, "clean": 0.7099, "corrupt": 0.423046, "corrupt_std": 0.08895541896927919, "n_iter": 324}
+{"arm": "B_prune_geom", "K_wanted": 2048, "seed": 0, "fit_n": 128118, "clean": 0.70718, "corrupt": 0.41197999999999996, "corrupt_std": 0.09057444672754011, "n_iter": 314}
+{"arm": "B_prune_geom", "K_wanted": 2048, "seed": 1, "fit_n": 128118, "clean": 0.70718, "corrupt": 0.41197999999999996, "corrupt_std": 0.09057444672754011, "n_iter": 314}
+{"arm": "B_prune_geom", "K_wanted": 2048, "seed": 2, "fit_n": 128118, "clean": 0.70718, "corrupt": 0.41197999999999996, "corrupt_std": 0.09057444672754011, "n_iter": 314}
+{"arm": "B_prune_geom_ar", "K_wanted": 100, "seed": 0, "fit_n": 128118, "clean": 0.69246, "corrupt": 0.39066199999999995, "corrupt_std": 0.08395756282789538, "n_iter": 202}
+{"arm": "B_prune_geom_ar", "K_wanted": 100, "seed": 1, "fit_n": 128118, "clean": 0.69246, "corrupt": 0.39066199999999995, "corrupt_std": 0.08395756282789538, "n_iter": 202}
+{"arm": "B_prune_geom_ar", "K_wanted": 100, "seed": 2, "fit_n": 128118, "clean": 0.69246, "corrupt": 0.39066199999999995, "corrupt_std": 0.08395756282789538, "n_iter": 202}
+{"arm": "B_prune_geom_ar", "K_wanted": 400, "seed": 0, "fit_n": 128118, "clean": 0.71858, "corrupt": 0.42657, "corrupt_std": 0.09362500958611433, "n_iter": 260}
+{"arm": "B_prune_geom_ar", "K_wanted": 400, "seed": 1, "fit_n": 128118, "clean": 0.71858, "corrupt": 0.42657, "corrupt_std": 0.09362500958611433, "n_iter": 260}
+{"arm": "B_prune_geom_ar", "K_wanted": 400, "seed": 2, "fit_n": 128118, "clean": 0.71858, "corrupt": 0.42657, "corrupt_std": 0.09362500958611433, "n_iter": 260}
+{"arm": "B_prune_geom_ar", "K_wanted": 800, "seed": 0, "fit_n": 128118, "clean": 0.7143, "corrupt": 0.423792, "corrupt_std": 0.09079276720091749, "n_iter": 270}
+{"arm": "B_prune_geom_ar", "K_wanted": 800, "seed": 1, "fit_n": 128118, "clean": 0.7143, "corrupt": 0.423792, "corrupt_std": 0.09079276720091749, "n_iter": 270}
+{"arm": "B_prune_geom_ar", "K_wanted": 800, "seed": 2, "fit_n": 128118, "clean": 0.7143, "corrupt": 0.423792, "corrupt_std": 0.09079276720091749, "n_iter": 270}
+{"arm": "B_prune_geom_ar", "K_wanted": 1200, "seed": 0, "fit_n": 128118, "clean": 0.71116, "corrupt": 0.41712000000000005, "corrupt_std": 0.09035988224870593, "n_iter": 285}
+{"arm": "B_prune_geom_ar", "K_wanted": 1200, "seed": 1, "fit_n": 128118, "clean": 0.71116, "corrupt": 0.41712000000000005, "corrupt_std": 0.09035988224870593, "n_iter": 285}
+{"arm": "B_prune_geom_ar", "K_wanted": 1200, "seed": 2, "fit_n": 128118, "clean": 0.71116, "corrupt": 0.41712000000000005, "corrupt_std": 0.09035988224870593, "n_iter": 285}
+{"arm": "B_prune_geom_ar", "K_wanted": 1600, "seed": 0, "fit_n": 128118, "clean": 0.71052, "corrupt": 0.41752199999999995, "corrupt_std": 0.09141928481452916, "n_iter": 322}
+{"arm": "B_prune_geom_ar", "K_wanted": 1600, "seed": 1, "fit_n": 128118, "clean": 0.71052, "corrupt": 0.41752199999999995, "corrupt_std": 0.09141928481452916, "n_iter": 322}
+{"arm": "B_prune_geom_ar", "K_wanted": 1600, "seed": 2, "fit_n": 128118, "clean": 0.71052, "corrupt": 0.41752199999999995, "corrupt_std": 0.09141928481452916, "n_iter": 322}
+{"arm": "B_prune_geom_ar", "K_wanted": 2048, "seed": 0, "fit_n": 128118, "clean": 0.70774, "corrupt": 0.41230599999999995, "corrupt_std": 0.09070259314925898, "n_iter": 264}
+{"arm": "B_prune_geom_ar", "K_wanted": 2048, "seed": 1, "fit_n": 128118, "clean": 0.70774, "corrupt": 0.41230599999999995, "corrupt_std": 0.09070259314925898, "n_iter": 264}
+{"arm": "B_prune_geom_ar", "K_wanted": 2048, "seed": 2, "fit_n": 128118, "clean": 0.70774, "corrupt": 0.41230599999999995, "corrupt_std": 0.09070259314925898, "n_iter": 264}
+{"arm": "A_native", "K_wanted": 100, "seed": 0, "fit_n": 128118, "clean": 0.6695, "corrupt": 0.335466, "corrupt_std": 0.08625986740077914, "n_iter": 150}
+{"arm": "A_native", "K_wanted": 100, "seed": 1, "fit_n": 128118, "clean": 0.6687, "corrupt": 0.342516, "corrupt_std": 0.08450156533461377, "n_iter": 154}
+{"arm": "A_native", "K_wanted": 100, "seed": 2, "fit_n": 128118, "clean": 0.6715, "corrupt": 0.347616, "corrupt_std": 0.08588541613102892, "n_iter": 151}
+{"arm": "A_native", "K_wanted": 400, "seed": 0, "fit_n": 128118, "clean": 0.70992, "corrupt": 0.39560199999999995, "corrupt_std": 0.08810825543613945, "n_iter": 206}
+{"arm": "A_native", "K_wanted": 400, "seed": 1, "fit_n": 128118, "clean": 0.71102, "corrupt": 0.39874200000000004, "corrupt_std": 0.09102209377947752, "n_iter": 260}
+{"arm": "A_native", "K_wanted": 400, "seed": 2, "fit_n": 128118, "clean": 0.70938, "corrupt": 0.39759, "corrupt_std": 0.0892613776501349, "n_iter": 213}
+{"arm": "A_native", "K_wanted": 800, "seed": 0, "fit_n": 128118, "clean": 0.70716, "corrupt": 0.38937, "corrupt_std": 0.08833576591619047, "n_iter": 292}
+{"arm": "A_native", "K_wanted": 800, "seed": 1, "fit_n": 128118, "clean": 0.70776, "corrupt": 0.38577, "corrupt_std": 0.08850690018298007, "n_iter": 241}
+{"arm": "A_native", "K_wanted": 800, "seed": 2, "fit_n": 128118, "clean": 0.70668, "corrupt": 0.384862, "corrupt_std": 0.08823012340465132, "n_iter": 268}
+{"arm": "A_native", "K_wanted": 1200, "seed": 0, "fit_n": 128118, "clean": 0.70398, "corrupt": 0.382034, "corrupt_std": 0.08774212080865153, "n_iter": 278}
+{"arm": "A_native", "K_wanted": 1200, "seed": 1, "fit_n": 128118, "clean": 0.70432, "corrupt": 0.383806, "corrupt_std": 0.08450821548228313, "n_iter": 299}
+{"arm": "A_native", "K_wanted": 1200, "seed": 2, "fit_n": 128118, "clean": 0.70438, "corrupt": 0.3850539999999999, "corrupt_std": 0.08736293449741715, "n_iter": 280}
+{"arm": "A_native", "K_wanted": 1600, "seed": 0, "fit_n": 128118, "clean": 0.70294, "corrupt": 0.381536, "corrupt_std": 0.08758237758818836, "n_iter": 326}
+{"arm": "A_native", "K_wanted": 1600, "seed": 1, "fit_n": 128118, "clean": 0.70324, "corrupt": 0.38095599999999996, "corrupt_std": 0.08622897647542849, "n_iter": 320}
+{"arm": "A_native", "K_wanted": 1600, "seed": 2, "fit_n": 128118, "clean": 0.70276, "corrupt": 0.38105, "corrupt_std": 0.08498096833997597, "n_iter": 336}
+{"arm": "A_native", "K_wanted": 2048, "seed": 0, "fit_n": 128118, "clean": 0.69994, "corrupt": 0.375992, "corrupt_std": 0.08563232856812898, "n_iter": 321}
+{"arm": "A_native", "K_wanted": 2048, "seed": 1, "fit_n": 128118, "clean": 0.70202, "corrupt": 0.37683199999999994, "corrupt_std": 0.08624017170669362, "n_iter": 338}
+{"arm": "A_native", "K_wanted": 2048, "seed": 2, "fit_n": 128118, "clean": 0.70096, "corrupt": 0.37708200000000003, "corrupt_std": 0.0865498947197511, "n_iter": 300}
+{"arm": "B_prune_rand0", "K_wanted": 100, "seed": 0, "fit_n": 128118, "clean": 0.68778, "corrupt": 0.378898, "corrupt_std": 0.08473867190368281, "n_iter": 196}
+{"arm": "B_prune_rand0", "K_wanted": 100, "seed": 1, "fit_n": 128118, "clean": 0.68778, "corrupt": 0.378898, "corrupt_std": 0.08473867190368281, "n_iter": 196}
+{"arm": "B_prune_rand0", "K_wanted": 100, "seed": 2, "fit_n": 128118, "clean": 0.68778, "corrupt": 0.378898, "corrupt_std": 0.08473867190368281, "n_iter": 196}
+{"arm": "B_prune_rand0", "K_wanted": 400, "seed": 0, "fit_n": 128118, "clean": 0.71694, "corrupt": 0.41782, "corrupt_std": 0.08840277823688575, "n_iter": 250}
+{"arm": "B_prune_rand0", "K_wanted": 400, "seed": 1, "fit_n": 128118, "clean": 0.71694, "corrupt": 0.41782, "corrupt_std": 0.08840277823688575, "n_iter": 250}
+{"arm": "B_prune_rand0", "K_wanted": 400, "seed": 2, "fit_n": 128118, "clean": 0.71694, "corrupt": 0.41782, "corrupt_std": 0.08840277823688575, "n_iter": 250}
+{"arm": "B_prune_rand0", "K_wanted": 800, "seed": 0, "fit_n": 128118, "clean": 0.71434, "corrupt": 0.418646, "corrupt_std": 0.09012520448797884, "n_iter": 276}
+{"arm": "B_prune_rand0", "K_wanted": 800, "seed": 1, "fit_n": 128118, "clean": 0.71434, "corrupt": 0.418646, "corrupt_std": 0.09012520448797884, "n_iter": 276}
+{"arm": "B_prune_rand0", "K_wanted": 800, "seed": 2, "fit_n": 128118, "clean": 0.71434, "corrupt": 0.418646, "corrupt_std": 0.09012520448797884, "n_iter": 276}
+{"arm": "B_prune_rand0", "K_wanted": 1200, "seed": 0, "fit_n": 128118, "clean": 0.71112, "corrupt": 0.41431400000000007, "corrupt_std": 0.08935783885032135, "n_iter": 307}
+{"arm": "B_prune_rand0", "K_wanted": 1200, "seed": 1, "fit_n": 128118, "clean": 0.71112, "corrupt": 0.41431400000000007, "corrupt_std": 0.08935783885032135, "n_iter": 307}
+{"arm": "B_prune_rand0", "K_wanted": 1200, "seed": 2, "fit_n": 128118, "clean": 0.71112, "corrupt": 0.41431400000000007, "corrupt_std": 0.08935783885032135, "n_iter": 307}
+{"arm": "B_prune_rand0", "K_wanted": 1600, "seed": 0, "fit_n": 128118, "clean": 0.70782, "corrupt": 0.41117, "corrupt_std": 0.08954846118164175, "n_iter": 279}
+{"arm": "B_prune_rand0", "K_wanted": 1600, "seed": 1, "fit_n": 128118, "clean": 0.70782, "corrupt": 0.41117, "corrupt_std": 0.08954846118164175, "n_iter": 279}
+{"arm": "B_prune_rand0", "K_wanted": 1600, "seed": 2, "fit_n": 128118, "clean": 0.70782, "corrupt": 0.41117, "corrupt_std": 0.08954846118164175, "n_iter": 279}
+{"arm": "B_prune_rand0", "K_wanted": 2048, "seed": 0, "fit_n": 128118, "clean": 0.70592, "corrupt": 0.40895600000000004, "corrupt_std": 0.09034761127998904, "n_iter": 338}
+{"arm": "B_prune_rand0", "K_wanted": 2048, "seed": 1, "fit_n": 128118, "clean": 0.70592, "corrupt": 0.40895600000000004, "corrupt_std": 0.09034761127998904, "n_iter": 338}
+{"arm": "B_prune_rand0", "K_wanted": 2048, "seed": 2, "fit_n": 128118, "clean": 0.70592, "corrupt": 0.40895600000000004, "corrupt_std": 0.09034761127998904, "n_iter": 338}
+{"arm": "B_prune_rand1", "K_wanted": 100, "seed": 0, "fit_n": 128118, "clean": 0.69124, "corrupt": 0.390602, "corrupt_std": 0.08384676425479995, "n_iter": 169}
+{"arm": "B_prune_rand1", "K_wanted": 100, "seed": 1, "fit_n": 128118, "clean": 0.69124, "corrupt": 0.390602, "corrupt_std": 0.08384676425479995, "n_iter": 169}
+{"arm": "B_prune_rand1", "K_wanted": 100, "seed": 2, "fit_n": 128118, "clean": 0.69124, "corrupt": 0.390602, "corrupt_std": 0.08384676425479995, "n_iter": 169}
+{"arm": "B_prune_rand1", "K_wanted": 400, "seed": 0, "fit_n": 128118, "clean": 0.7164, "corrupt": 0.41596600000000006, "corrupt_std": 0.08919400968674972, "n_iter": 281}
+{"arm": "B_prune_rand1", "K_wanted": 400, "seed": 1, "fit_n": 128118, "clean": 0.7164, "corrupt": 0.41596600000000006, "corrupt_std": 0.08919400968674972, "n_iter": 281}
+{"arm": "B_prune_rand1", "K_wanted": 400, "seed": 2, "fit_n": 128118, "clean": 0.7164, "corrupt": 0.41596600000000006, "corrupt_std": 0.08919400968674972, "n_iter": 281}
+{"arm": "B_prune_rand1", "K_wanted": 800, "seed": 0, "fit_n": 128118, "clean": 0.71244, "corrupt": 0.41495, "corrupt_std": 0.09013146453930501, "n_iter": 327}
+{"arm": "B_prune_rand1", "K_wanted": 800, "seed": 1, "fit_n": 128118, "clean": 0.71244, "corrupt": 0.41495, "corrupt_std": 0.09013146453930501, "n_iter": 327}
+{"arm": "B_prune_rand1", "K_wanted": 800, "seed": 2, "fit_n": 128118, "clean": 0.71244, "corrupt": 0.41495, "corrupt_std": 0.09013146453930501, "n_iter": 327}
+{"arm": "B_prune_rand1", "K_wanted": 1200, "seed": 0, "fit_n": 128118, "clean": 0.70888, "corrupt": 0.4120399999999999, "corrupt_std": 0.09015770139039704, "n_iter": 286}
+{"arm": "B_prune_rand1", "K_wanted": 1200, "seed": 1, "fit_n": 128118, "clean": 0.70888, "corrupt": 0.4120399999999999, "corrupt_std": 0.09015770139039704, "n_iter": 286}
+{"arm": "B_prune_rand1", "K_wanted": 1200, "seed": 2, "fit_n": 128118, "clean": 0.70888, "corrupt": 0.4120399999999999, "corrupt_std": 0.09015770139039704, "n_iter": 286}
+{"arm": "B_prune_rand1", "K_wanted": 1600, "seed": 0, "fit_n": 128118, "clean": 0.70764, "corrupt": 0.41052599999999995, "corrupt_std": 0.09029199125060872, "n_iter": 336}
+{"arm": "B_prune_rand1", "K_wanted": 1600, "seed": 1, "fit_n": 128118, "clean": 0.70764, "corrupt": 0.41052599999999995, "corrupt_std": 0.09029199125060872, "n_iter": 336}
+{"arm": "B_prune_rand1", "K_wanted": 1600, "seed": 2, "fit_n": 128118, "clean": 0.70764, "corrupt": 0.41052599999999995, "corrupt_std": 0.09029199125060872, "n_iter": 336}
+{"arm": "B_prune_rand1", "K_wanted": 2048, "seed": 0, "fit_n": 128118, "clean": 0.70652, "corrupt": 0.408944, "corrupt_std": 0.09018308923517755, "n_iter": 296}
+{"arm": "B_prune_rand1", "K_wanted": 2048, "seed": 1, "fit_n": 128118, "clean": 0.70652, "corrupt": 0.408944, "corrupt_std": 0.09018308923517755, "n_iter": 296}
+{"arm": "B_prune_rand1", "K_wanted": 2048, "seed": 2, "fit_n": 128118, "clean": 0.70652, "corrupt": 0.408944, "corrupt_std": 0.09018308923517755, "n_iter": 296}
+{"arm": "B_prune_rand2", "K_wanted": 100, "seed": 0, "fit_n": 128118, "clean": 0.69424, "corrupt": 0.40877600000000003, "corrupt_std": 0.0874178616988542, "n_iter": 172}
+{"arm": "B_prune_rand2", "K_wanted": 100, "seed": 1, "fit_n": 128118, "clean": 0.69424, "corrupt": 0.40877600000000003, "corrupt_std": 0.0874178616988542, "n_iter": 172}
+{"arm": "B_prune_rand2", "K_wanted": 100, "seed": 2, "fit_n": 128118, "clean": 0.69424, "corrupt": 0.40877600000000003, "corrupt_std": 0.0874178616988542, "n_iter": 172}
+{"arm": "B_prune_rand2", "K_wanted": 400, "seed": 0, "fit_n": 128118, "clean": 0.71624, "corrupt": 0.43221599999999993, "corrupt_std": 0.0909409020408309, "n_iter": 272}
+{"arm": "B_prune_rand2", "K_wanted": 400, "seed": 1, "fit_n": 128118, "clean": 0.71624, "corrupt": 0.43221599999999993, "corrupt_std": 0.0909409020408309, "n_iter": 272}
+{"arm": "B_prune_rand2", "K_wanted": 400, "seed": 2, "fit_n": 128118, "clean": 0.71624, "corrupt": 0.43221599999999993, "corrupt_std": 0.0909409020408309, "n_iter": 272}
+{"arm": "B_prune_rand2", "K_wanted": 800, "seed": 0, "fit_n": 128118, "clean": 0.7126, "corrupt": 0.41962399999999994, "corrupt_std": 0.08852356061523961, "n_iter": 307}
+{"arm": "B_prune_rand2", "K_wanted": 800, "seed": 1, "fit_n": 128118, "clean": 0.7126, "corrupt": 0.41962399999999994, "corrupt_std": 0.08852356061523961, "n_iter": 307}
+{"arm": "B_prune_rand2", "K_wanted": 800, "seed": 2, "fit_n": 128118, "clean": 0.7126, "corrupt": 0.41962399999999994, "corrupt_std": 0.08852356061523961, "n_iter": 307}
+{"arm": "B_prune_rand2", "K_wanted": 1200, "seed": 0, "fit_n": 128118, "clean": 0.70872, "corrupt": 0.41612400000000005, "corrupt_std": 0.08943627487770275, "n_iter": 304}
+{"arm": "B_prune_rand2", "K_wanted": 1200, "seed": 1, "fit_n": 128118, "clean": 0.70872, "corrupt": 0.41612400000000005, "corrupt_std": 0.08943627487770275, "n_iter": 304}
+{"arm": "B_prune_rand2", "K_wanted": 1200, "seed": 2, "fit_n": 128118, "clean": 0.70872, "corrupt": 0.41612400000000005, "corrupt_std": 0.08943627487770275, "n_iter": 304}
+{"arm": "B_prune_rand2", "K_wanted": 1600, "seed": 0, "fit_n": 128118, "clean": 0.70744, "corrupt": 0.411782, "corrupt_std": 0.09050033522589847, "n_iter": 339}
+{"arm": "B_prune_rand2", "K_wanted": 1600, "seed": 1, "fit_n": 128118, "clean": 0.70744, "corrupt": 0.411782, "corrupt_std": 0.09050033522589847, "n_iter": 339}
+{"arm": "B_prune_rand2", "K_wanted": 1600, "seed": 2, "fit_n": 128118, "clean": 0.70744, "corrupt": 0.411782, "corrupt_std": 0.09050033522589847, "n_iter": 339}
+{"arm": "B_prune_rand2", "K_wanted": 2048, "seed": 0, "fit_n": 128118, "clean": 0.70578, "corrupt": 0.40906400000000004, "corrupt_std": 0.09014416932891446, "n_iter": 329}
+{"arm": "B_prune_rand2", "K_wanted": 2048, "seed": 1, "fit_n": 128118, "clean": 0.70578, "corrupt": 0.40906400000000004, "corrupt_std": 0.09014416932891446, "n_iter": 329}
+{"arm": "B_prune_rand2", "K_wanted": 2048, "seed": 2, "fit_n": 128118, "clean": 0.70578, "corrupt": 0.40906400000000004, "corrupt_std": 0.09014416932891446, "n_iter": 329}
+{"arm": "B_prune_dk_disjoint", "K_wanted": 100, "seed": 0, "fit_n": 128118, "clean": 0.68494, "corrupt": 0.40751400000000004, "corrupt_std": 0.09077308986698647, "n_iter": 190}
+{"arm": "B_prune_dk_disjoint", "K_wanted": 100, "seed": 1, "fit_n": 128118, "clean": 0.68494, "corrupt": 0.40751400000000004, "corrupt_std": 0.09077308986698647, "n_iter": 190}
+{"arm": "B_prune_dk_disjoint", "K_wanted": 400, "seed": 0, "fit_n": 128118, "clean": 0.71864, "corrupt": 0.45294999999999996, "corrupt_std": 0.09021104998834678, "n_iter": 314}
+{"arm": "B_prune_dk_disjoint", "K_wanted": 100, "seed": 2, "fit_n": 128118, "clean": 0.68494, "corrupt": 0.40751400000000004, "corrupt_std": 0.09077308986698647, "n_iter": 190}
+{"arm": "B_prune_dk_disjoint", "K_wanted": 800, "seed": 0, "fit_n": 128118, "clean": 0.71636, "corrupt": 0.44563600000000003, "corrupt_std": 0.09182298962678138, "n_iter": 354}
+{"arm": "B_prune_dk_disjoint", "K_wanted": 400, "seed": 1, "fit_n": 128118, "clean": 0.71864, "corrupt": 0.45294999999999996, "corrupt_std": 0.09021104998834678, "n_iter": 314}
+{"arm": "B_prune_dk_disjoint", "K_wanted": 1200, "seed": 0, "fit_n": 128118, "clean": 0.71082, "corrupt": 0.4369979999999999, "corrupt_std": 0.09128529846585375, "n_iter": 355}
+{"arm": "B_prune_dk_disjoint", "K_wanted": 1600, "seed": 0, "fit_n": 128118, "clean": 0.7087, "corrupt": 0.42513000000000006, "corrupt_std": 0.08994544313082235, "n_iter": 333}
+{"arm": "B_prune_dk_disjoint", "K_wanted": 400, "seed": 2, "fit_n": 128118, "clean": 0.71864, "corrupt": 0.45294999999999996, "corrupt_std": 0.09021104998834678, "n_iter": 314}
+{"arm": "B_prune_dk_disjoint", "K_wanted": 800, "seed": 1, "fit_n": 128118, "clean": 0.71636, "corrupt": 0.44563600000000003, "corrupt_std": 0.09182298962678138, "n_iter": 354}
+{"arm": "B_prune_dk_disjoint", "K_wanted": 1200, "seed": 1, "fit_n": 128118, "clean": 0.71082, "corrupt": 0.4369979999999999, "corrupt_std": 0.09128529846585375, "n_iter": 355}
+{"arm": "B_prune_dk_disjoint", "K_wanted": 800, "seed": 2, "fit_n": 128118, "clean": 0.71636, "corrupt": 0.44563600000000003, "corrupt_std": 0.09182298962678138, "n_iter": 354}
+{"arm": "B_prune_dk_disjoint", "K_wanted": 1600, "seed": 1, "fit_n": 128118, "clean": 0.7087, "corrupt": 0.42513000000000006, "corrupt_std": 0.08994544313082235, "n_iter": 333}
+{"arm": "B_prune_dk_disjoint", "K_wanted": 1200, "seed": 2, "fit_n": 128118, "clean": 0.71082, "corrupt": 0.4369979999999999, "corrupt_std": 0.09128529846585375, "n_iter": 355}
+{"arm": "B_prune_dk_disjoint", "K_wanted": 1600, "seed": 2, "fit_n": 128118, "clean": 0.7087, "corrupt": 0.42513000000000006, "corrupt_std": 0.08994544313082235, "n_iter": 333}

@@ -19,8 +19,8 @@ Output layout (all 4 extracted subtrees side-by-side under one root):
 Skip-if-exists: presence of `<corruption>/5/` with at least one wnid subdir
 signals prior successful extraction for that corruption.
 
-Run via SLURM (cpu_il, ~1 hr expected wall-clock):
-    sbatch scripts/slurm/data_prep/download_imagenet_c.sbatch
+Usage (~1 h wall-clock):
+    python scripts/data_prep/imagenet_c_download.py
 """
 
 from __future__ import annotations

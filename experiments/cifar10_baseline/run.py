@@ -30,9 +30,9 @@ Artifacts written next to this file:
   summary.json           — final aggregate with verdict
   git_commit.txt         — our fork commit at runtime
 
-Typical SLURM submission:
-    sbatch scripts/slurm/cifar10/04_baseline_sweep.sbatch       # array 0..4
-    sbatch scripts/slurm/cifar10/05_baseline_replicate.sbatch   # afterok array
+Typical run:
+    python experiments/cifar10_baseline/run.py --phase sweep --cluster-index {0..4}   # one K per process
+    python experiments/cifar10_baseline/run.py --phase replicate
 """
 
 from __future__ import annotations
@@ -47,7 +47,7 @@ from pathlib import Path
 
 import yaml
 
-from cbm_in_the_wild.dcbm_bridge import build_cbm, evaluate_split
+from cbm_in_the_wild.dcbm.bridge import build_cbm, evaluate_split
 from cbm_in_the_wild.runs import capture_context, write_summary
 from cbm_in_the_wild.seeding import set_all_seeds
 
@@ -162,13 +162,13 @@ def run_save_best(
 ) -> dict:
     """Train one CBM with ``best`` (n_clusters, λ, lr); save artifacts.
 
-    Output layout (per ``cbm_in_the_wild.persistence.save_cbm_artifacts``):
+    Output layout (per ``cbm_in_the_wild.dcbm.persistence.save_cbm_artifacts``):
         out_dir/linear_head.pt
         out_dir/centroids.pt
         out_dir/scaler.pkl
         out_dir/manifest.json
     """
-    from cbm_in_the_wild.persistence import save_cbm_artifacts
+    from cbm_in_the_wild.dcbm.persistence import save_cbm_artifacts
 
     res = train_and_evaluate(
         cfg, seed=seed,

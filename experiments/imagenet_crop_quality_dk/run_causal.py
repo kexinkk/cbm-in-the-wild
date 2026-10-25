@@ -73,7 +73,7 @@ def rep_crop_files() -> tuple[np.ndarray, list, list]:
     from the crop blob exactly as run.py:131-140 (rep_idx is not persisted in membership.npz).
     This single crop *is* the frozen bank row C_k up to the medoid tie-break, so the n=1
     intervention degrades precisely the crop the concept was acquired from."""
-    from cbm_in_the_wild.persistence import load_cbm_artifacts
+    from cbm_in_the_wild.dcbm.persistence import load_cbm_artifacts
 
     blob = torch.load(CROP_BLOB, map_location="cpu", weights_only=False)
     names = list(blob.keys())
@@ -175,7 +175,7 @@ def phase_embed(rep_crop: bool = False) -> None:
 
 
 def phase_dk(rep_crop: bool = False) -> None:
-    from cbm_in_the_wild.concept_shift import recompute_dk
+    from cbm_in_the_wild.dcbm.concept_shift import recompute_dk
 
     centroids_f, table_f, summary_f = _out_paths(rep_crop)
     z = np.load(centroids_f, allow_pickle=True)

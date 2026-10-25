@@ -6,7 +6,7 @@ For every family and held-out corruption c, compares accuracy on c (sev 3, 50k e
   dk_disjoint  d_k from all 10 corruptions (c seen), same disjoint pool
   rand0-2      size-matched random subsets
 each refit under seeds 0-2. Writes loco/loco_summary.csv + loco/loco_summary.json.
-Runs: scripts/slurm/dk_disjoint_loco/submit.sh. 2026-10-13, NeurIPS workshop camera-ready.
+Runs: run_loco.sh.
 """
 from __future__ import annotations
 

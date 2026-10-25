@@ -69,9 +69,9 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 
 from cbm_in_the_wild.paths import CHECKPOINT_DIR, REPO_ROOT
-from cbm_in_the_wild.persistence import load_cbm_artifacts
-from cbm_in_the_wild.analysis.analysis import load_per_image_cell
-from cbm_in_the_wild.bank import stack_segcrop_emb, centroids_from_segcrop
+from cbm_in_the_wild.dcbm.persistence import load_cbm_artifacts
+from cbm_in_the_wild.dcbm.analysis import load_per_image_cell
+from cbm_in_the_wild.dcbm.bank import stack_segcrop_emb, centroids_from_segcrop
 
 HERE       = Path(__file__).resolve().parent
 REPO       = HERE.parents[1]
@@ -103,7 +103,7 @@ MAX_ITER = int(os.environ.get("MAX_ITER", "1000"))
 #                rows are medoids, so each concept has an acquisition resolution)
 #   dkres_geom — dk_hold3 OLS-residualized on log2(min_side): d_k with the crop-quality
 #                component partialed out (follow-up to imagenet_crop_quality_dk)
-RANK_BY  = [s for s in os.environ.get("RANK_BY", "dk_hold3,dk,mk_perp,rand0,rand1,rand2").split(",") if s]
+RANK_BY  = [s for s in os.environ.get("RANK_BY", "dk_hold3,rand0,rand1,rand2,geom,dkres_geom,geom_ar").split(",") if s]
 # KMeans restarts for the native arm — lower than sklearn's default 10 to bound the sweep cost.
 N_INIT   = int(os.environ.get("N_INIT", "3"))
 # optional subsample of the crop pool for the native KMeans (0 = full pool). A subsample is
@@ -122,7 +122,7 @@ def _frozen_medoid_minside(here: Path) -> np.ndarray:
     cache = here / "geom_frozen2048.npz"
     if cache.exists():
         return np.load(cache)["min_side"]
-    from cbm_in_the_wild.bank import bank_crop_keys
+    from cbm_in_the_wild.dcbm.bank import bank_crop_keys
     art  = load_cbm_artifacts(CHECKPOINT_DIR / CHECKPOINT)
     blob = torch.load(CROP_BLOB, weights_only=False)
     keys = bank_crop_keys(blob, art["centroids"].float())
@@ -240,7 +240,7 @@ def main() -> None:
     # is rebuilt from the full results.jsonl below, so a partial run augments, never clobbers.
     _sz_env = os.environ.get("SIZES", "")
     SIZES = ([K if s.strip() == "K" else int(s) for s in _sz_env.split(",") if s.strip()]
-             if _sz_env else [50, 100, 200, 400, 800, 1200, 1600, K])
+             if _sz_env else [100, 400, 800, 1200, 1600, K])
 
     # --- eval side: full 50k clean test + aligned labels (deployed space) ----
     cdir = ckpt / "clean_propagation"
@@ -273,7 +273,7 @@ def main() -> None:
     VAL_CLASSES = np.unique(VAL_LAB)
 
     # optional class-stratified fit subsample (per seed → variance on both arms)
-    FIT_N = int(os.environ.get("FIT_N", "25000")) or None
+    FIT_N = int(os.environ.get("FIT_N", "0")) or None   # 0 = full 128,118-image pool
     # effective N actually used (full pool when FIT_N is 0/None/>=pool) — stamps every result
     # row so the cache never confuses a 25k fit with a 128k fit for the same (arm, K, seed).
     FIT_N_EFF = int(FIT_N) if (FIT_N and FIT_N < VAL_EMB.shape[0]) else int(VAL_EMB.shape[0])

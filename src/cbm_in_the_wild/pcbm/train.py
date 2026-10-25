@@ -15,7 +15,7 @@ regularizer is NOT the variable under test — the capacity-matched ablation
 refits its own head per (rank, K, seed) — so we use a fast dense L2 head here
 rather than PCBM's elastic-net SGD (documented deviation).
 
-Broden images are staged to $TMPDIR by the sbatch; PCBM_BRODEN_DIR points at
+PCBM_BRODEN_DIR points at
 the extracted `broden_concepts/` tree (<concept>/{positives,negatives}/*.png).
 """
 

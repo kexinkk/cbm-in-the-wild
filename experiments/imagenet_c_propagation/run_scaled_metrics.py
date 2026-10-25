@@ -34,7 +34,7 @@ from cbm_in_the_wild.metrics import (
     spearman_rho,
     top_k_concept_overlap,
 )
-from cbm_in_the_wild.pipeline import propagate_corrupted_cell, MetricsSink
+from cbm_in_the_wild.dcbm.pipeline import propagate_corrupted_cell, MetricsSink
 
 
 def run_scaled_cell(ctx, corruption, severity, cell_dir):

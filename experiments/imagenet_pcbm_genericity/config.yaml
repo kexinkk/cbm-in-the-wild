@@ -51,4 +51,4 @@ ablation:
   sizes: [20, 40, 60, 80, 100, 120, 140, 160]           # cav/mm (K_full=166)
   sizes_large: [400, 800, 1200, 1600, 2000, 2400, 2800, 3200, 3600, 4000]  # mmL (K_full≈4588)
   seeds: [0, 1, 2]
-  fit_n: 25000
+  fit_n: 200000              # >= 128k held-out val -> uses the full pool
