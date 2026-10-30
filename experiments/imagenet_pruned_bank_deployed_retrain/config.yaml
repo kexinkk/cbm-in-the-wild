@@ -1,0 +1,41 @@
+# DCBM (ImageNet): capacity-matched concept selection with the deployed head recipe.
+# The concept bank is the only variable; the head is retrained from scratch with the
+# experiments/imagenet_baseline recipe on the 1.15M train split (128k held out for
+# best-val-loss epoch selection). Eval: full 50k test clean + the 10 severity-3 cells.
+#
+# Arms (2048 = the shared `full` anchor where every subset arm coincides):
+#   full        reference 2048 bank unchanged (reproduces the deployed head)
+#   native<K>   fresh KMeans(K) bank (cached by ../imagenet_concept_shift_robust_set)
+#   dk<K>       keep the K lowest-d_k concepts (all-severity d_k, test pairs)
+#   rand<K>     random K-subset (draw seeded by the run seed)
+#   dkd<K>      d_k re-estimated on the disjoint train pool (../imagenet_dk_disjoint_pool)
+#   loco_<c>_<K>  disjoint-pool d_k over the 9 corruptions other than c
+#   geom<K>     largest medoid crop first (corruption-free)
+#   dkres<K>    d_k residualized on log2 of the medoid-crop short side
+
+dataset: imagenet
+model_name: CLIP-ViT-B16
+class_labels_path: null
+device: cuda:0
+one_hot: false
+use_wandb: false
+
+# deployed recipe (experiments/imagenet_baseline)
+epochs: 200
+batch_size: 512
+lambda_1: 1.0e-4
+lr: 1.0e-4
+early_stopping_patience: null
+
+checkpoint: imagenet_baseline    # frozen reference bank + clean_propagation eval cache
+arms: [full,
+       native50, native100, native200, native400, native800, native1200, native1600,
+       dk50, dk100, dk200, dk400, dk800, dk1200, dk1600,
+       rand50, rand100, rand200, rand400, rand800, rand1200, rand1600]
+extra_arms: [dkd200, dkd400, dkd1200]   # disjoint d_k at the peak-margin (200) and best-accuracy (1200) K
+ks: [50, 100, 200, 400, 800, 1200, 1600]   # sizes allowed for loco_<c>_<K> / geom<K> / dkres<K>
+seeds: [0, 1, 2]
+sev: 3
+families: [fog, gaussian_noise, motion_blur, patch_masking, salt_and_pepper,
+           jpeg_compression, row_column_dropout, random_pixel_dropout,
+           sparse_random_occlusion, structured_pixel_dropout]

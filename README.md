@@ -16,8 +16,8 @@ far been evaluated on clean data only. We follow ten image corruptions through t
 (DCBM, Label-free CBM, Post-hoc CBM) on a frozen CLIP ViT-B/16 and find:
 
 - **Corruption hurts all three CBMs.** Accuracy drops by 4–66 points, depending on corruption type and severity; Gaussian noise is harshest, patch masking mildest.
-- **Corruption reorders concepts.** The CLIP embedding direction is largely preserved (cosine $\geq 0.59$), yet the concept activation vector is reordered with the top-1 activated concept changes in 70--100% of images.
-- **Concepts differ in robustness, and the robust ones can be found.** A per-concept shift score $d_k$ ranks concepts consistently across corruptionsand moderately across corruption types. Keeping the most stable ones beats a size-matched random subset by \good{+1.5 to +3.3\,pp} on corrupted images, at $\leq 0.25$\,pp clean cost with the head refit.
+- **Corruption reorders concepts.** The CLIP embedding direction is largely preserved (cosine $\geq 0.59$), yet the concept activation vector is reordered with the top-1 activated concept changes in 70–100% of images.
+- **Concepts differ in robustness, and the robust ones can be found.** A per-concept shift score $d_k$ ranks concepts consistently across corruptions. Pruning the unstable ones and retraining each head with its own deployed recipe raises corrupted accuracy above the deployed full-bank model by 0.5–1.1 points for all three CBMs while dropping 13–41% of the concepts, at a clean cost of at most 0.5 points. A size-matched random subset never beats the deployed model.
 
 ![Corruptions](figures/corruption_examples.png)
 *Four natural corruptions from ImageNet-C and six sensor corruptions, at severity 3.*
@@ -65,9 +65,22 @@ Each directory under `experiments/` holds the runner, its `config.yaml` and our 
 | Corruption calibration | `corruption_baselines` | `run.py --dataset imagenet` |
 | Stage-wise propagation | `imagenet_c_propagation`, `imagenet_{lfcbm,pcbm}_genericity` | `run_cell.py --task-id 0..49`, `run_propagation.py` |
 | Per-concept shift $d_k$ | `imagenet_concept_shift_robust_set`, `imagenet_{lfcbm,pcbm}_genericity` | `run.py`, `run_concept_shift.py` |
-| Concept selection (Table 2) | same | `ablation_capacity_matched.py`, `run_ablation.py` |
-| $d_k$ on a disjoint pool, unseen corruptions | `imagenet_dk_disjoint_pool` | `embed_train_pool.py`, `compute_dk.py`, `run_loco.sh` |
-| Crop geometry | `imagenet_crop_quality_dk` | `run.py`, `run_causal.py` |
+| Concept selection, head retrained (Section 4) | `imagenet_pruned_bank_deployed_retrain` (DCBM), `imagenet_pruned_concepts_family_retrain` (LF-CBM, PCBM) | `run.py` |
+| Concept selection, common $L_2$ refit (Appendix) | `imagenet_concept_shift_robust_set`, `imagenet_{lfcbm,pcbm}_genericity` | `ablation_capacity_matched.py`, `run_ablation.py` |
+| $d_k$ on a disjoint pool, unseen corruptions | `imagenet_dk_disjoint_pool` | `embed_train_pool.py`, `compute_dk.py`, then the retrain `dkd<K>` / `loco_<c>_<K>` arms and `aggregate_loco_retrain.py` |
+| Crop geometry | `imagenet_crop_quality_dk` | `run.py`, `run_causal.py`; retrain arms `geom<K>`, `dkres<K>` |
+
+The retrain runners are resumable: each call trains until a wall budget (`TRAIN_DEADLINE`
+for DCBM, `TIME_BUDGET_S` for LF-CBM/PCBM), and rerunning the same command continues.
+
+```bash
+python experiments/imagenet_pruned_bank_deployed_retrain/run.py --phase train --arm dk1200 --seed 0
+python experiments/imagenet_pruned_bank_deployed_retrain/run.py --phase eval        # then --phase summarize
+python experiments/imagenet_pruned_concepts_family_retrain/run.py --family lfcbm --arm dk3600 --seed 0
+python experiments/imagenet_pruned_concepts_family_retrain/run.py --summarize
+```
+
+The DCBM `native<K>` arms reuse the K-means banks cached by `ablation_capacity_matched.py`.
 
 CIFAR-10 counterparts are in the `cifar10_*` directories. LF-CBM and PCBM are trained with
 `train_lfcbm.py` / `train_pcbm.py --bank mmL` in their experiment directories.

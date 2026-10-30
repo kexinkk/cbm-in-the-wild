@@ -1,0 +1,23 @@
+{
+  "dcbm": {
+    "K": 200,
+    "mean_loco_vs_rand_pp": 4.3332,
+    "mean_dkd_vs_rand_pp": 4.735733333333333,
+    "retention": 0.9150008446421533,
+    "folds_loco_above_rand": 10
+  },
+  "lfcbm": {
+    "K": 400,
+    "mean_loco_vs_rand_pp": 2.119933466116586,
+    "mean_dkd_vs_rand_pp": 3.084466556708017,
+    "retention": 0.6872933867628457,
+    "folds_loco_above_rand": 8
+  },
+  "pcbm_mmL": {
+    "K": 3600,
+    "mean_loco_vs_rand_pp": 0.8213330308596298,
+    "mean_dkd_vs_rand_pp": 1.1042002836863212,
+    "retention": 0.743826136430293,
+    "folds_loco_above_rand": 6
+  }
+}

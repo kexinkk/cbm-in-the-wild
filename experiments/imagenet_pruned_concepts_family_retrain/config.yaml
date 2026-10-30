@@ -1,0 +1,23 @@
+# LF-CBM and PCBM-mmL (ImageNet): capacity-matched concept selection with each family's
+# deployed head recipe. The concept layer (LF-CBM W_c, PCBM-mmL text bank) and its
+# train-set standardization stay the deployed ones; only the kept columns change. The
+# head is retrained with GLM-SAGA on the 1.15M train split, exactly like the deployed head.
+# DCBM counterpart: ../imagenet_pruned_bank_deployed_retrain.
+saga:
+  lfcbm:    {lam: 0.0001, n_iters: 80, batch_size: 256}   # ../imagenet_lfcbm_genericity/config.yaml
+  pcbm_mmL: {lam: 0.0002, n_iters: 60, batch_size: 256}   # ../imagenet_pcbm_genericity/config.yaml
+
+# Arms: full | dk<K> (all-severity d_k, test pairs) | rand<K> (RandomState(1000+seed))
+# | dkd<K> (d_k on the disjoint train pool) | loco_<c>_<K> (disjoint-pool d_k without c).
+# Grid K in {400, 800, ..., 4000}, seeds 0-2 (full: seed 0 reproduces the deployed head).
+# Reported extras: dkd at the peak-margin K (LF-CBM 400, PCBM 3600) and the best-accuracy
+# K (LF-CBM 3600, PCBM 4000); loco_<c>_K at the peak-margin K.
+ks: [400, 800, 1200, 1600, 2000, 2400, 2800, 3200, 3600, 4000]
+seeds: [0, 1, 2]
+
+# Eval: full 50k test clean + all 50 corrupted cells; headline = severity-3 mean.
+severities: [1, 2, 3, 4, 5]
+headline_severity: 3
+corruptions: [fog, gaussian_noise, motion_blur, patch_masking, salt_and_pepper,
+              jpeg_compression, row_column_dropout, random_pixel_dropout,
+              sparse_random_occlusion, structured_pixel_dropout]

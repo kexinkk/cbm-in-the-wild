@@ -1,0 +1,468 @@
+{
+ "method": "deployed_recipe_retrain_on_pruned_bank",
+ "recipe": {
+  "epochs": 200,
+  "batch_size": 512,
+  "lambda_1": 0.0001,
+  "lr": 0.0001
+ },
+ "checkpoint": "imagenet_baseline",
+ "sev": 3,
+ "n_runs": 147,
+ "n_expected": 66,
+ "complete": false,
+ "stock_reference": {
+  "clean_50k": 0.6977,
+  "sev3_mean_50k": 0.4513
+ },
+ "table": [
+  {
+   "arm": "dk50",
+   "K": 50,
+   "n": 3,
+   "clean_m": 0.532327,
+   "clean_s": 0.00021,
+   "corrupt_m": 0.281251,
+   "corrupt_s": 0.000112
+  },
+  {
+   "arm": "dkres50",
+   "K": 50,
+   "n": 3,
+   "clean_m": 0.536873,
+   "clean_s": 0.000291,
+   "corrupt_m": 0.277261,
+   "corrupt_s": 0.000107
+  },
+  {
+   "arm": "geom50",
+   "K": 50,
+   "n": 3,
+   "clean_m": 0.55128,
+   "clean_s": 0.000203,
+   "corrupt_m": 0.281621,
+   "corrupt_s": 7.4e-05
+  },
+  {
+   "arm": "rand50",
+   "K": 50,
+   "n": 3,
+   "clean_m": 0.522,
+   "clean_s": 0.004362,
+   "corrupt_m": 0.241491,
+   "corrupt_s": 0.013166
+  },
+  {
+   "arm": "native50",
+   "K": 50,
+   "n": 3,
+   "clean_m": 0.460173,
+   "clean_s": 0.001869,
+   "corrupt_m": 0.154226,
+   "corrupt_s": 0.002751
+  },
+  {
+   "arm": "dk100",
+   "K": 100,
+   "n": 3,
+   "clean_m": 0.609467,
+   "clean_s": 0.00019,
+   "corrupt_m": 0.359262,
+   "corrupt_s": 0.000317
+  },
+  {
+   "arm": "geom100",
+   "K": 100,
+   "n": 3,
+   "clean_m": 0.612487,
+   "clean_s": 0.000687,
+   "corrupt_m": 0.352223,
+   "corrupt_s": 0.000217
+  },
+  {
+   "arm": "dkres100",
+   "K": 100,
+   "n": 3,
+   "clean_m": 0.606407,
+   "clean_s": 0.000386,
+   "corrupt_m": 0.338561,
+   "corrupt_s": 0.000161
+  },
+  {
+   "arm": "rand100",
+   "K": 100,
+   "n": 3,
+   "clean_m": 0.596253,
+   "clean_s": 0.003148,
+   "corrupt_m": 0.315273,
+   "corrupt_s": 0.011741
+  },
+  {
+   "arm": "native100",
+   "K": 100,
+   "n": 3,
+   "clean_m": 0.54628,
+   "clean_s": 0.002641,
+   "corrupt_m": 0.224098,
+   "corrupt_s": 0.002682
+  },
+  {
+   "arm": "loco_jpeg_compression_200",
+   "K": 200,
+   "n": 3,
+   "clean_m": 0.650687,
+   "clean_s": 0.000625,
+   "corrupt_m": 0.408833,
+   "corrupt_s": 0.000141
+  },
+  {
+   "arm": "loco_motion_blur_200",
+   "K": 200,
+   "n": 3,
+   "clean_m": 0.651327,
+   "clean_s": 0.000147,
+   "corrupt_m": 0.410999,
+   "corrupt_s": 0.00012
+  },
+  {
+   "arm": "loco_fog_200",
+   "K": 200,
+   "n": 3,
+   "clean_m": 0.65232,
+   "clean_s": 0.000251,
+   "corrupt_m": 0.41233,
+   "corrupt_s": 0.000211
+  },
+  {
+   "arm": "loco_gaussian_noise_200",
+   "K": 200,
+   "n": 3,
+   "clean_m": 0.648853,
+   "clean_s": 0.000133,
+   "corrupt_m": 0.411701,
+   "corrupt_s": 0.000132
+  },
+  {
+   "arm": "dkd200",
+   "K": 200,
+   "n": 3,
+   "clean_m": 0.650447,
+   "clean_s": 0.000153,
+   "corrupt_m": 0.410438,
+   "corrupt_s": 0.000216
+  },
+  {
+   "arm": "dkres200",
+   "K": 200,
+   "n": 3,
+   "clean_m": 0.649233,
+   "clean_s": 4.6e-05,
+   "corrupt_m": 0.390251,
+   "corrupt_s": 0.00034
+  },
+  {
+   "arm": "loco_patch_masking_200",
+   "K": 200,
+   "n": 3,
+   "clean_m": 0.650053,
+   "clean_s": 0.000151,
+   "corrupt_m": 0.410005,
+   "corrupt_s": 0.000394
+  },
+  {
+   "arm": "loco_sparse_random_occlusion_200",
+   "K": 200,
+   "n": 3,
+   "clean_m": 0.650953,
+   "clean_s": 0.000519,
+   "corrupt_m": 0.407521,
+   "corrupt_s": 0.000328
+  },
+  {
+   "arm": "loco_salt_and_pepper_200",
+   "K": 200,
+   "n": 3,
+   "clean_m": 0.650513,
+   "clean_s": 0.000761,
+   "corrupt_m": 0.411595,
+   "corrupt_s": 0.000381
+  },
+  {
+   "arm": "native200",
+   "K": 200,
+   "n": 3,
+   "clean_m": 0.602493,
+   "clean_s": 0.000855,
+   "corrupt_m": 0.281071,
+   "corrupt_s": 0.004141
+  },
+  {
+   "arm": "loco_random_pixel_dropout_200",
+   "K": 200,
+   "n": 3,
+   "clean_m": 0.650473,
+   "clean_s": 0.000393,
+   "corrupt_m": 0.408859,
+   "corrupt_s": 0.000242
+  },
+  {
+   "arm": "geom200",
+   "K": 200,
+   "n": 3,
+   "clean_m": 0.645707,
+   "clean_s": 0.000639,
+   "corrupt_m": 0.3883,
+   "corrupt_s": 0.000268
+  },
+  {
+   "arm": "dk200",
+   "K": 200,
+   "n": 3,
+   "clean_m": 0.649953,
+   "clean_s": 0.000264,
+   "corrupt_m": 0.407201,
+   "corrupt_s": 0.000218
+  },
+  {
+   "arm": "rand200",
+   "K": 200,
+   "n": 3,
+   "clean_m": 0.6399,
+   "clean_s": 0.002235,
+   "corrupt_m": 0.363081,
+   "corrupt_s": 0.010359
+  },
+  {
+   "arm": "loco_structured_pixel_dropout_200",
+   "K": 200,
+   "n": 3,
+   "clean_m": 0.649907,
+   "clean_s": 0.000194,
+   "corrupt_m": 0.410119,
+   "corrupt_s": 0.00028
+  },
+  {
+   "arm": "loco_row_column_dropout_200",
+   "K": 200,
+   "n": 3,
+   "clean_m": 0.65032,
+   "clean_s": 0.000236,
+   "corrupt_m": 0.410447,
+   "corrupt_s": 0.000385
+  },
+  {
+   "arm": "geom400",
+   "K": 400,
+   "n": 3,
+   "clean_m": 0.670053,
+   "clean_s": 0.000391,
+   "corrupt_m": 0.422753,
+   "corrupt_s": 0.000196
+  },
+  {
+   "arm": "dk400",
+   "K": 400,
+   "n": 3,
+   "clean_m": 0.67274,
+   "clean_s": 0.000544,
+   "corrupt_m": 0.443519,
+   "corrupt_s": 0.000311
+  },
+  {
+   "arm": "dkd400",
+   "K": 400,
+   "n": 3,
+   "clean_m": 0.672947,
+   "clean_s": 0.000564,
+   "corrupt_m": 0.442229,
+   "corrupt_s": 0.000506
+  },
+  {
+   "arm": "native400",
+   "K": 400,
+   "n": 3,
+   "clean_m": 0.63914,
+   "clean_s": 0.000439,
+   "corrupt_m": 0.340734,
+   "corrupt_s": 0.002929
+  },
+  {
+   "arm": "rand400",
+   "K": 400,
+   "n": 3,
+   "clean_m": 0.66584,
+   "clean_s": 0.001374,
+   "corrupt_m": 0.3997,
+   "corrupt_s": 0.006887
+  },
+  {
+   "arm": "dkres400",
+   "K": 400,
+   "n": 3,
+   "clean_m": 0.672353,
+   "clean_s": 0.000291,
+   "corrupt_m": 0.422281,
+   "corrupt_s": 0.000246
+  },
+  {
+   "arm": "dkres800",
+   "K": 800,
+   "n": 3,
+   "clean_m": 0.687567,
+   "clean_s": 0.000561,
+   "corrupt_m": 0.448611,
+   "corrupt_s": 0.000122
+  },
+  {
+   "arm": "geom800",
+   "K": 800,
+   "n": 3,
+   "clean_m": 0.684027,
+   "clean_s": 0.000365,
+   "corrupt_m": 0.440033,
+   "corrupt_s": 0.000947
+  },
+  {
+   "arm": "dk800",
+   "K": 800,
+   "n": 3,
+   "clean_m": 0.686247,
+   "clean_s": 0.001033,
+   "corrupt_m": 0.459783,
+   "corrupt_s": 0.000829
+  },
+  {
+   "arm": "native800",
+   "K": 800,
+   "n": 3,
+   "clean_m": 0.664373,
+   "clean_s": 0.000831,
+   "corrupt_m": 0.370356,
+   "corrupt_s": 0.002541
+  },
+  {
+   "arm": "rand800",
+   "K": 800,
+   "n": 3,
+   "clean_m": 0.68234,
+   "clean_s": 0.000492,
+   "corrupt_m": 0.425845,
+   "corrupt_s": 0.003162
+  },
+  {
+   "arm": "dkd1200",
+   "K": 1200,
+   "n": 3,
+   "clean_m": 0.693127,
+   "clean_s": 0.000515,
+   "corrupt_m": 0.464266,
+   "corrupt_s": 0.000436
+  },
+  {
+   "arm": "geom1200",
+   "K": 1200,
+   "n": 3,
+   "clean_m": 0.693707,
+   "clean_s": 0.000978,
+   "corrupt_m": 0.452088,
+   "corrupt_s": 0.000711
+  },
+  {
+   "arm": "dk1200",
+   "K": 1200,
+   "n": 3,
+   "clean_m": 0.693053,
+   "clean_s": 0.000518,
+   "corrupt_m": 0.460831,
+   "corrupt_s": 0.000559
+  },
+  {
+   "arm": "dkres1200",
+   "K": 1200,
+   "n": 3,
+   "clean_m": 0.694107,
+   "clean_s": 0.001489,
+   "corrupt_m": 0.454275,
+   "corrupt_s": 0.000603
+  },
+  {
+   "arm": "rand1200",
+   "K": 1200,
+   "n": 3,
+   "clean_m": 0.691427,
+   "clean_s": 0.001613,
+   "corrupt_m": 0.437854,
+   "corrupt_s": 0.003057
+  },
+  {
+   "arm": "native1200",
+   "K": 1200,
+   "n": 3,
+   "clean_m": 0.674467,
+   "clean_s": 0.000831,
+   "corrupt_m": 0.394212,
+   "corrupt_s": 0.002208
+  },
+  {
+   "arm": "dkres1600",
+   "K": 1600,
+   "n": 3,
+   "clean_m": 0.69502,
+   "clean_s": 0.000787,
+   "corrupt_m": 0.458559,
+   "corrupt_s": 0.00049
+  },
+  {
+   "arm": "rand1600",
+   "K": 1600,
+   "n": 3,
+   "clean_m": 0.693593,
+   "clean_s": 0.000435,
+   "corrupt_m": 0.448401,
+   "corrupt_s": 0.0024
+  },
+  {
+   "arm": "geom1600",
+   "K": 1600,
+   "n": 3,
+   "clean_m": 0.69564,
+   "clean_s": 0.001475,
+   "corrupt_m": 0.456959,
+   "corrupt_s": 0.000635
+  },
+  {
+   "arm": "dk1600",
+   "K": 1600,
+   "n": 3,
+   "clean_m": 0.696253,
+   "clean_s": 0.001204,
+   "corrupt_m": 0.459951,
+   "corrupt_s": 0.000452
+  },
+  {
+   "arm": "native1600",
+   "K": 1600,
+   "n": 3,
+   "clean_m": 0.68188,
+   "clean_s": 0.001161,
+   "corrupt_m": 0.40416,
+   "corrupt_s": 0.001845
+  },
+  {
+   "arm": "full",
+   "K": 2048,
+   "n": 3,
+   "clean_m": 0.696347,
+   "clean_s": 0.00033,
+   "corrupt_m": 0.452516,
+   "corrupt_s": 0.000205
+  }
+ ],
+ "context": {
+  "git_commit": "3f240948417cf1a8c25c9a74be82d921faa32ac9",
+  "slurm_job_id": "local",
+  "slurm_node": "local",
+  "slurm_partition": "local",
+  "host": "uc3n991.localdomain"
+ }
+}
